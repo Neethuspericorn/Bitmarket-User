@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beekarte</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+              <div class="cart ms-lg-5 ms-sm-3 ms-3 updates order-lg-3">
+                <a href="#"><img src="img/cart.svg" alt="cart"></a>
+              </div> 
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <form class="d-flex search-wrp" role="search">
+                    <button class="btn btn-outline-success" type="submit"><img src="img/search.svg"></button>
+                    <input class="form-control me-2" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop by Category
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Profile
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span><img src="img/user.svg"></span>Account</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/orders.svg"></span>My Orders</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/favs.svg"></span>Favorites</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/notifications.svg"></span>Notifications</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/logout.svg"></span>Logout</a></li>
+                  </ul>
+                </li>
+            </ul>
+            
+              </div>
+             
+            </div>
+          </nav>
+    </header>
+    <main>
+    <section class="content-area-wrp">
+        <div class="container container-custom">
+            <div class="col-lg-12">
+                <h2 class="sub-title"><span><img src="img/heart_line.svg" alt=""></span> Favourites (3)</h2>
+                <ul class="list-cart-items">
+                    <li class="cart-items">
+                        <div class="pro-variation">
+                          <div class="pro-img">
+                              <img class="img-fluid" src="img/01.png" alt="">
+                          </div>
+                            <div class="info">
+                              <h4 class="pro-title">
+                                  <span>Denim Streetwear</span>
+                                  Blue Denim Jacket
+                              </h4>
+                              <div class="price-blk">
+                                <span>$ 0.15 ETH</span> <span class="old">0.16 ETH</span>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="cart-action">
+                            <div class="stock-btn">
+                                <button class="stock out">Out of Stock</button>
+                            </div>
+                            <button class="move-cart" disabled>Move to Cart</button>
+                            <button class="delete"><img src="img/delete.svg"></button>
+                        </div>
+                    </li>
+                    <li class="cart-items">
+                          <div class="pro-variation">
+                            <div class="pro-img">
+                                <img class="img-fluid" src="img/02.png" alt="">
+                            </div>
+                            <div class="info">
+                              <h4 class="pro-title">
+                                  <span>Denim Streetwear</span>
+                                  Blue Denim Jacket
+                              </h4>
+                              <div class="price-blk">
+                                <span>$ 0.15 ETH</span> <span class="old">0.16 ETH</span>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="cart-action">
+                            <div class="stock-btn">
+                                <button class="stock in">In Stock</button>
+                            </div>
+                            <button class="move-cart">Move to Cart</button>
+                            <button class="delete"><img src="img/delete.svg"></button>
+                        </div>
+                    </li>
+                    <li class="cart-items">
+                          <div class="pro-variation">
+                            <div class="pro-img">
+                                <img class="img-fluid" src="img/03.png" alt="">
+                            </div>
+                            <div class="info">
+                              <h4 class="pro-title">
+                                  <span>Denim Streetwear</span>
+                                  Blue Denim Jacket
+                              </h4>
+                              <div class="price-blk">
+                                <span>$ 0.15 ETH</span> <span class="old">0.16 ETH</span>
+                              </div>
+                            </div>
+                          </div>
+                        <div class="cart-action">
+                            <div class="stock-btn">
+                                <button class="stock in">In Stock</button>
+                            </div>
+                            <button class="move-cart">Move to Cart</button>
+                            <button class="delete"><img src="img/delete.svg"></button>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </section>
+    </main>
+     
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
