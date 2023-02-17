@@ -9,6 +9,57 @@
     .products-row{
         row-gap: 24px;
     }
+    .resultsCount{
+        color: #000000;
+        font-size: 19px;
+        padding-bottom: 1em;
+        @media screen and (max-width: 1679px){
+            font-size: 16px;
+        }
+        @media screen and (max-width: 1440px){
+            font-size: 15px;
+        }
+    }
+    .sortBy{
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        column-gap: 40px;
+        padding-bottom: 7px;
+        margin-bottom: 13px;
+        border-bottom: 1px solid #7070701a;
+        .title{
+            font-size: 14px; 
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            display: flex;
+            column-gap: 40px;
+        }
+        .sortLink{
+            color: #000000;
+            font-weight: 500;
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background-color: transparent;
+            }
+            &.active{
+                color: $purple;
+                &:after{
+                    background-color: $purple;
+                }
+            }
+        }
+    }
     .products-card{
         padding: 30px;
         .product-txt{
