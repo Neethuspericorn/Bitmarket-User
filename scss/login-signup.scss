@@ -1,0 +1,47 @@
+@import "partials/partials";
+
+.modal.loginSignup{
+    .modal-body{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .modal-dialog.modal-dialog{
+        max-width: 1000px;
+    }
+}
+
+.login-signup-wrap{
+    max-width: 560px;
+    margin: auto;     
+}
+
+.nav-tabs.loginSignupTabs{
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .nav-item{
+        flex: 1;
+        max-width: 200px;
+    }
+    .nav-link{
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        font-size: 19px;
+        color: #C7C7C7;
+        font-weight: 400;
+        &.active{
+            color: #7F57F1;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+}
+
+.tab-content{
+    &.loginSignups{
+        padding-top: 50px;
+    }
+}
