@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,OAAO,CAAC,yFAAI,CACZ,OAAO,CAAC,6FAAI,CFCZ,AAAA,iBAAiB,AAAA,CACb,WAAW,CAAE,GAAG,CAChB,cAAc,CAAE,IAAI,CACvB",
+    "sources": [
+        "../scss/products-list.scss",
+        "../scss/partials/_partials.scss",
+        "../scss/partials/_fonts.scss",
+        "../scss/partials/_variables.scss",
+        "../scss/partials/_mixins.scss"
+    ],
+    "names": [],
+    "file": "products-list.css"
+}

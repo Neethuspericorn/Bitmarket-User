@@ -2,22 +2,8 @@
 
 .orders-section{
     padding-top: 20px;
-    padding-bottom: 60x;
-    .orders-sidebar{
-        width: 100%;
-        flex: 0 0 100%;
-        @media screen and (min-width: 992px){
-            flex: 0 0 260px;
-            max-width: 260px;
-        }
-        @media screen and (min-width: 1401px){
-            flex: 0 0 318px;
-            max-width: 318px;
-        }
-        
-
-        
-    }
+    padding-bottom: 60px;
+    
     .order-items-wrp{
         display: flex;
         flex-wrap: wrap;

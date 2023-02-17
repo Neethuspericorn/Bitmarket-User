@@ -58,7 +58,6 @@ body {
         border: 1px solid transparent;
         background: $purple;
         background: linear-gradient(180deg, $purple 0%, $purpleDark 60%);
-
         &:hover {
             background: linear-gradient(180deg, $purple 0%, $purpleDark 90%);
         }
