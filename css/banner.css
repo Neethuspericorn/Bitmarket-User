@@ -27,7 +27,8 @@
     transform: scale(3.5);
     white-space: nowrap;
     color: #cccbdc;
-    width: 100%; }
+    width: 100%;
+    opacity: 0; }
   .banner .connect-blk {
     display: flex;
     align-items: center;
@@ -224,5 +225,18 @@
       @media (max-width: 991px) {
         .banner .bnr-img img {
           max-width: 70%; } }
+  .banner .slick-current .title-cloned {
+    opacity: 1;
+    -webkit-animation: linear;
+    -webkit-animation-name: forward;
+    -webkit-animation-duration: 1.5s; }
+
+@-webkit-keyframes forward {
+  0% {
+    left: 90%; }
+  50% {
+    left: 80%; }
+  100% {
+    left: 70%; } }
 
 /*# sourceMappingURL=banner.css.map */
