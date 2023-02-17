@@ -22,6 +22,9 @@
         color: #A958F0;
         width: auto;
         opacity: 0;
+        @media (max-width:991px){
+            transform: scale(2.5);
+        }
     }
     .connect-blk{
         display: flex;
@@ -37,6 +40,10 @@
         a{
             display: block;
             margin:8px 0;
+            @media (max-width:991px){
+                margin: 4px 0;
+                max-width: 14px;
+            }
         }
     }
         .banner-slider{
@@ -191,6 +198,9 @@
                 @media (max-width:991px){
                     font: normal normal 700 25px/40px $poppins;
                 }
+                @media (max-width:767px){
+                    font: normal normal 700 20px/30px $poppins;
+                }
                 span{
                     display: block;
                     color: #000000;
@@ -207,6 +217,9 @@
                     }
                     @media (max-width:991px){
                         font: normal normal normal 18px/30px $poppins;
+                    }
+                    @media (max-width:767px){
+                        font: normal normal normal 14px/24px $poppins;
                     }
                 }
             }
@@ -227,6 +240,9 @@
                 }
                 @media (max-width:991px){
                     font: normal normal 300 16px/24px $poppins;
+                }
+                @media (max-width:767px){
+                    font: normal normal 300 14px/22px $poppins;
                 }
             }
             .banner-cta{

@@ -28,6 +28,9 @@
     color: #A958F0;
     width: auto;
     opacity: 0; }
+    @media (max-width: 991px) {
+      .banner .title-cloned {
+        transform: scale(2.5); } }
   .banner .connect-blk {
     display: flex;
     align-items: center;
@@ -42,6 +45,10 @@
     .banner .connect-blk a {
       display: block;
       margin: 8px 0; }
+      @media (max-width: 991px) {
+        .banner .connect-blk a {
+          margin: 4px 0;
+          max-width: 14px; } }
   .banner .banner-slider .slick-slide {
     height: 100%;
     position: relative; }
@@ -171,6 +178,9 @@
       @media (max-width: 991px) {
         .banner .bnr-content .banner-title {
           font: normal normal 700 25px/40px "Poppins", sans-serif; } }
+      @media (max-width: 767px) {
+        .banner .bnr-content .banner-title {
+          font: normal normal 700 20px/30px "Poppins", sans-serif; } }
       .banner .bnr-content .banner-title span {
         display: block;
         color: #000000;
@@ -188,6 +198,9 @@
         @media (max-width: 991px) {
           .banner .bnr-content .banner-title span {
             font: normal normal normal 18px/30px "Poppins", sans-serif; } }
+        @media (max-width: 767px) {
+          .banner .bnr-content .banner-title span {
+            font: normal normal normal 14px/24px "Poppins", sans-serif; } }
     .banner .bnr-content .banner-desc {
       font: normal normal 300 21px/34px "Poppins", sans-serif;
       color: #000;
@@ -206,6 +219,9 @@
       @media (max-width: 991px) {
         .banner .bnr-content .banner-desc {
           font: normal normal 300 16px/24px "Poppins", sans-serif; } }
+      @media (max-width: 767px) {
+        .banner .bnr-content .banner-desc {
+          font: normal normal 300 14px/22px "Poppins", sans-serif; } }
     .banner .bnr-content .banner-cta {
       color: #7F57F1;
       font: normal normal 500 14px/21px "Poppins", sans-serif;
