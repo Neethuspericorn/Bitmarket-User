@@ -301,6 +301,10 @@
                 @media (max-width:991px){
                     max-width: 70%;
                 }
+                @media (max-width:767px){
+                    max-width: 50%;
+                    margin: 0 auto;
+                }
             }
         }
         .slick-current{

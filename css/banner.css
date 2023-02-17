@@ -265,6 +265,10 @@
       @media (max-width: 991px) {
         .banner .bnr-img img {
           max-width: 70%; } }
+      @media (max-width: 767px) {
+        .banner .bnr-img img {
+          max-width: 50%;
+          margin: 0 auto; } }
   .banner .slick-current .title-cloned {
     opacity: 0.1;
     -webkit-animation: linear;
