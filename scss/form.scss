@@ -38,7 +38,7 @@
         }
     }
     .form-group{
-        padding-bottom: 30px;
+        padding-bottom: 25px;
         position: relative;
     }
     .error{
@@ -55,8 +55,7 @@
         border: 1px solid #F7F5FF;
         font-size: 16px;
         margin-bottom: 5px;
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding: 16px 20px;
         color: #1D1D39;
         &::placeholder{
             opacity: 0.5;
