@@ -6,5 +6,38 @@
 }
 
 .products-list{
-    
+    .products-row{
+        row-gap: 24px;
+    }
+    .products-card{
+        padding: 30px;
+        .product-txt{
+            h6{
+                font-size: 16px;
+            }
+            span{
+                font-size: 16px;
+            }
+        }
+        .products-card-footer{
+            .price-block{
+                .price{
+                    font-size: 16px;
+                }
+
+                .view-block{
+                    .btn{
+                        font-size: 11px;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                        &:before{
+                            width: 40px;
+                            height: 40px;
+                            left: 0;
+                        }
+                    }
+                } 
+            } 
+        } 
+    }
 }
