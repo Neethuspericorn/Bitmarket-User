@@ -48,7 +48,7 @@ header{
                 border-bottom: 15px solid #fff;
                 position: absolute;
                 top: -13px;
-                right: 60px;
+                right: 73px;
                 z-index: 1;
                 }
             }
@@ -62,23 +62,37 @@ header{
                 border-bottom: 15px solid #ccc;
                 position: absolute;
                 top: -15px;
-                right: 60px;
+                right: 73px;
                 }
             }
+            li{
+                border-top: 1px solid #00000029;
+                &:first-child{
+                    border: none;
+                }
+            }
+                
             a{
                 font: normal normal 300 18px/27px Poppins;
-                padding: 5px 35px;
+                padding: 10px 35px;
+                display: flex;
+                justify-content: flex-start;
+                img{
+                    
+                    max-width: 14px;
+                }
+
                 @media (max-width:1679px){
                     font: normal normal 300 17px/27px Poppins;
                 }
                 @media (max-width:1480px){
-                    font: normal normal 300 16px/26px Poppins;
+                    font: normal normal 300 15px/26px Poppins;
                 }
                 @media (max-width:1199px){
-                    font: normal normal 300 15px/24px Poppins;
+                    font: normal normal 300 14px/24px Poppins;
                 }
                 @media (max-width:991px){
-                    font: normal normal 300 14px/24px Poppins;
+                    font: normal normal 300 13px/22px Poppins;
                 }
                 &:hover{
                     color: $purple;
