@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/sidebar-filters.css">
+    <link rel="stylesheet" href="css/products-list.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+              <div class="cart ms-lg-5 ms-sm-3 ms-3 updates order-lg-3">
+                <a href="#"><img src="img/cart.svg" alt="cart"></a>
+              </div> 
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <form class="d-flex search-wrp" role="search">
+                    <button class="btn btn-outline-success" type="submit"><img src="img/search.svg"></button>
+                    <input class="form-control me-2" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop by Category
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Profile
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span><img src="img/user.svg"></span>Account</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/orders.svg"></span>My Orders</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/favs.svg"></span>Favorites</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/notifications.svg"></span>Notifications</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/logout.svg"></span>Logout</a></li>
+                  </ul>
+                </li>
+            </ul>
+            
+              </div>
+             
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+
+        <section class="section products-section">
+            <div class="container container-custom">
+                <div class="row">
+                    <div class="col products-sidebar">
+                         <div class="sidebar-filters">
+                            <div class="filter-itm">
+                                <h5 class="fltrHdng sidebarHdng">
+                                    <button class="btn btn-backBtn" id="closeSidebar">    </button>
+                                    <span>Filters</span>
+                                    <button class="btn btn-link btn-clearFilter">Clear All</button>
+                                </h5>
+
+                                <h5 class="fltrHdng">
+                                    Category
+                                </h5>
+                                <ul class="filter-itms">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="orderStatus">
+                                            <label class="form-check-label" for="orderStatus">
+                                                Order Status
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Ontheway">
+                                            <label class="form-check-label" for="Ontheway">
+                                                On the way
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Delivered">
+                                            <label class="form-check-label" for="Delivered">
+                                                Delivered
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Cancelled">
+                                            <label class="form-check-label" for="Cancelled">
+                                                Cancelled
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Returned">
+                                            <label class="form-check-label" for="Returned">
+                                                Returned
+                                            </label>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                            <div class="filter-itm">
+                                <h5 class="fltrHdng">Order Date</h5>
+
+                                <ul class="filter-itms">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="lastMonth">
+                                            <label class="form-check-label" for="lastMonth">
+                                                Last 30 days
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="2022">
+                                            <label class="form-check-label" for="2022">
+                                                2022
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="2021">
+                                            <label class="form-check-label" for="2021">
+                                                2021
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="2020">
+                                            <label class="form-check-label" for="2020">
+                                                2020
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="2019">
+                                            <label class="form-check-label" for="2019">
+                                                2019
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Older">
+                                            <label class="form-check-label" for="Older">
+                                                Older
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                         </div>
+
+                         <div id="sidebar-filter-overlay"></div>
+                    </div>
+
+                    <div class="col products-list">
+                        <div class="row products-row">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="products-card">
+                                    <div class="products-card-header">
+                                        <button class="btn btn-add-fav isActive">
+                                            <img src="img/heart_line.svg" class="product-like product-like-line" alt="product">
+                                            <img src="img/heart_fill.svg" class="product-like product-like-fill" alt="product">
+                                        </button>
+                                        <img src="img/product-1.png" class="product-img" alt="product">
+                                    </div>
+                                    <div class="products-card-body">
+                                        <div class="product-txt">
+                                            <h6>Ingrid Street wear</h6>
+                                            <span>Giorgio Armani</span>
+                                        </div>
+                                    </div>
+                                    <div class="products-card-footer">
+                                        <div class="price-block">
+                                            <div class="price">
+                                                0.16 ETH
+                                            </div>
+                                            <div class="view-block">
+                                                <button class="btn">More info
+                                                    <img src="img/right_arrow.svg" alt="right_arrow">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4  col-md-6">
+                                <div class="products-card">
+                                    <div class="products-card-header">
+                                        <button class="btn btn-add-fav isActive">
+                                            <img src="img/heart_line.svg" class="product-like product-like-line" alt="product">
+                                            <img src="img/heart_fill.svg" class="product-like product-like-fill" alt="product">
+                                        </button>
+                                        <img src="img/product-1.png" class="product-img" alt="product">
+                                    </div>
+                                    <div class="products-card-body">
+                                        <div class="product-txt">
+                                            <h6>Ingrid Street wear</h6>
+                                            <span>Giorgio Armani</span>
+                                        </div>
+                                    </div>
+                                    <div class="products-card-footer">
+                                        <div class="price-block">
+                                            <div class="price">
+                                                0.16 ETH
+                                            </div>
+                                            <div class="view-block">
+                                                <button class="btn">More info
+                                                    <img src="img/right_arrow.svg" alt="right_arrow">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4  col-md-6">
+                                <div class="products-card">
+                                    <div class="products-card-header">
+                                        <button class="btn btn-add-fav isActive">
+                                            <img src="img/heart_line.svg" class="product-like product-like-line" alt="product">
+                                            <img src="img/heart_fill.svg" class="product-like product-like-fill" alt="product">
+                                        </button>
+                                        <img src="img/product-1.png" class="product-img" alt="product">
+                                    </div>
+                                    <div class="products-card-body">
+                                        <div class="product-txt">
+                                            <h6>Ingrid Street wear</h6>
+                                            <span>Giorgio Armani</span>
+                                        </div>
+                                    </div>
+                                    <div class="products-card-footer">
+                                        <div class="price-block">
+                                            <div class="price">
+                                                0.16 ETH
+                                            </div>
+                                            <div class="view-block">
+                                                <button class="btn">More info
+                                                    <img src="img/right_arrow.svg" alt="right_arrow">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4  col-md-6">
+                                <div class="products-card">
+                                    <div class="products-card-header">
+                                        <button class="btn btn-add-fav isActive">
+                                            <img src="img/heart_line.svg" class="product-like product-like-line" alt="product">
+                                            <img src="img/heart_fill.svg" class="product-like product-like-fill" alt="product">
+                                        </button>
+                                        <img src="img/product-1.png" class="product-img" alt="product">
+                                    </div>
+                                    <div class="products-card-body">
+                                        <div class="product-txt">
+                                            <h6>Ingrid Street wear</h6>
+                                            <span>Giorgio Armani</span>
+                                        </div>
+                                    </div>
+                                    <div class="products-card-footer">
+                                        <div class="price-block">
+                                            <div class="price">
+                                                0.16 ETH
+                                            </div>
+                                            <div class="view-block">
+                                                <button class="btn">More info
+                                                    <img src="img/right_arrow.svg" alt="right_arrow">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4  col-md-6">
+                                <div class="products-card">
+                                    <div class="products-card-header">
+                                        <button class="btn btn-add-fav isActive">
+                                            <img src="img/heart_line.svg" class="product-like product-like-line" alt="product">
+                                            <img src="img/heart_fill.svg" class="product-like product-like-fill" alt="product">
+                                        </button>
+                                        <img src="img/product-1.png" class="product-img" alt="product">
+                                    </div>
+                                    <div class="products-card-body">
+                                        <div class="product-txt">
+                                            <h6>Ingrid Street wear</h6>
+                                            <span>Giorgio Armani</span>
+                                        </div>
+                                    </div>
+                                    <div class="products-card-footer">
+                                        <div class="price-block">
+                                            <div class="price">
+                                                0.16 ETH
+                                            </div>
+                                            <div class="view-block">
+                                                <button class="btn">More info
+                                                    <img src="img/right_arrow.svg" alt="right_arrow">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4  col-md-6">
+                                <div class="products-card">
+                                    <div class="products-card-header">
+                                        <button class="btn btn-add-fav isActive">
+                                            <img src="img/heart_line.svg" class="product-like product-like-line" alt="product">
+                                            <img src="img/heart_fill.svg" class="product-like product-like-fill" alt="product">
+                                        </button>
+                                        <img src="img/product-1.png" class="product-img" alt="product">
+                                    </div>
+                                    <div class="products-card-body">
+                                        <div class="product-txt">
+                                            <h6>Ingrid Street wear</h6>
+                                            <span>Giorgio Armani</span>
+                                        </div>
+                                    </div>
+                                    <div class="products-card-footer">
+                                        <div class="price-block">
+                                            <div class="price">
+                                                0.16 ETH
+                                            </div>
+                                            <div class="view-block">
+                                                <button class="btn">More info
+                                                    <img src="img/right_arrow.svg" alt="right_arrow">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
+                    </div>
+                     
+                </div>
+            </div>
+        </section>
+
+         
+    </main>
+</body>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        let filterToggle = document.getElementById('filterToggle');
+        let filterSidebar = document.getElementsByClassName('sidebar-filters');
+        let overlay = document.getElementById('sidebar-filter-overlay');
+        let closeSidebar = document.getElementById('closeSidebar');
+
+        
+        filterToggle.onclick = function(e){
+            filterSidebar[0].classList.add('show');
+            overlay.classList.add('show');
+        }
+        overlay.onclick = function(e){
+            filterSidebar[0].classList.remove('show');
+            tgt = e.target;
+            tgt.classList.remove('show');
+        }
+        closeSidebar.onclick = function(e){
+            filterSidebar[0].classList.remove('show');
+            overlay.classList.remove('show');
+        }
+    </script>
+
+</html>
