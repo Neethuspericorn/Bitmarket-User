@@ -14,20 +14,19 @@
   overflow-x: hidden; }
   @media (max-width: 991px) {
     .banner {
-      height: auto;
-      padding-bottom: 50px; } }
+      height: auto; } }
   @media (min-width: 1350px) {
     .banner .container {
       max-width: 1300px; } }
   .banner .title-cloned {
     font: normal normal 600 60px/90px "Poppins", sans-serif;
     position: absolute;
-    top: 50%;
+    bottom: 108px;
     left: 0px;
-    transform: scale(3.5);
+    transform: scale(5.5);
     white-space: nowrap;
-    color: #cccbdc;
-    width: 100%;
+    color: #A958F0;
+    width: auto;
     opacity: 0; }
   .banner .connect-blk {
     display: flex;
@@ -35,7 +34,7 @@
     justify-content: center;
     width: 22px;
     position: absolute;
-    right: 130px;
+    right: 50px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 3;
@@ -64,6 +63,12 @@
     justify-content: center;
     align-items: center; }
     @media (max-width: 991px) {
+      .banner .banner-slider .slick-dots {
+        bottom: 30px;
+        right: 50px;
+        height: 40px;
+        width: 190px; } }
+    @media (max-width: 767px) {
       .banner .banner-slider .slick-dots {
         display: none !important; } }
     .banner .banner-slider .slick-dots li {
@@ -94,49 +99,78 @@
     text-align: center; }
     @media (max-width: 991px) {
       .banner .banner-slider .slick-arrow {
-        bottom: 50%; } }
+        width: 40px;
+        height: 40px;
+        bottom: 30px; } }
+    @media (max-width: 767px) {
+      .banner .banner-slider .slick-arrow {
+        bottom: 50%;
+        width: 40px;
+        height: 40px; } }
     .banner .banner-slider .slick-arrow.next-arrow {
       right: 150px; }
+      @media (max-width: 991px) {
+        .banner .banner-slider .slick-arrow.next-arrow {
+          right: 50px; } }
+      @media (max-width: 767px) {
+        .banner .banner-slider .slick-arrow.next-arrow {
+          left: calc(100% - 100px); } }
       .banner .banner-slider .slick-arrow.next-arrow:before {
         content: "";
         display: inline-block;
         background: url(/img/right_arrow.svg) no-repeat center;
         height: 53px;
         width: 53px; }
+        @media (max-width: 991px) {
+          .banner .banner-slider .slick-arrow.next-arrow:before {
+            width: 40px;
+            height: 40px;
+            background-size: 7px; } }
     .banner .banner-slider .slick-arrow.prev-arrow {
       right: 350px;
       background-color: rgba(255, 255, 255, 0.5); }
       @media (max-width: 991px) {
         .banner .banner-slider .slick-arrow.prev-arrow {
-          right: inherit;
-          left: 0px; } }
+          right: 200px; } }
+      @media (max-width: 767px) {
+        .banner .banner-slider .slick-arrow.prev-arrow {
+          right: calc(100% - 100px); } }
       .banner .banner-slider .slick-arrow.prev-arrow:before {
         content: "";
         display: inline-block;
         background: url(/img/left_arrow.svg) no-repeat center;
         height: 53px;
         width: 53px; }
+        @media (max-width: 991px) {
+          .banner .banner-slider .slick-arrow.prev-arrow:before {
+            width: 40px;
+            height: 40px;
+            background-size: 7px; } }
   .banner .bnr-content {
     display: flex;
     justify-content: center;
     flex-direction: column; }
+    @media (max-width: 991px) {
+      .banner .bnr-content {
+        margin-top: 50px; } }
     .banner .bnr-content .banner-title {
-      font: normal normal 600 60px/90px "Poppins", sans-serif;
-      color: #7F57F1;
+      font: normal normal 700 60px/90px "Poppins", sans-serif;
+      color: #451E90;
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      opacity: 0; }
       @media (max-width: 1679px) {
         .banner .bnr-content .banner-title {
-          font: normal normal 600 50px/60px "Poppins", sans-serif; } }
+          font: normal normal 700 50px/60px "Poppins", sans-serif; } }
       @media (max-width: 1480px) {
         .banner .bnr-content .banner-title {
-          font: normal normal 600 40px/50px "Poppins", sans-serif; } }
+          font: normal normal 700 40px/50px "Poppins", sans-serif; } }
       @media (max-width: 1199px) {
         .banner .bnr-content .banner-title {
-          font: normal normal 600 30px/40px "Poppins", sans-serif; } }
+          font: normal normal 700 30px/40px "Poppins", sans-serif; } }
       @media (max-width: 991px) {
         .banner .bnr-content .banner-title {
-          font: normal normal 600 25px/40px "Poppins", sans-serif; } }
+          font: normal normal 700 25px/40px "Poppins", sans-serif; } }
       .banner .bnr-content .banner-title span {
         display: block;
         color: #000000;
@@ -158,7 +192,8 @@
       font: normal normal 300 21px/34px "Poppins", sans-serif;
       color: #000;
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      opacity: 0; }
       @media (max-width: 1679px) {
         .banner .bnr-content .banner-desc {
           font: normal normal 300 20px/30px "Poppins", sans-serif; } }
@@ -182,7 +217,8 @@
       transition: 0.3s ease-in-out;
       max-width: 220px;
       margin-top: 60px;
-      z-index: 2; }
+      z-index: 2;
+      opacity: 0; }
       @media (max-width: 991px) {
         .banner .bnr-content .banner-cta {
           margin-top: 25px;
@@ -192,7 +228,7 @@
         display: block;
         width: 23px;
         height: 13px;
-        background: url(img/arrow_tail.svg) no-repeat center;
+        background: url(/img/arrow_tail.svg) no-repeat center;
         margin-left: 10px; }
       .banner .bnr-content .banner-cta:before {
         content: "";
@@ -220,23 +256,61 @@
     @media (min-width: 992px) {
       .banner .bnr-img.mt-50 {
         margin-top: 50px; } }
+    @media (max-width: 991px) {
+      .banner .bnr-img.mt-50 {
+        margin-top: 50px; } }
     .banner .bnr-img img {
-      max-width: 460px; }
+      max-width: 460px;
+      opacity: 0; }
       @media (max-width: 991px) {
         .banner .bnr-img img {
           max-width: 70%; } }
+      @media (max-width: 767px) {
+        .banner .bnr-img img {
+          max-width: 50%;
+          margin: 0 auto; } }
   .banner .slick-current .title-cloned {
-    opacity: 1;
+    opacity: 0.1;
     -webkit-animation: linear;
     -webkit-animation-name: forward;
-    -webkit-animation-duration: 1.5s; }
+    -webkit-animation-duration: 5s; }
+  .banner .slick-current .bnr-img img {
+    opacity: 1; }
+  .banner .slick-current .banner-title {
+    opacity: 1; }
+  .banner .slick-current .banner-desc {
+    opacity: 1; }
+  .banner .slick-current .banner-cta {
+    opacity: 1; }
 
 @-webkit-keyframes forward {
   0% {
-    left: 90%; }
+    left: -100px;
+    opacity: 0; }
   50% {
-    left: 80%; }
+    left: 0px;
+    opacity: 0.1; }
   100% {
-    left: 70%; } }
+    left: 100px;
+    opacity: 0.1; } }
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); } }
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight; }
 
 /*# sourceMappingURL=banner.css.map */
