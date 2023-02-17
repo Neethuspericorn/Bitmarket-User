@@ -3,7 +3,8 @@ $(document).ready(function () {
     autoplay: true,
     prevArrow: '<div class="slick-nav prev-arrow"></div>',
     nextArrow: '<div class="slick-nav next-arrow"></div>',
-    dots: true
+    dots: true,
+    speed: 500,
   });
   $('.banner-slider').on('init', function(e, slick) {
     var $firstAnimatingElements = $('div.slick-slide:first-child').find('[data-animation]');
@@ -18,10 +19,13 @@ $('.banner-slider').on('beforeChange', function(e, slick, currentSlide, nextSlid
     elements.each(function() {
         var $this = $(this);
         var $animationDelay = $this.data('delay');
+        var $animationDuration = $this.data('duration');
         var $animationType = 'animated ' + $this.data('animation');
         $this.css({
             'animation-delay': $animationDelay,
-            '-webkit-animation-delay': $animationDelay
+            '-webkit-animation-delay': $animationDelay,
+            'animation-duration': $animationDuration,
+            '-webkit-animation-duration': $animationDuration,
         });
         $this.addClass($animationType).one(animationEndEvents, function() {
             $this.removeClass($animationType);
