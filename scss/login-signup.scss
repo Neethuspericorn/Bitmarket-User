@@ -13,7 +13,17 @@
 
 .login-signup-wrap{
     max-width: 560px;
-    margin: auto;     
+    margin: auto;
+    .form-act-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .btn{
+            flex: 1;
+        }
+    }   
 }
 
 .nav-tabs.loginSignupTabs{
@@ -32,6 +42,9 @@
         font-size: 19px;
         color: #C7C7C7;
         font-weight: 400;
+        &:focus-visible{
+            outline: $purpleLighter auto 1px;
+        }
         &.active{
             color: #7F57F1;
             font-weight: 600;
@@ -43,5 +56,19 @@
 .tab-content{
     &.loginSignups{
         padding-top: 50px;
+        .tab-pane{
+            &:focus-visible{
+                outline: $purpleLighter auto 1px;
+            }
+        }
+        
+    }
+}
+
+.forgotPwd{
+    color: #000;
+    font-size: 16px;
+    &:hover{
+        color: $purpleDark;
     }
 }
