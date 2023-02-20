@@ -4,7 +4,7 @@ $(document).ready(function () {
     prevArrow: '<div class="slick-nav prev-arrow"></div>',
     nextArrow: '<div class="slick-nav next-arrow"></div>',
     dots: true,
-    speed: 500,
+    autoplaySpeed:3500
   });
   $('.banner-slider').on('init', function(e, slick) {
     var $firstAnimatingElements = $('div.slick-slide:first-child').find('[data-animation]');
