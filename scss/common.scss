@@ -58,6 +58,7 @@ body {
         border: 1px solid transparent;
         background: $purple;
         background: linear-gradient(180deg, $purple 0%, $purpleDark 60%);
+
         &:hover {
             background: linear-gradient(180deg, $purple 0%, $purpleDark 90%);
         }
@@ -161,6 +162,21 @@ body {
             width: 339px;
             object-fit: contain;
             height: 220px;
+
+            @media (max-width:1679px) {
+                width: 320px;
+                height: 200px;
+            }
+
+            @media (max-width:1441px) {
+                width: 290px;
+                height: 190px;
+            }
+
+            @media (max-width:1281px) {
+                width: 270px;
+                height: 170px;
+            }
         }
     }
 
@@ -168,8 +184,20 @@ body {
         .product-txt {
             margin-top: 75px;
 
+            @media (max-width:1679px) {
+                margin-top: 50px;
+            }
+
             @media (max-width:1281px) {
-                margin-top: 40px;
+                margin-top: 30px;
+            }
+
+            @media (max-width:1023px) {
+                margin-top: 20px;
+            }
+
+            @media (max-width:991px) {
+                margin-top: 5px;
             }
 
             h6 {
@@ -183,17 +211,23 @@ body {
                     font-size: 20px;
                 }
 
-                @media (max-width:1199px) {
+                @media (max-width:1367px) {
                     font-size: 18px;
+                }
+
+                @media (max-width:1281px) {
+                    font-size: 16px;
                 }
 
                 @media (max-width:991px) {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
 
-                @media (max-width:768px) {
-                    font-size: 18px;
+                @media (max-width:767px) {
+                    text-align: center;
                 }
+
+
             }
 
             span {
@@ -203,15 +237,15 @@ body {
                 color: #000000;
 
                 @media (max-width:1679px) {
-                    font-size: 18px;
-                }
-
-                @media (max-width:1199px) {
                     font-size: 16px;
                 }
 
-                @media (max-width:991px) {
+                @media (max-width:1281px) {
                     font-size: 14px;
+                }
+                @media (max-width:767px) {
+                    text-align: center;
+                    display: block;
                 }
             }
         }
@@ -223,8 +257,16 @@ body {
             align-items: center;
             margin-top: 31px;
 
-            @media (max-width:1024px) {
+            @media (max-width:1679px) {
                 margin-top: 20px;
+            }
+
+            @media (max-width:1281px) {
+                margin-top: 10px;
+            }
+            @media (max-width:767px) {
+                flex-direction: column;
+                margin-top: 18px;
             }
 
             .price {
@@ -237,15 +279,22 @@ body {
                     font-size: 18px;
                 }
 
-                @media (max-width:1199px) {
+                @media (max-width:1281px) {
                     font-size: 16px;
                 }
+
+                @media (max-width:1199px) {
+                    font-size: 14px;
+                }
+               
             }
 
             .view-block {
                 margin: auto;
                 margin-right: 0;
-
+                @media (max-width:767px) {
+                    margin: auto;
+                }
                 .btn {
                     text-align: left;
                     font: 500 14px $poppins;
@@ -275,10 +324,16 @@ body {
                             left: -15px;
                         }
 
-                        @media (max-width:1679px) {
+                        @media (max-width:1441px) {
                             width: 38px;
                             height: 38px;
                             left: -5px;
+                        }
+
+                        @media (max-width:1281px) {
+                            width: 30px;
+                            height: 30px;
+                            left: 13px;
                         }
                     }
                 }

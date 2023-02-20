@@ -1,0 +1,244 @@
+@import "partials/partials";
+
+.favorite-brands-section {
+    margin-top: 140px;
+    position: relative;
+
+    @media (max-width:1679px) {
+        margin-top: 90px;
+    }
+
+    @media (max-width:1281px) {
+        margin-top: 70px;
+    }
+
+
+
+    .main-title {
+        text-align: center;
+        font: bold 39px $poppins;
+        color: #000000;
+
+        @media (max-width:1679px) {
+            font-size: 30px;
+        }
+
+        @media (max-width:1281px) {
+            font-size: 26px;
+        }
+
+        @media (max-width:1199px) {
+            font-size: 20px;
+        }
+
+        @media (max-width:767px) {
+            font-size: 16px;
+        }
+
+
+        span {
+            font-weight: 300;
+            letter-spacing: 0.94px;
+            color: #000000;
+        }
+    }
+
+    .slick-list {
+        padding: 0 120px 0 0 !important;
+    }
+
+    .slick-slider {
+
+        .slick-slide {
+            margin-right: 15px;
+            margin-left: 15px;
+
+
+        }
+    }
+
+    .slick-dots {
+        li {
+            height: 4px;
+            overflow: hidden;
+
+            button {
+                width: 24px;
+                height: 4px;
+                margin: 0;
+
+                &:before {
+                    width: 24px;
+                    height: 4px;
+                    background: #BEBEBE;
+                    border-radius: 4px;
+                    opacity: 1;
+                }
+            }
+
+            .slick-active {
+                bottom {
+                    &::before {
+                        background: #404040;
+                    }
+                }
+            }
+        }
+    }
+
+    .favorite-brands {
+        margin-top: 50px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: transparent linear-gradient(90deg, #FFFFFF00 0%, #FFFFFF 100%);
+            border-radius: 4px;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 125px;
+            height: auto;
+            margin: auto;
+            z-index: 999;
+        }
+
+        @media (max-width:1679px) {
+            margin-top: 40px;
+        }
+
+        @media (max-width:1367px) {
+            margin-top: 30px;
+        }
+
+        .favorite-brands-list {
+            background: #F8F9FD;
+            padding: 30px;
+            border-radius: 4px;
+            margin-bottom: 50px;
+
+            @media (max-width:1367px) {
+                margin-bottom: 30px;
+            }
+
+            .brands-logo {
+                margin-top: 100px;
+                margin-bottom: 35px;
+
+                @media ($sm-1679) {
+                    margin-top: 60px;
+                }
+
+                @media ($sm-1367) {
+                    margin: 30px auto;
+                }
+
+                @media ($sm-1199) {
+                    margin: 20px auto;
+                }
+                @media ($sm-991) {
+                    margin-top: 0px;
+                }
+            }
+
+            .title {
+                display: block;
+                margin: auto;
+                text-align: center;
+                font: 300 23px $poppins;
+                color: #000000;
+                margin-bottom: 60px;
+
+                @media ($sm-1679) {
+                    margin-bottom: 30px;
+                }
+
+                @media ($sm-1367) {
+                    margin-bottom: 10px;
+                }
+
+                @media ($sm-1199) {
+                    font-size: 20px;
+                }
+            }
+
+            .view-product {
+                display: flex;
+                margin: auto;
+                text-align: left;
+                font: normal 14px $poppins;
+                color: #000000;
+                align-items: center;
+                position: relative;
+                transition: all 0.2s ease-in-out;
+
+                @media ($sm-1679) {
+                    padding: 0;
+                }
+
+                img {
+                    margin-left: 12px;
+                    width: 23px;
+                    height: 13px;
+                    object-fit: contain;
+                    z-index: 9999;
+                    transition: all 0.2s ease-in-out;
+                    @media ($sm-767) {
+                        display: none;
+                    }
+                }
+
+                span {
+                    position: relative;
+                    z-index: 9999;
+                }
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 53px;
+                    height: 53px;
+                    border-radius: 100px;
+                    position: absolute;
+                    background: #FFFFFF;
+                    opacity: 0.8;
+                    left: -19px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    z-index: 1;
+
+                    @media ($sm-1679) {
+                        width: 38px;
+                        height: 38px;
+                        left: -5px;
+                    }
+                    @media ($sm-1199) {
+                        width: 28px;
+                        height: 28px;
+                        left: -13px;
+                    }
+
+                }
+
+                &:hover {
+                    opacity: 0.9;
+
+                    img {
+                        margin-left: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-dots li.slick-active button:before {
+        background: #404040;
+    }
+
+    .slick-prev,
+    .slick-next {
+        display: none;
+    }
+}

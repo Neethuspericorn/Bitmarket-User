@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.favorite-brands-section {
+  margin-top: 140px;
+  position: relative; }
+  @media (max-width: 1679px) {
+    .favorite-brands-section {
+      margin-top: 90px; } }
+  @media (max-width: 1281px) {
+    .favorite-brands-section {
+      margin-top: 70px; } }
+  .favorite-brands-section .main-title {
+    text-align: center;
+    font: bold 39px "Poppins", sans-serif;
+    color: #000000; }
+    @media (max-width: 1679px) {
+      .favorite-brands-section .main-title {
+        font-size: 30px; } }
+    @media (max-width: 1281px) {
+      .favorite-brands-section .main-title {
+        font-size: 26px; } }
+    @media (max-width: 1199px) {
+      .favorite-brands-section .main-title {
+        font-size: 20px; } }
+    @media (max-width: 767px) {
+      .favorite-brands-section .main-title {
+        font-size: 16px; } }
+    .favorite-brands-section .main-title span {
+      font-weight: 300;
+      letter-spacing: 0.94px;
+      color: #000000; }
+  .favorite-brands-section .slick-list {
+    padding: 0 120px 0 0 !important; }
+  .favorite-brands-section .slick-slider .slick-slide {
+    margin-right: 15px;
+    margin-left: 15px; }
+  .favorite-brands-section .slick-dots li {
+    height: 4px;
+    overflow: hidden; }
+    .favorite-brands-section .slick-dots li button {
+      width: 24px;
+      height: 4px;
+      margin: 0; }
+      .favorite-brands-section .slick-dots li button:before {
+        width: 24px;
+        height: 4px;
+        background: #BEBEBE;
+        border-radius: 4px;
+        opacity: 1; }
+    .favorite-brands-section .slick-dots li .slick-active bottom::before {
+      background: #404040; }
+  .favorite-brands-section .favorite-brands {
+    margin-top: 50px; }
+    .favorite-brands-section .favorite-brands::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: transparent linear-gradient(90deg, #FFFFFF00 0%, #FFFFFF 100%);
+      border-radius: 4px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 125px;
+      height: auto;
+      margin: auto;
+      z-index: 999; }
+    @media (max-width: 1679px) {
+      .favorite-brands-section .favorite-brands {
+        margin-top: 40px; } }
+    @media (max-width: 1367px) {
+      .favorite-brands-section .favorite-brands {
+        margin-top: 30px; } }
+    .favorite-brands-section .favorite-brands .favorite-brands-list {
+      background: #F8F9FD;
+      padding: 30px;
+      border-radius: 4px;
+      margin-bottom: 50px; }
+      @media (max-width: 1367px) {
+        .favorite-brands-section .favorite-brands .favorite-brands-list {
+          margin-bottom: 30px; } }
+      .favorite-brands-section .favorite-brands .favorite-brands-list .brands-logo {
+        margin-top: 100px;
+        margin-bottom: 35px; }
+        @media (max-width: 1679px) {
+          .favorite-brands-section .favorite-brands .favorite-brands-list .brands-logo {
+            margin-top: 60px; } }
+        @media (max-width: 1367px) {
+          .favorite-brands-section .favorite-brands .favorite-brands-list .brands-logo {
+            margin: 30px auto; } }
+        @media (max-width: 1199px) {
+          .favorite-brands-section .favorite-brands .favorite-brands-list .brands-logo {
+            margin: 20px auto; } }
+        @media (max-width: 991px) {
+          .favorite-brands-section .favorite-brands .favorite-brands-list .brands-logo {
+            margin-top: 0px; } }
+      .favorite-brands-section .favorite-brands .favorite-brands-list .title {
+        display: block;
+        margin: auto;
+        text-align: center;
+        font: 300 23px "Poppins", sans-serif;
+        color: #000000;
+        margin-bottom: 60px; }
+        @media (max-width: 1679px) {
+          .favorite-brands-section .favorite-brands .favorite-brands-list .title {
+            margin-bottom: 30px; } }
+        @media (max-width: 1367px) {
+          .favorite-brands-section .favorite-brands .favorite-brands-list .title {
+            margin-bottom: 10px; } }
+        @media (max-width: 1199px) {
+          .favorite-brands-section .favorite-brands .favorite-brands-list .title {
+            font-size: 20px; } }
+      .favorite-brands-section .favorite-brands .favorite-brands-list .view-product {
+        display: flex;
+        margin: auto;
+        text-align: left;
+        font: normal 14px "Poppins", sans-serif;
+        color: #000000;
+        align-items: center;
+        position: relative;
+        transition: all 0.2s ease-in-out; }
+        @media (max-width: 1679px) {
+          .favorite-brands-section .favorite-brands .favorite-brands-list .view-product {
+            padding: 0; } }
+        .favorite-brands-section .favorite-brands .favorite-brands-list .view-product img {
+          margin-left: 12px;
+          width: 23px;
+          height: 13px;
+          object-fit: contain;
+          z-index: 9999;
+          transition: all 0.2s ease-in-out; }
+          @media (max-width: 767px) {
+            .favorite-brands-section .favorite-brands .favorite-brands-list .view-product img {
+              display: none; } }
+        .favorite-brands-section .favorite-brands .favorite-brands-list .view-product span {
+          position: relative;
+          z-index: 9999; }
+        .favorite-brands-section .favorite-brands .favorite-brands-list .view-product::before {
+          content: '';
+          display: block;
+          width: 53px;
+          height: 53px;
+          border-radius: 100px;
+          position: absolute;
+          background: #FFFFFF;
+          opacity: 0.8;
+          left: -19px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 1; }
+          @media (max-width: 1679px) {
+            .favorite-brands-section .favorite-brands .favorite-brands-list .view-product::before {
+              width: 38px;
+              height: 38px;
+              left: -5px; } }
+          @media (max-width: 1199px) {
+            .favorite-brands-section .favorite-brands .favorite-brands-list .view-product::before {
+              width: 28px;
+              height: 28px;
+              left: -13px; } }
+        .favorite-brands-section .favorite-brands .favorite-brands-list .view-product:hover {
+          opacity: 0.9; }
+          .favorite-brands-section .favorite-brands .favorite-brands-list .view-product:hover img {
+            margin-left: 18px; }
+  .favorite-brands-section .slick-dots li.slick-active button:before {
+    background: #404040; }
+  .favorite-brands-section .slick-prev,
+  .favorite-brands-section .slick-next {
+    display: none; }
+
+/*# sourceMappingURL=favorite-brands.css.map */
