@@ -1,0 +1,274 @@
+@import "partials/partials";
+
+@media(min-width: 1679px){
+    .faq-container{
+        max-width: 1350px;
+    }
+}
+ 
+.title-block{
+    text-align: center;
+    font-family: $poppins;
+    
+    .title{
+        font-weight: 300;
+        font-size: 39px;
+        color: #000;
+        span {
+            font-weight: bold;
+        };
+        @media ($sm-1679) {
+            font-size: 36px;
+        }
+        @media ($sm-1441) {
+            font-size: 33px;
+        }
+        @media ($sm-1199) {
+            font-size: 30px;
+        }
+        @media ($sm-767) {
+            font-size: 24px;
+        }
+    }
+    p{
+        margin-bottom: 0;
+        color: #292929;
+        font-size: 22px;
+        font-weight: 300;
+        line-height:  1.9;
+        @media ($sm-1679) {
+            font-size: 18px;
+        }
+        @media ($sm-1441) {
+            font-size: 16px;
+        }
+        @media ($sm-1199) {
+            font-size: 14px;
+        }
+    }
+    
+}
+.faq-sec{
+    padding: 60px 0;
+    *{
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .title-block{
+        margin-bottom: 60px;
+        @media ($sm-1679) {
+            margin-bottom: 50px;
+        }
+        @media ($sm-1441) {
+            margin-bottom: 40px;
+        }
+        @media ($sm-1199) {
+            margin-bottom: 30px;
+        }
+    }
+    .faq-content-cover{
+        .accordion-item{
+            border-radius: 6px;
+            margin-bottom: 20px;
+            background-color: #F8F9FD;
+            border: none;
+            font-family: $poppins;
+            padding: 0 60px;
+            @media ($sm-1679) {
+                padding: 0 50px;
+            }
+            @media ($sm-1441) {
+                padding: 0 40px;
+            }
+            @media ($sm-1199) {
+                padding: 0 30px;
+            }
+            @media ($sm-767) {
+                 
+            }
+            .accordion-button{
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+                padding: 40px 0;
+                font-size: 25px;
+                font-weight: 500;
+                color: #000;
+                @media ($sm-1679) {
+                    padding: 30px 0;
+                    font-size: 22px;
+                }
+                @media ($sm-1441) {
+                    font-size: 20px;
+                    padding: 20px 0;
+                }
+                @media ($sm-1199) {
+                    font-size: 18px;
+                    padding: 15px 0;
+                }
+                @media ($sm-767) {
+                    font-size: 16px;
+                    padding: 15px 0;
+                }
+                &::after{
+                    content: '+';
+                    background-image: none;
+                    color: #414141;
+                    font-size: 32px;
+                    font-weight: 600;
+                    transform: none;
+                    transition: .5s;
+                    padding-left: 0.5em;
+                    @media ($sm-1679) {
+                        font-size: 30px;
+                    }
+                    @media ($sm-1441) {
+                        font-size: 28px;
+                    }
+                    @media ($sm-1199) {
+                         
+                    }
+                    @media ($sm-767) {
+                         
+                    }
+                }
+                &[aria-expanded='true']{
+                    &::after{
+                        content: '-';
+                    }
+                }
+            }
+            .accordion-body{
+                padding: 0 100px 40px 0;
+                @media ($sm-1679) {
+                    padding: 0 80px 30px 0;
+                }
+                @media ($sm-1441) {
+                    padding: 0 70px 24px 0;
+                }
+                @media ($sm-1199) {
+                    padding: 0 50px 22px 0;
+                }
+                @media ($sm-767) {
+                    padding: 0 30px 20px 0;
+                }
+                p{
+                    margin-bottom: 0;
+                    color: #3E3E3E;
+                    font-size: 21px;
+                    font-weight: 300;
+                    line-height: 1.7;
+                    @media ($sm-1679) {
+                        font-size: 19px;
+                    }
+                    @media ($sm-1441) {
+                        font-size: 17px;
+                    }
+                    @media ($sm-1199) {
+                        font-size: 14px;
+                    }
+                    @media ($sm-767) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.have-qst-sec{
+    padding-bottom: 130px;
+    @media ($sm-1679) {
+        padding-bottom: 100px;
+    }
+    @media ($sm-1441) {
+        padding-bottom: 80px;
+    }
+    @media ($sm-1199) {
+        padding-bottom: 60px;
+    }
+    @media ($sm-767) {
+        padding-bottom: 40px;
+    }
+    .title-block{
+        .title{
+            margin-bottom: 30px;
+            font-weight: 500;
+            
+        }
+        p{
+            max-width: 755px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.fashion-team-sec{
+    background: {
+        image: url('../img/team-lg-bg.jpg');
+        repeat: no-repeat;
+        position: left top;
+        color: #25064C;
+        size: cover;
+    };
+
+    @media ($sm-1199) {
+        background-position: center top;
+    }
+     
+    .fashion-team-wrapper{
+        display: flex;
+        padding: 100px 0;
+        height: 100%;
+        min-height: 570px;
+        align-items: center;
+        @media ($sm-1679) {
+            min-height: 500px;
+        }
+        @media ($sm-1441) {
+            min-height: 400px;
+        }
+        @media ($sm-1199) {
+            min-height: 320px;
+        }
+        @media ($sm-767) {
+            min-height: 300px;
+        }
+        .fashion-title{
+            font-family: $poppins;
+            h2{
+                color: #fff;
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                @media ($sm-1679) {
+                    font-size: 32px;  
+                }
+                @media ($sm-1441) {
+                    font-size: 28px;
+                }
+                @media ($sm-1199) {
+                    font-size: 24px;
+                }
+                 
+            }
+            p{
+                margin-bottom: 0;
+                color: #fff;
+                font-size: 27px;
+                font-weight: 300;
+                @media ($sm-1679) {
+                    font-size: 24px;  
+                }
+                @media ($sm-1441) {
+                    font-size: 20px;
+                }
+                @media ($sm-1199) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

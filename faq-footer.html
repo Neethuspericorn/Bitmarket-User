@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+              <div class="cart ms-lg-5 ms-sm-3 ms-3 updates order-lg-3">
+                <a href="#"><img src="img/cart.svg" alt="cart"></a>
+              </div> 
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <form class="d-flex search-wrp" role="search">
+                    <button class="btn btn-outline-success" type="submit"><img src="img/search.svg"></button>
+                    <input class="form-control me-2" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop by Category
+                  </a>
+                
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Profile
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span><img src="img/user.svg"></span>Account</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/orders.svg"></span>My Orders</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/favs.svg"></span>Favorites</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/notifications.svg"></span>Notifications</a></li>
+                    <li><a class="dropdown-item" href="#"><span><img src="img/logout.svg"></span>Logout</a></li>
+                  </ul>
+                </li>
+            </ul>
+            
+              </div>
+             
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        
+        <section class="faq-sec">
+            <div class="container container-custom">
+              <div class="title-block">
+                <h2 class="title"><span>Frequently</span> Asked Questions</h2>
+              </div>
+      
+              <div class="faq-content-cover">
+      
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Who should I contact if I have a Query?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How can I change my delivery address?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How long will it take for my parcel to arrive?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What is your return policy?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How to cancel/Change my order
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+          </section>
+      
+          <section class="have-qst-sec">
+            <div class="container container-custom">
+              <div class="title-block">
+                <h2 class="title">Still have questions?</h2>
+                <p>If you cannot find answer to your question in our FAQ, you can always contact us. We will answer to you shortly!</p>
+              </div>
+            </div>
+          </section>
+      
+          <section class="fashion-team-sec">
+            <div class="container container-custom">
+              <div class="fashion-team-wrapper">
+                <div class="fashion-title">
+                  <h2>A Big Fashion Team</h2>
+                  <p>Dedicated to all your styling Needs.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <footer>
+            <div class="footer-sec">
+              <div class="container container-custom">
+                <div class="footer-wrapper">
+                  <div class="f-logo">
+                    <a href="#"><img src="img/logo.svg" alt=""></a>
+                  </div>
+                  <div class="f-qk-links">
+                    <div class="link-m">
+                      <a href="#" class="qk-link btn--6">Contact us</a>
+                    </div>
+                    <div class="f-soc-block">
+                      <a class="f-soc" href="#"><img src="img/facebook.svg" alt=""></a>
+                      <a class="f-soc" href="#"><img src="img/twitter.svg" alt=""></a>
+                      <a class="f-soc" href="#"><img src="img/linkedin.svg" alt=""></a>
+                      <a class="f-soc" href="#"><img src="img/insta_icon.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright-sec">
+              <p>Copyright © 2023 Beekarte. All rights reserved</p>
+            </div>
+          </footer>
+    </main>
+</body>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+
+
+</html>
