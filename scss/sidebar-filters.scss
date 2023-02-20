@@ -50,6 +50,7 @@
         &:not(:first-of-type){
             .fltrHdng{
                 border-top: 1px solid #CBCBCB;
+                margin-top: -1px;
             }
         }
     }
@@ -118,8 +119,21 @@
                 font-weight: 600;
             }
             font-weight: 500;
-            .toggleCollapse{
-
+            .btn-toggleCollapse{
+                 padding: 5px 0px;
+                 width: 40px;
+                 display: flex;
+                 &.collapsed{
+                    img{
+                        transform: rotate(0);
+                    }
+                 }
+                 img{
+                    margin-left: auto;
+                    transform: rotate(180deg);
+                    transition: ease-in-out 0.3s;
+                 }
+                margin-left: auto;
             }
         }
         .filter-itm{
