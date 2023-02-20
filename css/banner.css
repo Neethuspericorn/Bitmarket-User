@@ -309,8 +309,10 @@
   .banner .slick-current .banner-cta {
     opacity: 1; }
 
-.bottom-top .bnr-img {
-  margin-top: auto; }
+.bottom-top {
+  display: flex; }
+  .bottom-top .bnr-img {
+    margin-top: auto; }
 
 @-webkit-keyframes forward {
   0% {

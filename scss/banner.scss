@@ -4,6 +4,7 @@
     width: 100%;
     height: calc(100vh - 91px);
     overflow-x: hidden;
+
     @media (max-width:991px){
         height: auto;
     }
@@ -359,6 +360,7 @@
 }
 
 .bottom-top{
+    display: flex;
     .bnr-img{
         margin-top: auto;
     }
