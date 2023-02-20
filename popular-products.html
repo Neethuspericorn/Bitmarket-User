@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popular Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css//slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/login-signup.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css//slick-theme.css">
+    <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/popular-products.css">
     <link rel="stylesheet" href="css/favorite-brands.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
@@ -89,6 +93,55 @@
         </nav>
     </header>
     <main class="main">
+        <section class="banner">
+            <div class="connect-blk">
+              <a href="#"><img src="img/facebook.svg" alt=""></a>
+              <a href="#"><img src="img/twitter.svg" alt=""></a>
+              <a href="#"><img src="img/linkedin.svg" alt=""></a>
+            </div>
+              <div class="banner-slider">
+                <!-- slide One -->
+                <div>
+                  <div class="container h-100">
+                    <div class="row h-100">
+                      <div class="col-lg-6 col-md-6 col-md-6 bnr-img order-md-2 bottom-top">
+                        <div class="bnr-img">
+                          <img class="" data-animation="slideInUp" data-delay="0.8s" src="img/banner_user.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 bnr-content">
+                        <h2 class="banner-title" data-animation="fadeInDown" data-delay="0.5s" data-duration="1000ms"><span>Top Selling</span>Streetwear Jackets</h2>
+                        <p class="banner-desc" data-animation="fadeInLeft" data-delay="0.8s" data-duration="2000ms">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        <a data-animation="fadeInUpBig" data-delay="1s" href="#" class="banner-cta"><span>View Collections</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- scaled text -->
+                  <div class="title-cloned">Street Jackets</div>
+                </div>
+                <!-- slide One -->
+                <!-- slide two -->
+                <div>
+                  <div class="container h-100">
+                    <div class="row h-100">
+                      <div class="col-lg-6 col-md-6 order-md-2">
+                        <div class="bnr-img mt-50 top-bottom">
+                          <img class="" data-animation="slideInDown" data-delay="0.8s" src="img/shoe.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 bnr-content">
+                        <h2 class="banner-title" data-animation="fadeInDown" data-delay="0.5s" data-duration="1000ms"><span>Top Selling</span>Streetwear Jackets</h2>
+                        <p class="banner-desc" data-animation="fadeInLeft" data-delay="0.8s" data-duration="2000ms">when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        <a data-animation="fadeInUpBig" data-delay="1s" href="#" class="banner-cta"><span>View Collections</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- scaled text -->
+                  <div class="title-cloned">Street Jackets</div>
+                </div>
+                <!-- slide two -->
+              </div
+          </section>
         <section class="section popular-products-section">
             <div class="container container-custom">
                 <div class="products-title">
@@ -397,8 +450,150 @@
                 </div>
             </div>
         </section>
-    </main>
+        <section class="faq-sec">
+            <div class="container container-custom">
+                <div class="title-block">
+                    <h2 class="title"><span>Frequently</span> Asked Questions</h2>
+                </div>
 
+                <div class="faq-content-cover">
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Who should I contact if I have a Query?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I change my delivery address?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How long will it take for my parcel to arrive?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What is your return policy?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How to cancel/Change my order
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry’s standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="have-qst-sec">
+            <div class="container container-custom">
+                <div class="title-block">
+                    <h2 class="title">Still have questions?</h2>
+                    <p>If you cannot find answer to your question in our FAQ, you can always contact us. We will answer
+                        to you shortly!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="fashion-team-sec">
+            <div class="container container-custom">
+                <div class="fashion-team-wrapper">
+                    <div class="fashion-title">
+                        <h2>A Big Fashion Team</h2>
+                        <p>Dedicated to all your styling Needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-sec">
+            <div class="container container-custom">
+                <div class="footer-wrapper">
+                    <div class="f-logo">
+                        <a href="#"><img src="img/logo.svg" alt=""></a>
+                    </div>
+                    <div class="f-qk-links">
+                        <div class="link-m">
+                            <a href="#" class="qk-link btn--6">Contact us</a>
+                        </div>
+                        <div class="f-soc-block">
+                            <a class="f-soc" href="#"><img src="img/facebook.svg" alt=""></a>
+                            <a class="f-soc" href="#"><img src="img/twitter.svg" alt=""></a>
+                            <a class="f-soc" href="#"><img src="img/linkedin.svg" alt=""></a>
+                            <a class="f-soc" href="#"><img src="img/insta_icon.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-sec">
+            <p>Copyright © 2023 Beekarte. All rights reserved</p>
+        </div>
+    </footer>
 
     <!-- Modal -->
     <div class="modal fade loginSignup" id="loginSignup" tabindex="-1" aria-labelledby="loginSignupLabel"
@@ -534,47 +729,9 @@
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/jquery.js"></script>
-<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+<script src="js/slick.js"></script>
 <script src="js/main.js"></script>
-<script type="text/javascript">
-    $(document).on('ready', function () {
-        $(".favorite-brands").slick({
-            dots: true,
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            autoplay: true,
-            responsive: [
-                {
-                    breakpoint: 1281,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-
-
-        });
-    });
-</script>
 
 </html>
