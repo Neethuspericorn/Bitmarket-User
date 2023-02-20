@@ -51,14 +51,20 @@
         }
     }
         .banner-slider{
-            
+            height: 100%;
+            margin-bottom: 0;
+            .slick-list{
+                height: 100%;
+            }
             .slick-slide{
                 height: 100%;
                 position: relative;
             }
             .slick-track{
+                
                 @media (min-width:992px){
                 display: flex !important;
+                height: 100%;
                 }
             }
 
@@ -350,6 +356,12 @@
                 opacity: 1;
             }
         }
+}
+
+.bottom-top{
+    .bnr-img{
+        margin-top: auto;
+    }
 }
 
 
