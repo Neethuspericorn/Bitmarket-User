@@ -50,6 +50,7 @@
             display: none;
         }
     }
+    
     .form-control{
         background-color: #F7F5FF;
         border: 1px solid #F7F5FF;
@@ -70,6 +71,19 @@
         }
         &:focus{
             box-shadow: none;
+        }
+    }
+}
+
+.input-wrp{
+    position: relative;
+    &-pwd{
+        .btn-showpwd{
+            background-color: transparent;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
         }
     }
 }
