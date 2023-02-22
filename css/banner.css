@@ -42,6 +42,9 @@
     transform: translateY(-50%);
     z-index: 3;
     flex-direction: column; }
+    @media (max-width: 991px) {
+      .banner .connect-blk {
+        display: none; } }
     .banner .connect-blk a {
       display: block;
       margin: 8px 0;

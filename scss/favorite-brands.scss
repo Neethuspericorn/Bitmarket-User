@@ -13,7 +13,37 @@
         margin-top: 70px;
     }
 
+    .favorite-brands-container {
+        max-width: 100%;
+        padding-left: calc((100vw - 1360px)/2);
+        padding-right: 90px;
 
+        @media (max-width:1367px) {
+            padding-left: calc((100vw - 1326px)/2);
+            padding-right: 70px;
+        }
+
+        @media (max-width:1281px) {
+            padding-left: calc((100vw - 1244px)/2);
+            padding-right: 70px;
+        }
+
+        @media (max-width:1199px) {
+            padding-left: calc((100vw - 1164px)/2);
+            padding-right: 70px;
+        }
+
+        @media (max-width:1024px) {
+            padding-left: calc((100vw - 989px)/2);
+            padding-right: 60px;
+        }
+
+        @media (max-width:991px) {
+            padding-left:0;
+            padding-right: 0;
+            max-width: calc(100% - 40px);
+        }
+    }
 
     .main-title {
         text-align: center;
@@ -46,6 +76,10 @@
 
     .slick-list {
         padding: 0 120px 0 0 !important;
+
+        @media (max-width:1023px) {
+            padding: 0 0 0 0 !important;
+        }
     }
 
     .slick-slider {
@@ -103,6 +137,10 @@
             height: auto;
             margin: auto;
             z-index: 999;
+
+            @media (max-width:1023px) {
+                display: none;
+            }
         }
 
         @media (max-width:1679px) {
@@ -138,6 +176,7 @@
                 @media ($sm-1199) {
                     margin: 20px auto;
                 }
+
                 @media ($sm-991) {
                     margin-top: 0px;
                 }
@@ -157,6 +196,7 @@
 
                 @media ($sm-1367) {
                     margin-bottom: 10px;
+                    font-size: 20px;
                 }
 
                 @media ($sm-1199) {
@@ -185,6 +225,7 @@
                     object-fit: contain;
                     z-index: 9999;
                     transition: all 0.2s ease-in-out;
+
                     @media ($sm-767) {
                         display: none;
                     }
@@ -213,13 +254,19 @@
                     @media ($sm-1679) {
                         width: 38px;
                         height: 38px;
-                        left: -5px;
+                        left: -15px;
                     }
-                    @media ($sm-1199) {
-                        width: 28px;
-                        height: 28px;
+
+                    @media ($sm-1441) {
+                        left: -17px;
+                    }
+
+                    @media ($sm-1281) {
+                        width: 34px;
+                        height: 34px;
                         left: -13px;
                     }
+
 
                 }
 

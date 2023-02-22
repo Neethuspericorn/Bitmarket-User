@@ -38,6 +38,9 @@
         transform: translateY(-50%);
         z-index: 3;
         flex-direction: column;
+        @media (max-width:991px){
+            display: none;
+        }
         a{
             display: block;
             margin:8px 0;

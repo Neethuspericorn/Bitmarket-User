@@ -112,6 +112,14 @@ body {
     padding: 30px 45px;
     position: relative;
 
+    @media (max-width:1281px) {
+        padding: 30px;
+    }
+
+    @media (max-width:991px) {
+        padding: 20px;
+    }
+
     .products-card-header {
         .btn-add-fav {
             position: absolute;
@@ -119,6 +127,7 @@ body {
             right: 30px;
             width: 27px;
             height: 24px;
+            padding: 0;
 
             .product-like {
                 position: absolute;
@@ -222,7 +231,7 @@ body {
                     font-size: 16px;
                 }
 
-                @media (max-width:767px) {
+                @media (max-width:768px) {
                     text-align: center;
                 }
 
@@ -242,7 +251,8 @@ body {
                 @media (max-width:1281px) {
                     font-size: 14px;
                 }
-                @media (max-width:767px) {
+
+                @media (max-width:768px) {
                     text-align: center;
                     display: block;
                 }
@@ -263,7 +273,8 @@ body {
             @media (max-width:1281px) {
                 margin-top: 10px;
             }
-            @media (max-width:767px) {
+
+            @media (max-width:768px) {
                 flex-direction: column;
                 margin-top: 18px;
             }
@@ -285,15 +296,17 @@ body {
                 @media (max-width:1199px) {
                     font-size: 14px;
                 }
-               
+
             }
 
             .view-block {
                 margin: auto;
                 margin-right: 0;
-                @media (max-width:767px) {
+
+                @media (max-width:768px) {
                     margin: auto;
                 }
+
                 .btn {
                     text-align: left;
                     font: 500 14px $poppins;
@@ -301,6 +314,10 @@ body {
                     color: #000000;
                     position: relative;
                     z-index: 999;
+
+                    img {
+                        margin-left: 5px;
+                    }
 
                     &::before {
                         content: '';
@@ -333,6 +350,15 @@ body {
                             width: 30px;
                             height: 30px;
                             left: 13px;
+                        }
+
+                        @media (max-width:1023px) {
+                            width: 30px;
+                            height: 30px;
+                            left: 0px;
+                        }
+                        @media (max-width:768px) {
+                            left: 10px;
                         }
                     }
                 }
