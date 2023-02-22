@@ -39,6 +39,9 @@
     }
     .form-group{
         padding-bottom: 25px;
+        @media screen and (max-width: 1200px){
+            padding-bottom: 20px; 
+        }
         position: relative;
     }
     .error{
@@ -50,6 +53,7 @@
             display: none;
         }
     }
+    
     .form-control{
         background-color: #F7F5FF;
         border: 1px solid #F7F5FF;
@@ -70,6 +74,31 @@
         }
         &:focus{
             box-shadow: none;
+        }
+    }
+}
+
+.input-wrp{
+    position: relative;
+    &-pwd{
+        .form-control{
+            padding-right: 60px;
+        }
+        .btn-showpwd{
+            background-color: transparent;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            padding-right: 20px;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:active{
+                border: none !important;
+                box-shadow: none !important;
+            }
         }
     }
 }
