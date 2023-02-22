@@ -26,6 +26,7 @@ header{
                 margin-right: auto;
             }
             img{
+                max-width: inherit;
                 @media (max-width:767px){
                 height: 25px;
                 } 
@@ -37,6 +38,9 @@ header{
             @media (min-width:992px){
                 box-shadow: 0px 3px 6px #00000029;
                 margin-top: 40px;
+                border: none;
+                right: -24px;
+                left: inherit;
             }
             &:before{
                 @media (min-width:992px){
@@ -48,7 +52,7 @@ header{
                 border-bottom: 15px solid #fff;
                 position: absolute;
                 top: -13px;
-                right: 73px;
+                right: 30px;
                 z-index: 1;
                 }
             }
@@ -59,14 +63,14 @@ header{
                 height: 0;
                 border-left: 10px solid transparent;
                 border-right: 12px solid transparent;
-                border-bottom: 15px solid #ccc;
+                border-bottom: 15px solid #b5b5b51f;
                 position: absolute;
                 top: -15px;
-                right: 73px;
+                right: 30px;
                 }
             }
             li{
-                border-top: 1px solid #00000029;
+                border-top: 1px solid #f1f1f1;
                 &:first-child{
                     border: none;
                 }
@@ -192,10 +196,17 @@ header{
                 padding-left: 17px;
                 padding-top: 0px;
                 padding-bottom: 0px;
+                @media (max-width:1199px){
+                    padding-right: 10px;
+                }
                 @media (max-width:767px){
                     padding-left: 13px;
                 }
                 img{
+                    max-width: inherit;
+                    @media (max-width:1199px){
+                        max-width: 10px;
+                    }
                     @media (max-width:767px){
                         max-width: 13px;
                     }
@@ -211,6 +222,9 @@ header{
                 height: 43px;
                 min-width: 245px;
                 font: normal normal normal 14px/16px $raleway;
+                @media (max-width:1199px){
+                    min-width: 160px;
+                }
                 @media (max-width:767px){
                     min-width: 200px;
                     height: 35px;
@@ -252,12 +266,18 @@ header{
             @media (max-width:1480px){
                 height: 20px;
             }
+            @media (max-width:1199px){
+                height: 20px;
+            }
             @media (max-width:991px){
                 height: 20px;
             }
         }
         &.updates{
             cursor: pointer;
+            @media (max-width:1199px){
+                margin-left: 10px !important;
+            }
             &:after{
                 content: "";
                 width:7px;
@@ -272,6 +292,7 @@ header{
                    width:5px;
                 height:5px;
                 }
+                
             }
         }
     }

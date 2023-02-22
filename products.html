@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Orders</title>
+    <title>Products</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/breadcrumbs.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/sidebar-filters.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/products-list.css">
 </head>
 <body>
@@ -68,7 +70,7 @@
             </div>
           </nav>
     </header>
-    <main class="main">
+    <main class="">
 
         <section class="section products-section">
             <div class="container container-custom">
@@ -77,7 +79,7 @@
                          <div class="sidebar-filters">
                             <div class="filter-itm">
                                 <h5 class="fltrHdng sidebarHdng">
-                                    <button class="btn btn-backBtn" id="closeSidebar">    </button>
+                                    <button class="btn btn-backBtn" id="closeSidebar">  <img src="img/arrow_tail.svg" class="rotateB" alt="">  </button>
                                     <span>Filters</span>
                                     <button class="btn btn-link btn-clearFilter">Clear All</button>
                                 </h5>
@@ -489,17 +491,34 @@
                         </div>
 
                         <div class="row pagination-row">
-                           <div class="pagenation-wrap">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination">
-                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                    </ul>
-                                </nav>
-                           </div> 
+                            <div class="col">
+                                <div class="pagenation-wrap">
+
+                                    <div class="col-auto col-count">
+                                        <div class="pagination-count">
+                                            Page <span class="count">01 of 30</span> 
+                                        </div>
+                                    </div>
+        
+        
+                                    <div class="col col-pagenation-list">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                            <li class="page-item prev"><a class="page-link" href="#">Prev</a></li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                            <li class="page-item next"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                        
+                                   </div> 
+                            </div>
+                           
                         </div>
                     </div>
                      
@@ -507,7 +526,31 @@
             </div>
         </section>
 
-         
+        <footer>
+            <div class="footer-sec">
+                <div class="container container-custom">
+                    <div class="footer-wrapper">
+                        <div class="f-logo">
+                            <a href="#"><img src="img/logo.svg" alt=""></a>
+                        </div>
+                        <div class="f-qk-links">
+                            <div class="link-m">
+                                <a href="#" class="qk-link btn--6">Contact us</a>
+                            </div>
+                            <div class="f-soc-block">
+                                <a class="f-soc" href="#"><img src="img/facebook.svg" alt=""></a>
+                                <a class="f-soc" href="#"><img src="img/twitter.svg" alt=""></a>
+                                <a class="f-soc" href="#"><img src="img/linkedin.svg" alt=""></a>
+                                <a class="f-soc" href="#"><img src="img/insta_icon.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-sec">
+                <p>Copyright © 2023 Beekarte. All rights reserved</p>
+            </div>
+        </footer>
     </main>
 </body>
     <script src="js/bootstrap.bundle.js"></script>
