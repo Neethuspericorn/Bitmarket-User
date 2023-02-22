@@ -83,9 +83,13 @@
                                 </h5>
 
                                 <h5 class="fltrHdng">
-                                    Category
+                                    Category  
+                                    <button class="btn btn-toggleCollapse"  type="button" data-bs-toggle="collapse" data-bs-target="#Category" aria-expanded="true" aria-controls="CategoryExample"> 
+                                        <img src="img/down.svg" alt="collapse">    
+                                    </button>
                                 </h5>
-                                <ul class="filter-itms">
+
+                                <ul class="filter-itms collapse show" id="Category">
                                     <li>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="Fashion">
@@ -106,27 +110,36 @@
 
                                     <li>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="Home">
-                                            <label class="form-check-label" for="Home">
-                                                Home
+                                            <input class="form-check-input" type="checkbox" value="" id="Appliances">
+                                            <label class="form-check-label" for="Appliances">
+                                                Appliances
                                             </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="Cancelled">
-                                            <label class="form-check-label" for="Cancelled">
-                                                Cancelled
+                                            <input class="form-check-input" type="checkbox" value="" id="Mobiles">
+                                            <label class="form-check-label" for="Mobiles">
+                                                Mobiles
                                             </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="Returned">
-                                            <label class="form-check-label" for="Returned">
-                                                Returned
+                                            <input class="form-check-input" type="checkbox" value="" id="Appliances">
+                                            <label class="form-check-label" for="Appliances">
+                                                Appliances
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Toys">
+                                            <label class="form-check-label" for="Toys">
+                                                Toys
                                             </label>
                                         </div>
                                     </li>
@@ -136,63 +149,115 @@
                             </div>
 
                             <div class="filter-itm">
-                                <h5 class="fltrHdng">Order Date</h5>
+                                <h5 class="fltrHdng">Product</h5>
 
                                 <ul class="filter-itms">
                                     <li>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="lastMonth">
-                                            <label class="form-check-label" for="lastMonth">
-                                                Last 30 days
+                                            <input class="form-check-input" type="checkbox" value="" id="WinterWear">
+                                            <label class="form-check-label" for="WinterWear">
+                                                Winter Wear
                                             </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="2022">
-                                            <label class="form-check-label" for="2022">
-                                                2022
+                                            <input class="form-check-input" type="checkbox" value="" id="TopWear">
+                                            <label class="form-check-label" for="TopWear">
+                                                Top Wear
                                             </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="2021">
-                                            <label class="form-check-label" for="2021">
-                                                2021
+                                            <input class="form-check-input" type="checkbox" value="" id="BottomWear">
+                                            <label class="form-check-label" for="BottomWear">
+                                                Bottom Wear
                                             </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="2020">
-                                            <label class="form-check-label" for="2020">
-                                                2020
+                                            <input class="form-check-input" type="checkbox" value="" id="Raincoats">
+                                            <label class="form-check-label" for="Raincoats">
+                                                Raincoats
                                             </label>
                                         </div>
                                     </li>
 
                                     <li>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="2019">
-                                            <label class="form-check-label" for="2019">
-                                                2019
+                                            <input class="form-check-input" type="checkbox" value="" id="ClothingAccessories">
+                                            <label class="form-check-label" for="ClothingAccessories">
+                                                Clothing Accessories
                                             </label>
                                         </div>
                                     </li>
 
-                                    <li>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="Older">
-                                            <label class="form-check-label" for="Older">
-                                                Older
-                                            </label>
-                                        </div>
-                                    </li>
+                                     
                                 </ul>
+                            </div>
+
+                            <div class="filter-itm">
+                                <h5 class="fltrHdng">Brand</h5>
+
+                                <ul class="filter-itms">
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="JackandJones">
+                                            <label class="form-check-label" for="JackandJones">
+                                                Jack and Jones
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="HnM">
+                                            <label class="form-check-label" for="HnM">
+                                                H&M
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="Levis">
+                                            <label class="form-check-label" for="Levis">
+                                                Levi's
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="PeterEngland">
+                                            <label class="form-check-label" for="PeterEngland">
+                                                Peter England
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="HushPuppies">
+                                            <label class="form-check-label" for="HushPuppies">
+                                                Hush Puppies
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                     
+                                </ul>
+                            </div>
+
+                            <div class="filter-itm">
+                                <h5 class="fltrHdng">Price</h5>
+
+                                
                             </div>
                          </div>
 
@@ -211,8 +276,9 @@
                         <div class="row">
                             <div class="col">
                                 <div class="sortBy">
-                                    <h4 class="title">Sort By</h4>
-                                    <ul>
+                                    <h4 class="title">Sort By <button class="btn btn-sortBy"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseSortby" aria-expanded="false" aria-controls="collapseSortby"><img src="img/down.svg" alt="sortby"></button></h4>
+
+                                    <ul  class="collapse" id="collapseSortby">
                                         <li>
                                             <a href="#" class="sortLink">A-Z</a>
                                         </li>
@@ -229,9 +295,17 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <div class="col-auto d-lg-none">
+                                <button class="btn btn-secondary btn-filter" id="filterToggle">
+                                    <img src="img/filter.svg" alt="">
+                                </button>
+                            </div>
                         </div>
+
+
                         <div class="row products-row">
-                            <div class="col-xl-4 col-md-6">
+                            <div class="col-xl-4 col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -261,7 +335,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -291,7 +365,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -321,7 +395,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -351,7 +425,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -381,7 +455,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -413,7 +487,20 @@
 
 
                         </div>
-                        
+
+                        <div class="row pagination-row">
+                           <div class="pagenation-wrap">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                           </div> 
+                        </div>
                     </div>
                      
                 </div>

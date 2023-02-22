@@ -50,13 +50,14 @@
         &:not(:first-of-type){
             .fltrHdng{
                 border-top: 1px solid #CBCBCB;
+                margin-top: -1px;
             }
         }
     }
     @media screen and (max-width: 991px){
         border: none;
         position: fixed;
-        z-index: 5;
+        z-index: 999999;
         left: 0;
         top: 0;
         bottom: 0;
@@ -118,8 +119,21 @@
                 font-weight: 600;
             }
             font-weight: 500;
-            .toggleCollapse{
-
+            .btn-toggleCollapse{
+                 padding: 5px 0px;
+                 width: 40px;
+                 display: flex;
+                 &.collapsed{
+                    img{
+                        transform: rotate(0);
+                    }
+                 }
+                 img{
+                    margin-left: auto;
+                    transform: rotate(180deg);
+                    transition: ease-in-out 0.3s;
+                 }
+                margin-left: auto;
             }
         }
         .filter-itm{
@@ -143,7 +157,7 @@
         opacity: 0;
         transition: all ease 0.3s;
         &.show{
-            z-index: 1;
+            z-index: 9999;
             opacity: 0.3; 
         }
     }
