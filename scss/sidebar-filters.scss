@@ -40,6 +40,11 @@
         @media screen and (min-width: 992px){
             display: none;
         }
+        padding-left: 0px;
+        padding-right: 10px;
+        .rotateB{
+            transform: rotate(180deg);
+        }
     }
     &.show{
         @media screen and (max-width: 991px){
