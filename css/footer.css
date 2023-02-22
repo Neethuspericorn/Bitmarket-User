@@ -69,7 +69,11 @@
           display: inline-block;
           color: #fff;
           font-size: 18px;
-          transition: .3s; }
+          transition: .3s;
+          text-decoration: none;
+          text-align: left;
+          font: normal 18px "Poppins", sans-serif;
+          color: #FFFFFF; }
           @media (max-width: 1679px) {
             .footer-sec .footer-wrapper .f-qk-links .link-m .qk-link {
               font-size: 16px; } }
