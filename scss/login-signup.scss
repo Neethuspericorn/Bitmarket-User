@@ -16,7 +16,6 @@
 
     .modal-dialog.modal-dialog{
         transition: all ease-in-out 0.2s;
-        margin: auto;
         width: calc(100vw - 40px);
         max-width: 1000px;
         @media screen and (max-width: 1440px){
