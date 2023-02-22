@@ -605,135 +605,143 @@
         </div>
     </footer>
 
-    <!-- Modal -->
-    <div class="modal fade loginSignup" id="loginSignup" tabindex="-1" aria-labelledby="loginSignupLabel"
-        aria-hidden="true">
+     <!-- Modal -->
+    <div class="modal fade loginSignup" id="loginSignup" tabindex="-1" aria-labelledby="loginSignupLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="loginSignupLabel"> </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="login-signup-wrap">
-                        <ul class="nav nav-tabs loginSignupTabs" id="loginSignupTabs" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="login-tab" data-bs-toggle="tab"
-                                    data-bs-target="#login-tab-pane" type="button" role="tab"
-                                    aria-controls="login-tab-pane" aria-selected="true">Login</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="register-tab" data-bs-toggle="tab"
-                                    data-bs-target="#register-tab-pane" type="button" role="tab"
-                                    aria-controls="register-tab-pane" aria-selected="false">Register</button>
-                            </li>
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginSignupLabel"> </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="login-signup-wrap">
+                    <ul class="nav nav-tabs loginSignupTabs" id="loginSignupTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register-tab-pane" type="button" role="tab" aria-controls="register-tab-pane" aria-selected="false">Register</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content loginSignups" id="loginSignupTabsContent">
+                        <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
+                            <form id="login" class="form">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1" class="form-label">Enter Email Address*</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1">
+                                  <span class="error">Please enter valid</span>
+                                </div>
+                                <div class="form-group">
 
-
-                        </ul>
-                        <div class="tab-content loginSignups" id="loginSignupTabsContent">
-                            <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel"
-                                aria-labelledby="login-tab" tabindex="0">
-                                <form id="login" class="form">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1" class="form-label">Enter Email Address*</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1">
-                                        <span class="error">Please enter valid</span>
+                                  <label for="exampleInputPassword1" class="form-label">Password*</label>
+                                  
+                                  <div class="input-wrp input-wrp-pwd">
+                                    <button class="btn btn-showpwd" type="button">
+                                      <img src="img/view.svg" alt="view">
+                                    </button>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                  </div>
+                                  
+                                  <span class="error">Please enter valid</span>
+                                </div>
+                                <div class="form-group form-check">
+                                  <input type="checkbox" class="form-check-input" id="rememberMe">
+                                  <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-act-btn">
+                                        <button type="submit" class="btn btn-primary">Login</button>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1" class="form-label">Password*</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                        <span class="error">Please enter valid</span>
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <input type="checkbox" class="form-check-input" id="rememberMe">
-                                        <label class="form-check-label" for="rememberMe">Remember me</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-act-btn">
-                                            <button type="submit" class="btn btn-primary">Login</button>
-                                        </div>
-                                        <div class="form-act-btn">
-                                            <a href="#" class="forgotPwd" data-bs-target="#forgotPasswd"
-                                                data-bs-toggle="modal">Forgot password?</a>
-
-                                        </div>
-                                    </div>
-
-                                </form>
-
-
-
-                            </div>
-                            <div class="tab-pane fade" id="register-tab-pane" role="tabpanel"
-                                aria-labelledby="register-tab" tabindex="0">
-                                <form id="login" class="form">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1">
-                                        <span class="error">Please enter valid</span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                        <span class="error">Please enter valid</span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
-                                        <span class="error">Please enter valid</span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="form-act-btn">
-                                            <button type="submit" class="btn btn-primary">Register</button>
-                                        </div>
+                                    <div class="form-act-btn">
+                                        <a href="#" class="forgotPwd"  data-bs-target="#forgotPasswd"  data-bs-toggle="modal">Forgot password?</a>
 
                                     </div>
+                                </div>
+                                
+                              </form>
 
-                                </form>
-                            </div>
+                               
+
                         </div>
-                    </div>
+                        <div class="tab-pane fade" id="register-tab-pane" role="tabpanel" aria-labelledby="register-tab" tabindex="0">
+                            <form id="login" class="form">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1" class="form-label">Email address*</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1">
+                                  <span class="error">Please enter valid</span>
+                                </div>
+                                <div class="form-group">
+                                  
+                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                  <div class="input-wrp input-wrp-pwd">
+                                    <button class="btn btn-showpwd" type="button">
+                                      <img src="img/view.svg" alt="view">
+                                    </button>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                  </div>
+                                  
+                                  <span class="error">Please enter valid</span>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                    <div class="input-wrp input-wrp-pwd">
+                                      <button class="btn btn-showpwd" type="button">
+                                        <img src="img/view.svg" alt="view">
+                                      </button>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <span class="error">Please enter valid</span>
+                                  </div>
+                                 
+                                <div class="form-group">
+                                    <div class="form-act-btn">
+                                        <button type="submit" class="btn btn-primary">Register</button>
+                                    </div>
+                                    
+                                </div>
+                                
+                              </form>
+                        </div>
+                      </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade loginSignup" id="forgotPasswd" tabindex="-1" aria-labelledby="forgotPasswdLabel"
-        aria-hidden="true">
+    <div class="modal fade loginSignup" id="forgotPasswd" tabindex="-1" aria-labelledby="forgotPasswdLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="forgotPasswdLabel"> </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="login-signup-wrap">
-                        <form id="login" class="form">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="form-label">Enter Email Address*</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1">
-                                <span class="error">Please enter valid</span>
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="forgotPasswdLabel"> </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="login-signup-wrap">
+                    <form id="login" class="form">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1" class="form-label">Enter Email Address*</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1">
+                          <span class="error">Please enter valid</span>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <div class="form-act-btn">
+                                <button type="submit" class="btn btn-primary">Send Reset Link</button>
                             </div>
-
-
-                            <div class="form-group">
-                                <div class="form-act-btn">
-                                    <button type="submit" class="btn btn-primary">Send Reset Link</button>
-                                </div>
-                                <div class="form-act-btn">
-                                    <a href="#" class="forgotPwd" role="button" data-bs-toggle="modal"
-                                        data-bs-target="#loginSignup">Back</a>
-                                </div>
+                            <div class="form-act-btn">
+                                <a href="#" class="forgotPwd"  role="button"  data-bs-toggle="modal" data-bs-target="#loginSignup">Back</a>
                             </div>
-
-                        </form>
-
-                    </div>
+                        </div>
+                        
+                      </form> 
+                       
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </body>
