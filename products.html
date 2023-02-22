@@ -276,8 +276,9 @@
                         <div class="row">
                             <div class="col">
                                 <div class="sortBy">
-                                    <h4 class="title">Sort By</h4>
-                                    <ul>
+                                    <h4 class="title">Sort By <button class="btn btn-sortBy"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseSortby" aria-expanded="false" aria-controls="collapseSortby"><img src="img/down.svg" alt="sortby"></button></h4>
+
+                                    <ul  class="collapse" id="collapseSortby">
                                         <li>
                                             <a href="#" class="sortLink">A-Z</a>
                                         </li>
@@ -294,9 +295,17 @@
                                     </ul>
                                 </div>
                             </div>
+
+                            <div class="col-auto d-lg-none">
+                                <button class="btn btn-secondary btn-filter" id="filterToggle">
+                                    <img src="img/filter.svg" alt="">
+                                </button>
+                            </div>
                         </div>
+
+
                         <div class="row products-row">
-                            <div class="col-xl-4 col-md-6">
+                            <div class="col-xl-4 col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -326,7 +335,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -356,7 +365,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -386,7 +395,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -416,7 +425,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -446,7 +455,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-xl-4  col-md-6">
+                            <div class="col-xl-4  col-sm-6">
                                 <div class="products-card">
                                     <div class="products-card-header">
                                         <button class="btn btn-add-fav isActive">
@@ -478,7 +487,20 @@
 
 
                         </div>
-                        
+
+                        <div class="row pagination-row">
+                           <div class="pagenation-wrap">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                           </div> 
+                        </div>
                     </div>
                      
                 </div>

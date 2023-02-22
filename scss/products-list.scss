@@ -28,9 +28,32 @@
         padding-bottom: 7px;
         margin-bottom: 13px;
         border-bottom: 1px solid #7070701a;
+        @media screen and (max-width: 767px){
+            flex-direction: column;
+            align-items: flex-start;
+            border-bottom: none;
+        }
         .title{
             font-size: 14px; 
             margin: 0;
+            display: flex;
+            align-items: center;
+            .btn-sortBy{
+                padding: 5px;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 5px;
+                img{
+                    object-fit: contain;
+                    opacity: 0.7;
+                }
+                @media screen and (min-width: 768px){
+                    display: none;
+                }
+            }
         }
         ul{
             margin: 0;
@@ -38,19 +61,33 @@
             font-size: 14px;
             display: flex;
             column-gap: 40px;
+            &.collapse{
+                &:not(.show){
+                    @media screen and (max-width: 767px){
+                        display: none;
+                    }
+                }
+            }
+            @media screen and (max-width: 767px){
+                flex-direction: column;
+                row-gap: 5px;
+                padding-top: 10px;
+            }
         }
         .sortLink{
             color: #000000;
             font-weight: 500;
             position: relative;
             &:after{
-                content: '';
-                position: absolute;
-                bottom: -8px;
-                left: 0;
-                right: 0;
-                height: 1px;
-                background-color: transparent;
+                @media screen and (min-width: 768px){
+                    content: '';
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    background-color: transparent;
+                }
             }
             &.active{
                 color: $purple;
