@@ -41,16 +41,21 @@ header {
     @media (max-width: 991px) {
       header .navbar .navbar-brand {
         margin-right: auto; } }
-    @media (max-width: 767px) {
-      header .navbar .navbar-brand img {
-        height: 25px; } }
+    header .navbar .navbar-brand img {
+      max-width: inherit; }
+      @media (max-width: 767px) {
+        header .navbar .navbar-brand img {
+          height: 25px; } }
   header .navbar .dropdown-menu {
     padding-top: 12px;
     padding-bottom: 12px; }
     @media (min-width: 992px) {
       header .navbar .dropdown-menu {
         box-shadow: 0px 3px 6px #00000029;
-        margin-top: 40px; } }
+        margin-top: 40px;
+        border: none;
+        right: -24px;
+        left: inherit; } }
     @media (min-width: 992px) {
       header .navbar .dropdown-menu:before {
         content: "";
@@ -61,7 +66,7 @@ header {
         border-bottom: 15px solid #fff;
         position: absolute;
         top: -13px;
-        right: 73px;
+        right: 30px;
         z-index: 1; } }
     @media (min-width: 992px) {
       header .navbar .dropdown-menu:after {
@@ -70,12 +75,12 @@ header {
         height: 0;
         border-left: 10px solid transparent;
         border-right: 12px solid transparent;
-        border-bottom: 15px solid #ccc;
+        border-bottom: 15px solid #b5b5b51f;
         position: absolute;
         top: -15px;
-        right: 73px; } }
+        right: 30px; } }
     header .navbar .dropdown-menu li {
-      border-top: 1px solid #00000029; }
+      border-top: 1px solid #f1f1f1; }
       header .navbar .dropdown-menu li:first-child {
         border: none; }
     header .navbar .dropdown-menu a {
@@ -178,12 +183,20 @@ header {
       padding-left: 17px;
       padding-top: 0px;
       padding-bottom: 0px; }
+      @media (max-width: 1199px) {
+        header .navbar .search-wrp button {
+          padding-right: 10px; } }
       @media (max-width: 767px) {
         header .navbar .search-wrp button {
           padding-left: 13px; } }
-      @media (max-width: 767px) {
-        header .navbar .search-wrp button img {
-          max-width: 13px; } }
+      header .navbar .search-wrp button img {
+        max-width: inherit; }
+        @media (max-width: 1199px) {
+          header .navbar .search-wrp button img {
+            max-width: 10px; } }
+        @media (max-width: 767px) {
+          header .navbar .search-wrp button img {
+            max-width: 13px; } }
       header .navbar .search-wrp button:hover {
         background-color: transparent;
         outline: none; }
@@ -192,6 +205,9 @@ header {
       height: 43px;
       min-width: 245px;
       font: normal normal normal 14px/16px "Raleway", sans-serif; }
+      @media (max-width: 1199px) {
+        header .navbar .search-wrp input.form-control {
+          min-width: 160px; } }
       @media (max-width: 767px) {
         header .navbar .search-wrp input.form-control {
           min-width: 200px;
@@ -222,11 +238,17 @@ header {
     @media (max-width: 1480px) {
       header .cart img {
         height: 20px; } }
+    @media (max-width: 1199px) {
+      header .cart img {
+        height: 20px; } }
     @media (max-width: 991px) {
       header .cart img {
         height: 20px; } }
     header .cart.updates {
       cursor: pointer; }
+      @media (max-width: 1199px) {
+        header .cart.updates {
+          margin-left: 10px !important; } }
       header .cart.updates:after {
         content: "";
         width: 7px;

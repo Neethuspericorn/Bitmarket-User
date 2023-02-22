@@ -1,10 +1,12 @@
 $(document).ready(function () {
     $('.banner-slider').slick({
-      autoplay: true,
+      autoplay: false,
       prevArrow: '<div class="slick-nav prev-arrow"></div>',
       nextArrow: '<div class="slick-nav next-arrow"></div>',
       dots: true,
       autoplaySpeed:3500,
+      appendArrows: ".slider-arrow-nav .container",
+      appendDots: '.slider-arrow-nav .container'
     });
     $('.banner-slider').on('init', function(e, slick) {
       var $firstAnimatingElements = $('div.slick-slide:first-child').find('[data-animation]');
