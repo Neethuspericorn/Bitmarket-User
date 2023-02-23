@@ -232,14 +232,14 @@ header{
                 border: none;
                 height: 43px;
                 min-width: 245px;
-                font: normal normal normal 14px/16px $raleway;
+                font: normal normal normal 14px/16px $poppins;
                 @media (max-width:1199px){
                     min-width: 160px;
                 }
                 @media (max-width:767px){
                     min-width: 200px;
                     height: 35px;
-                    font: normal normal normal 12px/14px $raleway;
+                    font: normal normal normal 12px/14px $poppins;
                 }
                 &:focus{
                     box-shadow: none;

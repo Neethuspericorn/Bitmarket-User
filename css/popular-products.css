@@ -68,7 +68,8 @@
     align-items: center;
     margin: auto;
     justify-content: center;
-    margin-top: 34px; }
+    margin-top: 34px;
+    background: transparent !important; }
     @media (max-width: 1679px) {
       .popular-products-section .view-btn {
         width: 200px;

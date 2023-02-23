@@ -210,7 +210,7 @@ header {
       border: none;
       height: 43px;
       min-width: 245px;
-      font: normal normal normal 14px/16px "Raleway", sans-serif; }
+      font: normal normal normal 14px/16px "Poppins", sans-serif; }
       @media (max-width: 1199px) {
         header .navbar .search-wrp input.form-control {
           min-width: 160px; } }
@@ -218,7 +218,7 @@ header {
         header .navbar .search-wrp input.form-control {
           min-width: 200px;
           height: 35px;
-          font: normal normal normal 12px/14px "Raleway", sans-serif; } }
+          font: normal normal normal 12px/14px "Poppins", sans-serif; } }
       header .navbar .search-wrp input.form-control:focus {
         box-shadow: none; }
   header .navbar .navbar-nav .nav-item {

@@ -176,8 +176,8 @@
                     .form-block {
                         width: 341px;
                         flex-basis: 341px;
-                        margin-bottom: 40px;
-                        padding-bottom: 10px;
+                        margin-bottom: 50px;
+                        padding-bottom: 0px;
                         position: relative;
 
                         @media ($sm-1679) {
@@ -195,9 +195,11 @@
                             flex-basis: 350px;
                         }
 
-                        @media ($sm-1281) {
+                        @media ($sm-1199) {
                             width: 355px;
                             flex-basis: 355px;
+                            margin-bottom: 30px;
+
                         }
 
                         @media ($sm-1023) {
@@ -207,7 +209,7 @@
 
                         .form-label {
                             text-align: left;
-                            font: normal 17px $raleway;
+                            font: normal 17px $poppins;
                             color: #000000;
                             margin-bottom: 7px;
                             display: flex;
@@ -225,7 +227,7 @@
                                 padding: 0;
                                 text-align: left;
                                 text-decoration: underline;
-                                font: 500 17px $raleway;
+                                font: 500 17px $poppins;
                                 color: #7F57F1;
                                 margin-left: 9px;
 
@@ -245,8 +247,9 @@
                             border-radius: 6px;
                             border: none;
                             text-align: left;
-                            font: normal 17px $raleway;
+                            font: normal 17px $poppins;
                             color: #000000;
+                            border-radius: 0;
 
                             @media ($sm-1679) {
                                 height: 48px;
@@ -315,6 +318,7 @@
                             border-radius: 6px;
                             padding: 28px 39px 37px;
                             margin-bottom: 20px;
+                            position: relative;
 
                             @media ($sm-1679) {
                                 padding: 25px 35px 35px;
@@ -323,6 +327,7 @@
                             @media ($sm-1367) {
                                 padding: 25px 25px 25px;
                             }
+
                             @media ($sm-1199) {
                                 padding: 15px;
                             }
@@ -369,6 +374,27 @@
 
                             .mob-txt {
                                 display: block;
+                            }
+
+                            .dropdown {
+                                position: absolute;
+                                right: 0px;
+                                top: 0px;
+
+                                .btn {
+                                    span {
+                                        width: 3px;
+                                        height: 3px;
+                                        background: #C9B9F8;
+                                        display: block;
+                                        margin-bottom: 2px;
+                                        border: none;
+                                        box-shadow: none;
+                                        outline: none;
+                                    }
+
+                                    
+                                }
                             }
                         }
                     }

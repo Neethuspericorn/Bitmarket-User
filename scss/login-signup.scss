@@ -1,73 +1,85 @@
 @import "partials/partials";
 
-.modal.loginSignup{
-    .modal-body{
+.modal.loginSignup {
+    .modal-body {
         padding-top: 40px;
         padding-bottom: 40px;
         transition: all ease-in-out 0.2s;
-        @media screen and (max-width: 1679px){
+
+        @media screen and (max-width: 1679px) {
             padding-top: 30px;
             padding-bottom: 30px;
         }
-        @media screen and (max-width: 1440px){
-           padding: 15px 30px;
+
+        @media screen and (max-width: 1440px) {
+            padding: 15px 30px;
         }
     }
 
-    .modal-dialog.modal-dialog{
+    .modal-dialog.modal-dialog {
         transition: all ease-in-out 0.2s;
         width: calc(100vw - 40px);
         max-width: 1000px;
-        @media screen and (max-width: 1440px){
+
+        @media screen and (max-width: 1440px) {
             max-width: 800px;
         }
-        @media screen and (max-width: 1024px){
+
+        @media screen and (max-width: 1024px) {
             max-width: 600px;
         }
     }
 }
 
-.login-signup-wrap{
+.login-signup-wrap {
     max-width: 560px;
     margin: auto;
-    .form-act-btn{
+
+    .form-act-btn {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        .btn{
+
+        .btn {
             flex: 1;
         }
-    }   
+    }
 }
 
-.nav-tabs.loginSignupTabs{
+.nav-tabs.loginSignupTabs {
     border-bottom: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    .nav-item{
+
+    .nav-item {
         flex: 1;
         max-width: 200px;
     }
-    .nav-link{
+
+    .nav-link {
         border: none;
         border-radius: 0;
         width: 100%;
         font-size: 19px;
         color: #C7C7C7;
         font-weight: 400;
-        @media screen and (max-width: 1679px){
+
+        @media screen and (max-width: 1679px) {
             font-size: 18px;
         }
-        @media screen and (max-width: 1440px){
+
+        @media screen and (max-width: 1440px) {
             font-size: 16px;
         }
-        &:focus-visible{
+
+        &:focus-visible {
             outline: $purpleLighter auto 1px;
         }
-        &.active{
+
+        &.active {
             color: #7F57F1;
             font-weight: 600;
             text-decoration: underline;
@@ -75,28 +87,33 @@
     }
 }
 
-.tab-content{
-    &.loginSignups{
+.tab-content {
+    &.loginSignups {
         padding-top: 50px;
-        @media screen and (max-width: 1679px){
+
+        @media screen and (max-width: 1679px) {
             padding-top: 30px;
         }
-        @media screen and (max-width: 1440px){
+
+        @media screen and (max-width: 1440px) {
             padding-top: 25px;
         }
-        .tab-pane{
-            &:focus-visible{
+
+        .tab-pane {
+            &:focus-visible {
                 outline: $purpleLighter auto 1px;
             }
         }
-        
+
     }
 }
 
-.forgotPwd{
+.forgotPwd {
     color: #000;
     font-size: 16px;
-    &:hover{
+    text-decoration: none;
+
+    &:hover {
         color: $purpleDark;
     }
 }
