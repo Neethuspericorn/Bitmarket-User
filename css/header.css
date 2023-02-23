@@ -46,6 +46,12 @@ header {
       @media (max-width: 767px) {
         header .navbar .navbar-brand img {
           height: 25px; } }
+  header .navbar .dropdown .dropdown-toggle::after {
+    border: none;
+    width: 12px;
+    height: 7px;
+    background: url(../img/down.svg) no-repeat center;
+    vertical-align: 0.155em; }
   header .navbar .dropdown-menu {
     padding-top: 12px;
     padding-bottom: 12px; }
