@@ -38,7 +38,7 @@
                     </form>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -59,17 +59,40 @@
                                 My Profile
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><span><img src="img/user.svg"></span>Account</a>
+                                <li>
+                                    <a class="dropdown-item" href="account.html">
+                                        <span>
+                                            <img src="img/user.svg">
+                                        </span>Account
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><span><img src="img/orders.svg"></span>My
-                                        Orders</a></li>
-                                <li><a class="dropdown-item" href="#"><span><img src="img/favs.svg"></span>Favorites</a>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span>
+                                            <img src="img/orders.svg">
+                                        </span>My Orders</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><span><img
-                                                src="img/notifications.svg"></span>Notifications</a></li>
-                                <li><a class="dropdown-item" href="#"><span><img src="img/logout.svg"></span>Logout</a>
+                                <li><a class="dropdown-item" href="favorites.html">
+                                        <span><img src="img/favs.svg"></span>Favorites</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="notifications.html">
+                                        <span><img src="img/notifications.svg"></span>Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span><img src="img/logout.svg"></span>
+                                        Logout
+                                    </a>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="modal"
+                                data-bs-target="#loginSignup">
+                                Login/Signup
+                            </a>
                         </li>
                     </ul>
 
@@ -195,6 +218,9 @@
                             </h4>
                             <span class="txt-details">Ordered Date : 5th January 2022</span>
                         </div>
+                    </div>
+                    <div class="title-block">
+                        <h6 class="old-noti-title">Older Notifications</h6>
                     </div>
                     <div class="notification-items">
                         <div class="notification-img">

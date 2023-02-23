@@ -38,7 +38,7 @@
                     </form>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -59,17 +59,40 @@
                                 My Profile
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><span><img src="img/user.svg"></span>Account</a>
+                                <li>
+                                    <a class="dropdown-item" href="account.html">
+                                        <span>
+                                            <img src="img/user.svg">
+                                        </span>Account
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><span><img src="img/orders.svg"></span>My
-                                        Orders</a></li>
-                                <li><a class="dropdown-item" href="#"><span><img src="img/favs.svg"></span>Favorites</a>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span>
+                                            <img src="img/orders.svg">
+                                        </span>My Orders</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#"><span><img
-                                                src="img/notifications.svg"></span>Notifications</a></li>
-                                <li><a class="dropdown-item" href="#"><span><img src="img/logout.svg"></span>Logout</a>
+                                <li><a class="dropdown-item" href="favorites.html">
+                                        <span><img src="img/favs.svg"></span>Favorites</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="notifications.html">
+                                        <span><img src="img/notifications.svg"></span>Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span><img src="img/logout.svg"></span>
+                                        Logout
+                                    </a>
                                 </li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="modal"
+                                data-bs-target="#loginSignup">
+                                Login/Signup
+                            </a>
                         </li>
                     </ul>
 
@@ -79,204 +102,111 @@
         </nav>
     </header>
     <main>
-        <section class="account">
+        <section class="account-section">
             <div class="container container-custom">
-                <div class="pro-info-block">
-                    <div class="pro-info-pic">
-                        <div class="pic-edit">
-                            <button class="btn">
-                                <img src="" class="edit" alt="">
-                            </button>
-                        </div>
-                        <div class="pro-pics">
-                            <img src="" class="pic" alt="">
-                        </div>
-                    </div>
-                    <div class="pro-info-form">
-                        <div class="form-block">
-                            <label class="form-label">First Name</label>
-                            <input type="text" class="form-control" placeholder="John">
-                            <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Please enter a valid email
-                                address</span>
-                        </div>
-                        <div class="form-block">
-                            <label class="form-label">Last Name</label>
-                            <input type="text" class="form-control" placeholder="John">
-                        </div>
-                        <div class="form-block">
-                            <label class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" placeholder="+01 638535673">
-                        </div>
-                        <div class="form-block">
-                            <label class="form-label">Email Address</label>
-                            <input type="email" class="form-control" placeholder="Johndavid@gmail.com">
-                        </div>
-                        <div class="form-block">
-                            <label class="form-label">Password
-                                <button class="btn">Edit</button>
-                            </label>
-                            <input type="password" class="form-control" placeholder="*********************">
-                        </div>
-                    </div>
-                </div>
-                <div class="man-add">
-                    <div class="add-btn-block">
-                        <button class="btn new-address"><img src="" class="plus-icon" alt=""> Add New Address</button>
-                        <div class="address-list">
-                            <div class="address-items">
-                                <div class="place-block">
-                                    Home
+
+                <div class="account-wrap">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#home">Profile Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#menu1">Manage Address</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content p-0">
+                        <div class="tab-pane container active" id="home">
+                            <div class="pro-info-block">
+                                <div class="pro-info-pic">
+                                    <div class="pic-edit">
+                                        <button class="btn">
+                                            <img src="img/edit-btn.svg" class="edit" alt="profile-pic">
+                                        </button>
+                                    </div>
+                                    <div class="pro-pics">
+                                        <img src="img/profile-pic.png" class="pic" alt="">
+                                    </div>
                                 </div>
-                                <h6 class="title">John David</h6>
-                                <span class="dec">Cecilia Chapman, 711-2880 Nulla St., Mankato Mississippi</span>
-                                <span class="mob-txt">96522 (257) 563-7401</span>
+                                <div class="pro-info-form">
+                                    <div class="form-block">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-control" placeholder="John">
+                                        <span class="val-msg"><img src="img/warn-dngr.svg" alt=""> Please enter a valid
+                                            email
+                                            address</span>
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="John">
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" placeholder="+01 638535673">
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="Johndavid@gmail.com">
+                                    </div>
+                                    <div class="form-block">
+                                        <label class="form-label">Password
+                                            <button class="btn">Edit</button>
+                                        </label>
+                                        <input type="password" class="form-control" placeholder="*********************">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="address-list">
-                            <div class="address-items">
-                                <div class="place-block">
-                                    Work
+                        <div class="tab-pane container fade" id="menu1">
+                            <div class="man-add">
+                                <div class="add-btn-block">
+                                    <button class="btn new-address">
+                                        <img src="img/add-btn.svg" class="plus-icon" alt="add-btn"> Add New
+                                        Address</button>
+                                    <div class="address-list">
+                                        <div class="address-items">
+                                            <div class="place-block">
+                                                Home
+                                            </div>
+                                            <h6 class="title">John David</h6>
+                                            <span class="dec">Cecilia Chapman, 711-2880 Nulla St., Mankato
+                                                Mississippi</span>
+                                            <span class="mob-txt">96522 (257) 563-7401</span>
+                                        </div>
+                                    </div>
+                                    <div class="address-list">
+                                        <div class="address-items">
+                                            <div class="place-block">
+                                                Work
+                                            </div>
+                                            <h6 class="title">John David</h6>
+                                            <span class="dec">Cecilia Chapman, 711-2880 Nulla St., Mankato
+                                                Mississippi</span>
+                                            <span class="mob-txt">96522 (257) 563-7401</span>
+                                        </div>
+                                    </div>
+                                    <div class="address-list">
+                                        <div class="address-items">
+                                            <div class="place-block">
+                                                Home
+                                            </div>
+                                            <h6 class="title">John David</h6>
+                                            <span class="dec">Cecilia Chapman, 711-2880 Nulla St., Mankato
+                                                Mississippi</span>
+                                            <span class="mob-txt">96522 (257) 563-7401</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <h6 class="title">John David</h6>
-                                <span class="dec">Cecilia Chapman, 711-2880 Nulla St., Mankato Mississippi</span>
-                                <span class="mob-txt">96522 (257) 563-7401</span>
-                            </div>
-                        </div>
-                        <div class="address-list">
-                            <div class="address-items">
-                                <div class="place-block">
-                                    Home
-                                </div>
-                                <h6 class="title">John David</h6>
-                                <span class="dec">Cecilia Chapman, 711-2880 Nulla St., Mankato Mississippi</span>
-                                <span class="mob-txt">96522 (257) 563-7401</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- <ul class="nav nav-pills">
-            <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
-            <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
-            <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
-            <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
-          </ul>
-          
-          <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-              <h3>HOME</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div id="menu1" class="tab-pane fade">
-              <h3>Menu 1</h3>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-              <h3>Menu 2</h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-            </div>
-            <div id="menu3" class="tab-pane fade">
-              <h3>Menu 3</h3>
-              <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            </div>
-          </div>
-          <div class="login-signup-wrap">
-            <ul class="nav nav-tabs loginSignupTabs" id="loginSignupTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login-tab-pane" type="button" role="tab" aria-controls="login-tab-pane" aria-selected="true">Login</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register-tab-pane" type="button" role="tab" aria-controls="register-tab-pane" aria-selected="false">Register</button>
-                </li>
-              </ul>
-              <div class="tab-content loginSignups" id="loginSignupTabsContent">
-                <div class="tab-pane fade show active" id="login-tab-pane" role="tabpanel" aria-labelledby="login-tab" tabindex="0">
-                    <form id="login" class="form">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1" class="form-label">Enter Email Address*</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1">
-                          <span class="error">Please enter valid</span>
-                        </div>
-                        <div class="form-group">
 
-                          <label for="exampleInputPassword1" class="form-label">Password*</label>
-                          
-                          <div class="input-wrp input-wrp-pwd">
-                            <button class="btn btn-showpwd" type="button">
-                              <img src="img/view.svg" class="view" alt="view">
-                                <img src="img/hide.svg" class="hide d-none" alt="hide">
-                            </button>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                          </div>
-                          
-                          <span class="error">Please enter valid</span>
-                        </div>
-                        <div class="form-group form-check">
-                          <input type="checkbox" class="form-check-input" id="rememberMe">
-                          <label class="form-check-label" for="rememberMe">Remember me</label>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-act-btn">
-                                <button type="submit" class="btn btn-primary">Login</button>
-                            </div>
-                            <div class="form-act-btn">
-                                <a href="#" class="forgotPwd"  data-bs-target="#forgotPasswd"  data-bs-toggle="modal">Forgot password?</a>
-
-                            </div>
-                        </div>
-                        
-                      </form>
-
-                       
-
-                </div>
-                <div class="tab-pane fade" id="register-tab-pane" role="tabpanel" aria-labelledby="register-tab" tabindex="0">
-                    <form id="login" class="form">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1" class="form-label">Email address*</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1">
-                          <span class="error">Please enter valid</span>
-                        </div>
-                        <div class="form-group">
-                          
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <div class="input-wrp input-wrp-pwd">
-                            <button class="btn btn-showpwd" type="button">
-                              <img src="img/view.svg" class="view" alt="view">
-                                <img src="img/hide.svg" class="hide  d-none" alt="hide">
-                            </button>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                          </div>
-                          
-                          <span class="error">Please enter valid</span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                            <div class="input-wrp input-wrp-pwd">
-                              <button class="btn btn-showpwd" type="button">
-                                <img src="img/view.svg" class="view" alt="view">
-                                <img src="img/hide.svg" class="hide  d-none" alt="hide">
-                              </button>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            <span class="error">Please enter valid</span>
-                          </div>
-                         
-                        <div class="form-group">
-                            <div class="form-act-btn">
-                                <button type="submit" class="btn btn-primary">Register</button>
-                            </div>
-                            
-                        </div>
-                        
-                      </form>
-                </div>
-              </div>
-        </div> -->
     </main>
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/main.js"></script>
+
 </html>

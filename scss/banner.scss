@@ -189,7 +189,7 @@
                     display: block;
                     width: 23px;
                     height: 13px;
-                    background: url(/img/arrow_tail.svg) no-repeat center;
+                    background: url(../img/arrow_tail.svg) no-repeat center;
                     margin-left: 10px;
                     @media (max-width:579px){
                         width: 15px;
@@ -334,7 +334,7 @@
                     &:before{
                         content: "";
                         display: inline-block;
-                        background: url(/img/right_arrow.svg) no-repeat center;
+                        background: url(../img/right_arrow.svg) no-repeat center;
                         height: 56px;
                         width:56px;
                         @media (max-width:1199px){
@@ -353,7 +353,7 @@
                     &:before{
                         content: "";
                         display: inline-block;
-                        background: url(/img/left_arrow.svg) no-repeat center;
+                        background: url(../img/left_arrow.svg) no-repeat center;
                         height: 56px;
                         width:56px;
                         @media (max-width:1199px){

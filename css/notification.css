@@ -28,7 +28,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 14px; }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 767px) {
       .notification-section .notification-block .notification-items {
         flex-direction: column; } }
     .notification-section .notification-block .notification-items .notification-img {
@@ -39,6 +39,10 @@
       display: flex;
       align-items: center;
       justify-content: center; }
+      @media screen and (max-width: 1679px) {
+        .notification-section .notification-block .notification-items .notification-img {
+          width: 66px;
+          height: 66px; } }
       .notification-section .notification-block .notification-items .notification-img .notification-pic {
         width: 46px;
         height: 46px;
@@ -46,6 +50,11 @@
     .notification-section .notification-block .notification-items .notification-txt {
       margin-left: 37px; }
       @media screen and (max-width: 991px) {
+        .notification-section .notification-block .notification-items .notification-txt {
+          margin: 0;
+          margin-top: 15px;
+          margin-left: 20px; } }
+      @media screen and (max-width: 767px) {
         .notification-section .notification-block .notification-items .notification-txt {
           margin: 0;
           margin-top: 15px; } }
@@ -61,12 +70,34 @@
         @media screen and (max-width: 767px) {
           .notification-section .notification-block .notification-items .notification-txt .title {
             font-size: 14px;
-            margin: 0; } }
+            margin: 0;
+            text-align: center; } }
       .notification-section .notification-block .notification-items .notification-txt .txt-details {
         text-align: left;
         font: 300 13px "Poppins", sans-serif;
         letter-spacing: 0.31px;
         color: #292929; }
+        @media screen and (max-width: 767px) {
+          .notification-section .notification-block .notification-items .notification-txt .txt-details {
+            text-align: center;
+            display: block; } }
+  .notification-section .notification-block .title-block {
+    display: block;
+    margin-top: 42px;
+    margin-bottom: 23px; }
+    @media screen and (max-width: 1199px) {
+      .notification-section .notification-block .title-block {
+        margin-top: 30px;
+        margin-bottom: 23px; } }
+    @media screen and (max-width: 1199px) {
+      .notification-section .notification-block .title-block {
+        margin-top: 20px;
+        margin-bottom: 20px; } }
+    .notification-section .notification-block .title-block .old-noti-title {
+      text-align: left;
+      font: normal 16px "Poppins", sans-serif;
+      color: #000000;
+      margin: 0; }
   .notification-section .notification-block .isActive .notification-txt .title {
     color: #3C8100; }
 
