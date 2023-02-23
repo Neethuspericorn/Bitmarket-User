@@ -32,6 +32,16 @@ header{
                 } 
             }
         }
+        .dropdown{
+            .dropdown-toggle{
+                &::after{
+                    border: none;
+                    width: 12px;
+                    height: 7px;
+                    background: url(../img/down.svg) no-repeat center;
+                }
+            }
+        }
         .dropdown-menu{
             padding-top: 12px;
             padding-bottom: 12px;
