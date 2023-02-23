@@ -1,0 +1,130 @@
+@import "partials/partials";
+
+.pro-info-block {
+    max-width: 741px;
+    margin: auto;
+
+    .pro-info-form {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 0 59px;
+        flex-wrap: wrap;
+
+        .form-block {
+            width: 340px;
+            flex-basis: 341px;
+            margin-bottom: 40px;
+            padding-bottom: 10px;
+            position: relative;
+
+            .form-label {
+                text-align: left;
+                font: normal 17px $raleway;
+                color: #000000;
+                margin-bottom: 7px;
+                display: flex;
+                align-items: center;
+
+                .btn {
+                    padding: 0;
+                    text-align: left;
+                    text-decoration: underline;
+                    font: 500 17px $raleway;
+                    color: #7F57F1;
+                    margin-left: 9px;
+                }
+            }
+
+            .form-control {
+                height: 59px;
+                background: #F7F5FF;
+                border-radius: 6px;
+                border: none;
+
+                &:focus {
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+
+            .val-msg {
+                position: absolute;
+                left: 0;
+                top: 100%;
+                align-items: center;
+                padding-top: 8px;
+                font-size: 12px;
+                font-weight: 500;
+                color: #FF4141;
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.man-add {
+    max-width: 741px;
+    margin: auto;
+
+    .add-btn-block {
+        .new-address {
+            width: 100%;
+            height: 51px;
+            border: 1px dashed #7F57F1;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            text-align: left;
+            font: 600 14px $poppins;
+            color: #7F57F1;
+
+            .plus-icon {
+                width: 9px;
+                height: 9px;
+                margin-right: 10px;
+            }
+        }
+
+        .address-list {
+            .address-items {
+                background: #FBFAFF;
+                border: 1px solid #F5F2FF;
+                border-radius: 6px;
+                padding: 28px 39px 37px;
+                margin-bottom: 20px;
+
+                .place-block {
+                    width: 82px;
+                    height: 32px;
+                    background: #F4F0FF;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 22px;
+                }
+
+                .title {
+                    text-align: left;
+                    font: 600 16px $poppins;
+                    color: #3F346C;
+                }
+
+                .dec,
+                .mob-txt {
+                    text-align: left;
+                    font: normal 16px $poppins;
+                    letter-spacing: 0px;
+                    color: #3F346C;
+                }
+
+                .mob-txt {
+                    display: block;
+                }
+            }
+        }
+    }
+}

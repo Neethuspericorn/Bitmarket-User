@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.pro-info-block {
+  max-width: 741px;
+  margin: auto; }
+  .pro-info-block .pro-info-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 0 59px;
+    flex-wrap: wrap; }
+    .pro-info-block .pro-info-form .form-block {
+      width: 340px;
+      flex-basis: 341px;
+      margin-bottom: 40px;
+      padding-bottom: 10px;
+      position: relative; }
+      .pro-info-block .pro-info-form .form-block .form-label {
+        text-align: left;
+        font: normal 17px "Raleway", sans-serif;
+        color: #000000;
+        margin-bottom: 7px;
+        display: flex;
+        align-items: center; }
+        .pro-info-block .pro-info-form .form-block .form-label .btn {
+          padding: 0;
+          text-align: left;
+          text-decoration: underline;
+          font: 500 17px "Raleway", sans-serif;
+          color: #7F57F1;
+          margin-left: 9px; }
+      .pro-info-block .pro-info-form .form-block .form-control {
+        height: 59px;
+        background: #F7F5FF;
+        border-radius: 6px;
+        border: none; }
+        .pro-info-block .pro-info-form .form-block .form-control:focus {
+          box-shadow: none;
+          border: none; }
+      .pro-info-block .pro-info-form .form-block .val-msg {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        align-items: center;
+        padding-top: 8px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #FF4141; }
+        .pro-info-block .pro-info-form .form-block .val-msg img {
+          margin-right: 10px; }
+
+.man-add {
+  max-width: 741px;
+  margin: auto; }
+  .man-add .add-btn-block .new-address {
+    width: 100%;
+    height: 51px;
+    border: 1px dashed #7F57F1;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    text-align: left;
+    font: 600 14px "Poppins", sans-serif;
+    color: #7F57F1; }
+    .man-add .add-btn-block .new-address .plus-icon {
+      width: 9px;
+      height: 9px;
+      margin-right: 10px; }
+  .man-add .add-btn-block .address-list .address-items {
+    background: #FBFAFF;
+    border: 1px solid #F5F2FF;
+    border-radius: 6px;
+    padding: 28px 39px 37px;
+    margin-bottom: 20px; }
+    .man-add .add-btn-block .address-list .address-items .place-block {
+      width: 82px;
+      height: 32px;
+      background: #F4F0FF;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px; }
+    .man-add .add-btn-block .address-list .address-items .title {
+      text-align: left;
+      font: 600 16px "Poppins", sans-serif;
+      color: #3F346C; }
+    .man-add .add-btn-block .address-list .address-items .dec,
+    .man-add .add-btn-block .address-list .address-items .mob-txt {
+      text-align: left;
+      font: normal 16px "Poppins", sans-serif;
+      letter-spacing: 0px;
+      color: #3F346C; }
+    .man-add .add-btn-block .address-list .address-items .mob-txt {
+      display: block; }
+
+/*# sourceMappingURL=account.css.map */

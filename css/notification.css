@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.notification-section {
+  margin-top: 27px; }
+  .notification-section .notification-block .notification-items {
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 13px;
+    padding: 20px 23px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px; }
+    @media screen and (max-width: 991px) {
+      .notification-section .notification-block .notification-items {
+        flex-direction: column; } }
+    .notification-section .notification-block .notification-items .notification-img {
+      width: 86px;
+      height: 86px;
+      background: #F7F5FF;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .notification-section .notification-block .notification-items .notification-img .notification-pic {
+        width: 46px;
+        height: 46px;
+        object-fit: contain; }
+    .notification-section .notification-block .notification-items .notification-txt {
+      margin-left: 37px; }
+      @media screen and (max-width: 991px) {
+        .notification-section .notification-block .notification-items .notification-txt {
+          margin: 0;
+          margin-top: 15px; } }
+      .notification-section .notification-block .notification-items .notification-txt .title {
+        text-align: left;
+        font: 500 18px "Poppins", sans-serif;
+        color: #292929;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 991px) {
+          .notification-section .notification-block .notification-items .notification-txt .title {
+            font-size: 16px;
+            margin: 0; } }
+        @media screen and (max-width: 767px) {
+          .notification-section .notification-block .notification-items .notification-txt .title {
+            font-size: 14px;
+            margin: 0; } }
+      .notification-section .notification-block .notification-items .notification-txt .txt-details {
+        text-align: left;
+        font: 300 13px "Poppins", sans-serif;
+        letter-spacing: 0.31px;
+        color: #292929; }
+  .notification-section .notification-block .isActive .notification-txt .title {
+    color: #3C8100; }
+
+/*# sourceMappingURL=notification.css.map */

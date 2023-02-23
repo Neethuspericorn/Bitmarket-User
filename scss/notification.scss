@@ -1,0 +1,77 @@
+@import "partials/partials";
+
+.notification-section {
+    margin-top: 27px;
+
+    .notification-block {
+        .notification-items {
+            background: #FFFFFF;
+            border: 1px solid #D8D8D8;
+            border-radius: 13px;
+            padding: 20px 23px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+
+            @media screen and (max-width: 991px) {
+                flex-direction: column;
+            }
+
+            .notification-img {
+                width: 86px;
+                height: 86px;
+                background: #F7F5FF;
+                border-radius: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .notification-pic {
+                    width: 46px;
+                    height: 46px;
+                    object-fit: contain;
+                }
+            }
+
+            .notification-txt {
+                margin-left: 37px;
+
+                @media screen and (max-width: 991px) {
+                    margin: 0;
+                    margin-top: 15px;
+                }
+
+                .title {
+                    text-align: left;
+                    font: 500 18px $poppins;
+                    color: #292929;
+                    margin-bottom: 10px;
+
+                    @media screen and (max-width: 991px) {
+                        font-size: 16px;
+                        margin: 0;
+                    }
+                    @media screen and (max-width: 767px) {
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                }
+
+                .txt-details {
+                    text-align: left;
+                    font: 300 13px $poppins;
+                    letter-spacing: 0.31px;
+                    color: #292929;
+                }
+            }
+        }
+
+        .isActive {
+            .notification-txt {
+                .title {
+                    color: #3C8100;
+                }
+            }
+        }
+    }
+}
