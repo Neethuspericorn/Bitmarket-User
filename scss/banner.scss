@@ -186,7 +186,7 @@
                 font: normal normal 500 14px/21px $poppins;
                 text-decoration: none;
                 position: relative;
-                padding-left: 40px;
+                padding-left: 28px;
                 display: flex;
                 align-items: center;
                 transition: 0.3s ease-in-out;
@@ -205,6 +205,18 @@
                 @media (max-width:579px){
                     padding-left: 15px;
                     font-size: 12px;
+                }
+                span{
+                    position: relative;
+                    display: block;
+                &:before{
+                    content: "Vie";
+                    position: absolute;
+                    height: 21px;
+                    left: 0px;
+                    width: 30px;
+                    color: #fff;
+                }
                 }
                 &::after{
                     content: "";
@@ -244,6 +256,10 @@
                         color: #Fff;
                         position: relative;
                         z-index: 1;
+                        position: relative;
+                        &::before{
+                            display: none;
+                        }
                     }
                     &::after{
                         filter: brightness(20.5);
@@ -255,15 +271,6 @@
             position: relative;
             z-index: 2;
             
-                &.mt-50{
-                    @media (min-width:992px){
-                    margin-top: 50px;
-                    }
-                    @media (max-width:991px){
-                        margin-top: 50px;
-                    }
-                    
-                }
             img{
                 max-width: 460px;
                 opacity: 0;
@@ -436,8 +443,15 @@
 
 .bottom-top{
     display: flex;
+    justify-content: flex-end;
     .bnr-img{
         margin-top: auto;
+        @media (min-width:1024px){
+            min-height: 620px;
+        }
+        @media (min-width:992px){
+            min-height: 400px;
+        }
     }
 }
 .top-bottom{
@@ -447,7 +461,21 @@
         margin-top: 0px;
     }
     @media (min-width:992px){
-        margin-top: 100px;
+        // margin-top: 100px;
+        margin-top: 0px;
+    }
+    .bnr-img{
+        display: flex;
+        align-items: center;
+        @media (min-width:1200px)and (max-width:14802px){
+            min-height: 620px;
+        }
+        @media (min-width:1025px) and (max-width:1199px){
+            min-height: 400px;
+        }
+        @media (min-width:992px) and (max-width:1024px){
+            min-height: 400px;
+        }
     }
     
 }

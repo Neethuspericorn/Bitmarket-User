@@ -173,7 +173,7 @@
       font: normal normal 500 14px/21px "Poppins", sans-serif;
       text-decoration: none;
       position: relative;
-      padding-left: 40px;
+      padding-left: 28px;
       display: flex;
       align-items: center;
       transition: 0.3s ease-in-out;
@@ -193,6 +193,16 @@
         .banner .bnr-content .banner-cta {
           padding-left: 15px;
           font-size: 12px; } }
+      .banner .bnr-content .banner-cta span {
+        position: relative;
+        display: block; }
+        .banner .bnr-content .banner-cta span:before {
+          content: "Vie";
+          position: absolute;
+          height: 21px;
+          left: 0px;
+          width: 30px;
+          color: #fff; }
       .banner .bnr-content .banner-cta::after {
         content: "";
         display: block;
@@ -226,18 +236,15 @@
       .banner .bnr-content .banner-cta:hover span {
         color: #Fff;
         position: relative;
-        z-index: 1; }
+        z-index: 1;
+        position: relative; }
+        .banner .bnr-content .banner-cta:hover span::before {
+          display: none; }
       .banner .bnr-content .banner-cta:hover::after {
         filter: brightness(20.5); }
   .banner .bnr-img {
     position: relative;
     z-index: 2; }
-    @media (min-width: 992px) {
-      .banner .bnr-img.mt-50 {
-        margin-top: 50px; } }
-    @media (max-width: 991px) {
-      .banner .bnr-img.mt-50 {
-        margin-top: 50px; } }
     .banner .bnr-img img {
       max-width: 460px;
       opacity: 0; }
@@ -378,9 +385,16 @@
           display: none; }
 
 .bottom-top {
-  display: flex; }
+  display: flex;
+  justify-content: flex-end; }
   .bottom-top .bnr-img {
     margin-top: auto; }
+    @media (min-width: 1024px) {
+      .bottom-top .bnr-img {
+        min-height: 620px; } }
+    @media (min-width: 992px) {
+      .bottom-top .bnr-img {
+        min-height: 400px; } }
 
 .top-bottom {
   display: flex;
@@ -390,6 +404,18 @@
       margin-top: 0px; } }
   @media (min-width: 992px) {
     .top-bottom {
-      margin-top: 100px; } }
+      margin-top: 0px; } }
+  .top-bottom .bnr-img {
+    display: flex;
+    align-items: center; }
+    @media (min-width: 1200px) and (max-width: 14802px) {
+      .top-bottom .bnr-img {
+        min-height: 620px; } }
+    @media (min-width: 1025px) and (max-width: 1199px) {
+      .top-bottom .bnr-img {
+        min-height: 400px; } }
+    @media (min-width: 992px) and (max-width: 1024px) {
+      .top-bottom .bnr-img {
+        min-height: 400px; } }
 
 /*# sourceMappingURL=banner.css.map */
