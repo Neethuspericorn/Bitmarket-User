@@ -245,6 +245,12 @@
   .banner .bnr-img {
     position: relative;
     z-index: 2; }
+    @media (max-width: 1367px) {
+      .banner .bnr-img {
+        right: 30px; } }
+    @media (max-width: 1199px) {
+      .banner .bnr-img {
+        right: 0; } }
     .banner .bnr-img img {
       max-width: 460px;
       opacity: 0; }

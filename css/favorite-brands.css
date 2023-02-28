@@ -31,7 +31,11 @@
   .favorite-brands-section .favorite-brands-container {
     max-width: 100%;
     padding-left: calc((100vw - 1360px)/2);
-    padding-right: 90px; }
+    padding-right: 210px; }
+    @media (max-width: 1679px) {
+      .favorite-brands-section .favorite-brands-container {
+        padding-left: calc((100vw - 1326px)/2);
+        padding-right: 110px; } }
     @media (max-width: 1367px) {
       .favorite-brands-section .favorite-brands-container {
         padding-left: calc((100vw - 1326px)/2);
@@ -203,7 +207,7 @@
             .favorite-brands-section .favorite-brands .favorite-brands-list .view-product::before {
               width: 38px;
               height: 38px;
-              left: -15px; } }
+              left: -16px; } }
           @media (max-width: 1441px) {
             .favorite-brands-section .favorite-brands .favorite-brands-list .view-product::before {
               left: -17px; } }

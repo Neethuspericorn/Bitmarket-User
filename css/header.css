@@ -42,7 +42,8 @@ header {
       header .navbar .navbar-brand {
         margin-right: auto; } }
     header .navbar .navbar-brand img {
-      max-width: inherit; }
+      max-width: inherit;
+      width: 157px; }
       @media (max-width: 767px) {
         header .navbar .navbar-brand img {
           height: 25px; } }
