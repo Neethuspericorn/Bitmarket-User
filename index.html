@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/popular-products.css">
     <link rel="stylesheet" href="css/favorite-brands.css">
     <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/category-dropdown.css">
+    <link rel="stylesheet" href="css/logout.css">
     <link rel="stylesheet" href="css/footer.css">
 
 </head>
@@ -49,17 +51,85 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
 
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown category-dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Shop by Category
                             </a>
-
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="dropdown-block">
+                                                <div class="dropdown-img-block">
+                                                    <img src="img/01.png" class="product-items" alt="">
+                                                </div>
+                                                <span>Fashion</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="dropdown-block">
+                                                <div class="dropdown-img-block">
+                                                    <img src="img/01.png" class="product-items" alt="">
+                                                </div>
+                                                <span>Groceries</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="dropdown-block">
+                                                <div class="dropdown-img-block">
+                                                    <img src="img/01.png" class="product-items" alt="">
+                                                </div>
+                                                <span>Home</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="dropdown-block">
+                                                <div class="dropdown-img-block">
+                                                    <img src="img/01.png" class="product-items" alt="">
+                                                </div>
+                                                <span>Mobiles</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="dropdown-block">
+                                                <div class="dropdown-img-block">
+                                                    <img src="img/01.png" class="product-items" alt="">
+                                                </div>
+                                                <span>Electronics</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="dropdown-block">
+                                                <div class="dropdown-img-block">
+                                                    <img src="img/01.png" class="product-items" alt="">
+                                                </div>
+                                                <span>Appliances</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="dropdown-block">
+                                                <div class="dropdown-img-block">
+                                                    <img src="img/01.png" class="product-items" alt="">
+                                                </div>
+                                                <span>Toys</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -89,7 +159,8 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#" class="forgotPwd" data-bs-target="#logout"
+                                        data-bs-toggle="modal">
                                         <span><img src="img/logout.svg"></span>
                                         Logout
                                     </a>
@@ -112,12 +183,12 @@
     <main>
         <section class="banner">
             <div class="social-wrp">
-            <div class="connect-blk">
-                <a href="#"><img src="img/facebook.svg" alt=""></a>
-                <a href="#"><img src="img/twitter.svg" alt=""></a>
-                <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                <div class="connect-blk">
+                    <a href="#"><img src="img/facebook.svg" alt=""></a>
+                    <a href="#"><img src="img/twitter.svg" alt=""></a>
+                    <a href="#"><img src="img/linkedin.svg" alt=""></a>
+                </div>
             </div>
-        </div>
             <div class="slider-arrow-nav">
                 <div class="container"></div>
             </div>
@@ -766,6 +837,27 @@
 
                         </form>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade logout-block" id="logout" tabindex="-1" aria-labelledby="forgotPasswdLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="forgotPasswdLabel"> </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="logout-wrap">
+                        <img src="img/modal-logout.svg" class="logout-modal-pic" alt="logout">
+                        <h4 class="title">Are you sure you want to Logout?</h4>
+                        <div class="btn-area">
+                            <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-save">Confirm</button>
+                        </div>
                     </div>
                 </div>
             </div>

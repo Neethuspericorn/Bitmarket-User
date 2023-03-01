@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.empty-cart-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 290px);
+  width: 100%; }
+  @media (max-width: 991px) {
+    .empty-cart-wrp {
+      height: calc(100vh - 180px); } }
+  .empty-cart-wrp .empty-cart-block {
+    max-width: 402px;
+    max-height: 500px; }
+    .empty-cart-wrp .empty-cart-block .empty-cart-pic {
+      max-width: 380px;
+      display: block;
+      margin: auto; }
+      @media (max-width: 1679px) {
+        .empty-cart-wrp .empty-cart-block .empty-cart-pic {
+          max-width: 300px; } }
+      @media (max-width: 1367px) {
+        .empty-cart-wrp .empty-cart-block .empty-cart-pic {
+          max-width: 250px; } }
+      @media (max-width: 1199px) {
+        .empty-cart-wrp .empty-cart-block .empty-cart-pic {
+          max-width: 180px; } }
+    .empty-cart-wrp .empty-cart-block .title {
+      margin-top: 21px;
+      text-align: center;
+      font: 600 31px "Poppins", sans-serif;
+      color: #3E2096; }
+      @media (max-width: 1679px) {
+        .empty-cart-wrp .empty-cart-block .title {
+          font-size: 26px; } }
+      @media (max-width: 1367px) {
+        .empty-cart-wrp .empty-cart-block .title {
+          font-size: 20px; } }
+      @media (max-width: 1199px) {
+        .empty-cart-wrp .empty-cart-block .title {
+          font-size: 18px; } }
+    .empty-cart-wrp .empty-cart-block .dec {
+      max-width: 459px;
+      text-align: center;
+      font: normal 13px "Poppins", sans-serif;
+      color: #897BB1;
+      margin-top: 16px; }
+
+/*# sourceMappingURL=cart-section.css.map */

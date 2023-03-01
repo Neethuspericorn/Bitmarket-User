@@ -1,0 +1,64 @@
+@import "partials/partials";
+
+.empty-cart-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 290px);
+    width: 100%;
+
+    @media ($sm-991) {
+        height: calc(100vh - 180px);
+    }
+
+    .empty-cart-block {
+        max-width: 402px;
+        max-height: 500px;
+
+        .empty-cart-pic {
+            max-width: 380px;
+            display: block;
+            margin: auto;
+
+            @media ($sm-1679) {
+                max-width: 300px;
+            }
+
+            @media ($sm-1367) {
+                max-width: 250px;
+            }
+
+            @media ($sm-1199) {
+                max-width: 180px;
+            }
+        }
+
+        .title {
+            margin-top: 21px;
+            text-align: center;
+            font: 600 31px $poppins;
+            color: #3E2096;
+
+            @media ($sm-1679) {
+                font-size: 26px;
+            }
+
+            @media ($sm-1367) {
+                font-size: 20px;
+            }
+
+            @media ($sm-1199) {
+                font-size: 18px;
+            }
+        }
+
+        .dec {
+            max-width: 459px;
+            text-align: center;
+            font: normal 13px $poppins;
+            color: #897BB1;
+            margin-top: 16px
+        }
+    }
+}
