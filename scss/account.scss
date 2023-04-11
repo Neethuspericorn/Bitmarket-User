@@ -104,6 +104,9 @@
 
                         .btn {
                             padding: 0;
+                            border: none;
+                            outline: none;
+                            box-shadow: none;
 
                             .edit {
                                 @media ($sm-991) {
@@ -125,6 +128,7 @@
                         margin: auto;
                         background: #E8E0FF;
                         border-radius: 100px;
+                        position: relative;
 
                         @media ($sm-1679) {
                             width: 140px;
@@ -149,6 +153,29 @@
                             @media ($sm-1367) {
                                 width: 100px;
                                 height: 100px;
+                            }
+                        }
+
+                        .uploding-pic {
+                            position: absolute;
+                            width: 45px;
+                            height: 45px;
+                            background: #7F57F1;
+                            border: 1px solid #AA9DF2;
+                            border-radius: 100px;
+                            right: 0;
+                            bottom: 0;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 999;
+
+                            .form-control {
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                opacity: 0;
                             }
                         }
                     }
@@ -311,6 +338,137 @@
                         }
                     }
 
+                    .add-new-address {
+
+                        .title {
+                            margin: 30px 0;
+                            text-align: left;
+                            font: 600 18px $poppins;
+                            letter-spacing: 0px;
+                            color: #120D26;
+                        }
+
+                        .form-input-wrap {
+
+                            // display: flex;
+                            // flex-wrap: wrap;
+                            .form-block {
+                                margin-bottom: 30px;
+                                position: relative;
+
+                                .form-label {
+                                    text-align: left;
+                                    font: 500 15px/23px $poppins;
+                                    color: #120D26;
+
+                                    @media ($sm-1281) {
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .form-control {
+                                    height: 63px;
+                                    background: #FFFFFF;
+                                    border: 1px solid #D3D3D3;
+                                    border-radius: 8px;
+
+                                    @media ($sm-1441) {
+                                        height: 54px;
+                                    }
+
+                                    @media ($sm-1367) {
+                                        height: 48px;
+                                    }
+
+                                    @media ($sm-1199) {
+                                        height: 44px;
+                                    }
+                                }
+
+                                .form-radio-block {
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .form-check-input:checked {
+                                        background-color: #7F57F1;
+                                        border-color: #7F57F1;
+                                    }
+
+                                    .form-check-input:focus {
+                                        box-shadow: none;
+                                    }
+                                }
+
+                                .val-msg {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 100%;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    padding-top: 8px;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    color: #FF4141;
+
+                                    img {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .action-block {
+                            display: flex;
+                            justify-content: flex-end;
+                            margin-bottom: 30px;
+
+                            @media (max-width: 520px) {
+                                flex-direction: column;
+                            }
+
+                            .btn {
+                                width: 205px;
+                                height: 50px;
+                                border-radius: 6px;
+                                text-align: left;
+                                font: 500 14px $poppins;
+                                letter-spacing: 0px;
+                                color: #2C00AA;
+                                text-align: center;
+
+                                @media ($sm-1199) {
+                                    width: 160px;
+                                    height: 44px;
+                                }
+
+                                @media ($sm-991) {
+                                    width: 140px;
+                                    height: 44px;
+                                }
+
+                                @media (max-width: 520px) {
+                                    width: 100%;
+                                }
+
+                                &.btn-primary {
+                                    background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+                                    color: #fff;
+
+                                }
+
+                                &.btn-secondary {
+                                    background: #E4DBFF;
+                                    margin-right: 15px;
+
+                                    @media (max-width: 520px) {
+                                        margin: 0;
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     .address-list {
                         .address-items {
                             background: #FBFAFF;
@@ -319,6 +477,18 @@
                             padding: 28px 39px 37px;
                             margin-bottom: 20px;
                             position: relative;
+
+                            &.checkout-block {
+                                display: flex;
+
+                                .form-block {
+                                    padding-right: 10px;
+
+                                    .form-radio-block {
+                                        margin-top: 6px;
+                                    }
+                                }
+                            }
 
                             @media ($sm-1679) {
                                 padding: 25px 35px 35px;
@@ -382,6 +552,14 @@
                                 top: 0px;
 
                                 .btn {
+                                    border: none;
+
+                                    &:active {
+                                        border: none !important;
+                                        outline: none !important;
+                                        box-shadow: none !important;
+                                    }
+
                                     span {
                                         width: 3px;
                                         height: 3px;
@@ -393,7 +571,29 @@
                                         outline: none;
                                     }
 
-                                    
+
+                                }
+
+                                .dropdown-menu {
+                                    transform: translate(-90px, 35px) !important;
+                                    min-width: 120px;
+                                    background: #F5F2FF;
+                                    border: 1px solid #FBFAFF;
+
+                                    li {
+                                        a {
+                                            font: 400 16px "Poppins", sans-serif;
+                                            color: #3F346C;
+
+                                            @media ($sm-1367) {
+                                                font-size: 14px;
+                                            }
+
+                                            &:hover {
+                                                background: #e2dbf7;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -401,5 +601,18 @@
                 }
             }
         }
+    }
+}
+
+.checkout-wrap{
+    .title {
+        margin: 30px 0 0;
+        text-align: left;
+        font: 600 18px "Poppins", sans-serif;
+        letter-spacing: 0px;
+        color: #120D26;
+    }
+    .man-add{
+        margin-top: 20px !important;
     }
 }

@@ -1,2 +1,666 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");.orders-section{padding-top:20px;padding-bottom:60px}.orders-section .order-items-wrp{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:18px}.orders-section .order-item{display:-ms-grid;display:grid;width:100%;padding:30px;border:1px solid #CBCBCB;border-radius:4px;gap:20px;row-gap:10px;-ms-grid-columns:150px (1fr)[7];grid-template-columns:150px repeat(7, 1fr)}@media screen and (max-width: 1200px){.orders-section .order-item{-ms-grid-columns:100px (1fr)[7];grid-template-columns:100px repeat(7, 1fr);gap:10px}}.orders-section .order-item .prodImgWrp{max-height:150px;-ms-grid-column:1;-ms-grid-column-span:1;grid-column:1/2;-ms-grid-row:1;-ms-grid-row-span:3;grid-row:1/4}@media screen and (max-width: 1200px){.orders-section .order-item .prodImgWrp{max-height:100px}}.orders-section .order-item .prodImgWrp .prodImg{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}.orders-section .order-item .prodDetWrp{-ms-grid-column:2;-ms-grid-column-span:3;grid-column:2/5;-ms-grid-row:1;-ms-grid-row-span:2;grid-row:1/3}@media screen and (max-width: 1200px){.orders-section .order-item .prodDetWrp{-ms-grid-column:2;-ms-grid-column-span:4;grid-column:2/6}}@media screen and (max-width: 700px){.orders-section .order-item .prodDetWrp{-ms-grid-column:2;-ms-grid-column-span:7;grid-column:2/9}}.orders-section .order-item .prodDetWrp .prodName{font-size:18px;font-weight:600}@media screen and (max-width: 1200px){.orders-section .order-item .prodDetWrp .prodName{font-size:14px}}@media screen and (max-width: 991px){.orders-section .order-item .prodDetWrp .prodName{font-size:12px}}.orders-section .order-item .prodDetWrp p{font-size:13px;margin-bottom:6px;line-height:1.54;letter-spacing:0.31px}@media screen and (max-width: 1200px){.orders-section .order-item .prodDetWrp p{font-size:12px}}@media screen and (max-width: 991px){.orders-section .order-item .prodDetWrp p{font-size:11px}}@media screen and (max-width: 768px){.orders-section .order-item .prodDetWrp p.brand,.orders-section .order-item .prodDetWrp p.size{display:none}}.orders-section .order-item .prodDelStatus{-ms-grid-column:5;-ms-grid-column-span:4;grid-column:5/9;-ms-grid-row:1;-ms-grid-row-span:1;grid-row:1/2;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}@media screen and (max-width: 1200px){.orders-section .order-item .prodDelStatus{-ms-grid-column:6;-ms-grid-column-span:3;grid-column:6/9}}@media screen and (max-width: 700px){.orders-section .order-item .prodDelStatus{-ms-grid-column:1;-ms-grid-column-span:8;grid-column:1/9;-ms-grid-row:3;-ms-grid-row-span:2;grid-row:3/5}}@media screen and (min-width: 701px){.orders-section .order-item .prodDelStatus{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}}@media screen and (min-width: 701px){.orders-section .order-item .prodDelStatus .detWrp{text-align:right}}@media screen and (max-width: 700px){.orders-section .order-item .prodDelStatus .detWrp .status{padding-left:110px}}.orders-section .order-item .prodDelStatus .statusTxt{font-size:14px;font-weight:500;color:#000000}@media screen and (max-width: 1200px){.orders-section .order-item .prodDelStatus .statusTxt{font-size:12px}}@media screen and (max-width: 991px){.orders-section .order-item .prodDelStatus .statusTxt{font-size:11px}}.orders-section .order-item .prodDelStatus .statusTxt.delivered{color:#489D00}.orders-section .order-item .prodDelStatus .updateTxt{font-size:13px;color:#000000;font-weight:300;margin-bottom:1rem}@media screen and (max-width: 1200px){.orders-section .order-item .prodDelStatus .updateTxt{font-size:11px}}@media screen and (max-width: 700px){.orders-section .order-item .prodDelStatus .updateTxt{display:none}}.orders-section .order-item .prodDelStatus .priceTxt{font-size:14px;margin-bottom:0;color:#000000;font-weight:500}@media screen and (max-width: 1200px){.orders-section .order-item .prodDelStatus .priceTxt{font-size:12px}}@media screen and (max-width: 991px){.orders-section .order-item .prodDelStatus .priceTxt{font-size:11px}}.orders-section .order-item .btnsWrp{-ms-grid-column:5;-ms-grid-column-span:4;grid-column:5/9;-ms-grid-row:2;-ms-grid-row-span:1;grid-row:2/3;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:8px}@media screen and (max-width: 1200px){.orders-section .order-item .btnsWrp{-ms-grid-column:1;-ms-grid-column-span:8;grid-column:1/9;-ms-grid-row:3;-ms-grid-row-span:1;grid-row:3/4;gap:5px}}@media screen and (min-width: 701px){.orders-section .order-item .btnsWrp{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}}@media screen and (max-width: 700px){.orders-section .order-item .btnsWrp{-ms-grid-row:5;-ms-grid-row-span:1;grid-row:5/6}}@media screen and (max-width: 992px){.orders-section .order-item .btnsWrp{-ms-flex-wrap:wrap;flex-wrap:wrap}}@media screen and (max-width: 375px){.orders-section .order-item .btnsWrp{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}.orders-section .order-item .btnsWrp .btn{-webkit-box-flex:0;-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:140px;padding-left:10px;padding-right:10px}@media screen and (max-width: 1200px){.orders-section .order-item .btnsWrp .btn{padding:10px;font-size:12px}}@media screen and (max-width: 700px){.orders-section .order-item .btnsWrp .btn{-webkit-box-flex:1;-ms-flex:1;flex:1;max-width:50%}}@media screen and (max-width: 375px){.orders-section .order-item .btnsWrp .btn{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.orders-section {
+  padding-top: 20px;
+  padding-bottom: 60px; }
+  .orders-section .order-items-wrp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px; }
+  .orders-section .order-item {
+    display: grid;
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #CBCBCB;
+    border-radius: 4px;
+    gap: 20px;
+    row-gap: 10px;
+    grid-template-columns: 150px repeat(7, 1fr); }
+    @media screen and (max-width: 1200px) {
+      .orders-section .order-item {
+        grid-template-columns: 100px repeat(7, 1fr);
+        gap: 10px; } }
+    .orders-section .order-item .prodImgWrp {
+      max-height: 150px;
+      grid-column: 1/2;
+      grid-row: 1/4; }
+      @media screen and (max-width: 1200px) {
+        .orders-section .order-item .prodImgWrp {
+          max-height: 100px; } }
+      .orders-section .order-item .prodImgWrp .prodImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .orders-section .order-item .prodDetWrp {
+      grid-column: 2/5;
+      grid-row: 1/3; }
+      @media screen and (max-width: 1200px) {
+        .orders-section .order-item .prodDetWrp {
+          grid-column: 2/6; } }
+      @media screen and (max-width: 700px) {
+        .orders-section .order-item .prodDetWrp {
+          grid-column: 2/9; } }
+      .orders-section .order-item .prodDetWrp .prodName {
+        font-size: 18px;
+        font-weight: 600; }
+        @media screen and (max-width: 1200px) {
+          .orders-section .order-item .prodDetWrp .prodName {
+            font-size: 14px; } }
+        @media screen and (max-width: 991px) {
+          .orders-section .order-item .prodDetWrp .prodName {
+            font-size: 12px; } }
+      .orders-section .order-item .prodDetWrp p {
+        font-size: 13px;
+        margin-bottom: 6px;
+        line-height: 1.54;
+        letter-spacing: 0.31px; }
+        @media screen and (max-width: 1200px) {
+          .orders-section .order-item .prodDetWrp p {
+            font-size: 12px; } }
+        @media screen and (max-width: 991px) {
+          .orders-section .order-item .prodDetWrp p {
+            font-size: 11px; } }
+        @media screen and (max-width: 768px) {
+          .orders-section .order-item .prodDetWrp p.brand, .orders-section .order-item .prodDetWrp p.size {
+            display: none; } }
+    .orders-section .order-item .prodDelStatus {
+      grid-column: 5/9;
+      grid-row: 1/2;
+      display: flex;
+      flex-wrap: wrap; }
+      @media screen and (max-width: 1200px) {
+        .orders-section .order-item .prodDelStatus {
+          grid-column: 6/9; } }
+      @media screen and (max-width: 700px) {
+        .orders-section .order-item .prodDelStatus {
+          grid-column: 1/9;
+          grid-row: 3/5; } }
+      @media screen and (min-width: 701px) {
+        .orders-section .order-item .prodDelStatus {
+          justify-content: flex-end; } }
+      @media screen and (min-width: 701px) {
+        .orders-section .order-item .prodDelStatus .detWrp {
+          text-align: right; } }
+      @media screen and (max-width: 700px) {
+        .orders-section .order-item .prodDelStatus .detWrp .status {
+          padding-left: 110px; } }
+      .orders-section .order-item .prodDelStatus .statusTxt {
+        font-size: 14px;
+        font-weight: 500;
+        color: #000000; }
+        @media screen and (max-width: 1200px) {
+          .orders-section .order-item .prodDelStatus .statusTxt {
+            font-size: 12px; } }
+        @media screen and (max-width: 991px) {
+          .orders-section .order-item .prodDelStatus .statusTxt {
+            font-size: 11px; } }
+        .orders-section .order-item .prodDelStatus .statusTxt.delivered {
+          color: #489D00; }
+      .orders-section .order-item .prodDelStatus .updateTxt {
+        font-size: 13px;
+        color: #000000;
+        font-weight: 300;
+        margin-bottom: 1rem; }
+        @media screen and (max-width: 1200px) {
+          .orders-section .order-item .prodDelStatus .updateTxt {
+            font-size: 11px; } }
+        @media screen and (max-width: 700px) {
+          .orders-section .order-item .prodDelStatus .updateTxt {
+            display: none; } }
+      .orders-section .order-item .prodDelStatus .priceTxt {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #000000;
+        font-weight: 500; }
+        @media screen and (max-width: 1200px) {
+          .orders-section .order-item .prodDelStatus .priceTxt {
+            font-size: 12px; } }
+        @media screen and (max-width: 991px) {
+          .orders-section .order-item .prodDelStatus .priceTxt {
+            font-size: 11px; } }
+    .orders-section .order-item .btnsWrp {
+      grid-column: 5/9;
+      grid-row: 2/3;
+      display: flex;
+      align-items: center;
+      gap: 8px; }
+      @media screen and (max-width: 1200px) {
+        .orders-section .order-item .btnsWrp {
+          grid-column: 1/9;
+          grid-row: 3/4;
+          gap: 5px; } }
+      @media screen and (min-width: 701px) {
+        .orders-section .order-item .btnsWrp {
+          justify-content: flex-end; } }
+      @media screen and (max-width: 700px) {
+        .orders-section .order-item .btnsWrp {
+          grid-row: 5/6; } }
+      @media screen and (max-width: 992px) {
+        .orders-section .order-item .btnsWrp {
+          flex-wrap: wrap; } }
+      @media screen and (max-width: 375px) {
+        .orders-section .order-item .btnsWrp {
+          justify-content: center; } }
+      .orders-section .order-item .btnsWrp .btn {
+        flex: 0 0 33.333333%;
+        max-width: 140px;
+        padding-left: 10px;
+        padding-right: 10px; }
+        @media screen and (max-width: 1200px) {
+          .orders-section .order-item .btnsWrp .btn {
+            padding: 10px;
+            font-size: 12px; } }
+        @media screen and (max-width: 700px) {
+          .orders-section .order-item .btnsWrp .btn {
+            flex: 1;
+            max-width: 50%; } }
+        @media screen and (max-width: 375px) {
+          .orders-section .order-item .btnsWrp .btn {
+            flex: 0 0 100%;
+            max-width: 100%; } }
+
+.cancel-modal .modal-dialog {
+  max-width: 760px; }
+  .cancel-modal .modal-dialog .modal-content {
+    background: #fff;
+    border-radius: 21px;
+    border: none; }
+    .cancel-modal .modal-dialog .modal-content .modal-header {
+      border: none;
+      padding: 50px;
+      position: relative;
+      padding-bottom: 20px; }
+      @media (max-width: 1199px) {
+        .cancel-modal .modal-dialog .modal-content .modal-header {
+          padding: 0 30px; } }
+      .cancel-modal .modal-dialog .modal-content .modal-header .btn-close {
+        width: 26px;
+        height: 26px;
+        background-color: #FFFFFF;
+        border: 1px solid #E3E3E3;
+        border-radius: 100px;
+        background-size: 11px;
+        position: absolute;
+        right: 30px;
+        top: 30px; }
+        @media (max-width: 1367px) {
+          .cancel-modal .modal-dialog .modal-content .modal-header .btn-close {
+            width: 20px;
+            height: 20px; } }
+        @media (max-width: 991px) {
+          .cancel-modal .modal-dialog .modal-content .modal-header .btn-close {
+            width: 16px;
+            height: 16px; } }
+    .cancel-modal .modal-dialog .modal-content .modal-body {
+      padding: 0 50px;
+      padding-bottom: 50px; }
+      @media (max-width: 1199px) {
+        .cancel-modal .modal-dialog .modal-content .modal-body {
+          padding: 0 30px;
+          padding-bottom: 30px; } }
+      @media (max-width: 767px) {
+        .cancel-modal .modal-dialog .modal-content .modal-body {
+          padding: 0 15px; } }
+      .cancel-modal .modal-dialog .modal-content .modal-body .modal-title {
+        text-align: left;
+        font: 500 18px "Poppins", sans-serif;
+        color: #120D26;
+        margin-top: 30px; }
+        @media (max-width: 1367px) {
+          .cancel-modal .modal-dialog .modal-content .modal-body .modal-title {
+            margin-top: 15px; } }
+      .cancel-modal .modal-dialog .modal-content .modal-body .imgIcons {
+        display: block;
+        margin: auto;
+        max-width: 100px; }
+        @media (max-width: 1023px) {
+          .cancel-modal .modal-dialog .modal-content .modal-body .imgIcons {
+            max-width: 70px; } }
+      .cancel-modal .modal-dialog .modal-content .modal-body .action-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 36px; }
+        @media (max-width: 1367px) {
+          .cancel-modal .modal-dialog .modal-content .modal-body .action-btn {
+            margin-top: 20px; } }
+        @media (max-width: 1199px) {
+          .cancel-modal .modal-dialog .modal-content .modal-body .action-btn {
+            margin-top: 15px; } }
+        @media (max-width: 767px) {
+          .cancel-modal .modal-dialog .modal-content .modal-body .action-btn {
+            flex-direction: column; } }
+        .cancel-modal .modal-dialog .modal-content .modal-body .action-btn .btn {
+          width: 232px;
+          height: 50px;
+          text-align: center;
+          padding: 0;
+          font: 500 14px "Poppins", sans-serif; }
+          @media (max-width: 1367px) {
+            .cancel-modal .modal-dialog .modal-content .modal-body .action-btn .btn {
+              width: 200px;
+              height: 44px; } }
+          @media (max-width: 1199px) {
+            .cancel-modal .modal-dialog .modal-content .modal-body .action-btn .btn {
+              width: 180px; } }
+          @media (max-width: 1199px) {
+            .cancel-modal .modal-dialog .modal-content .modal-body .action-btn .btn {
+              width: 140px; } }
+          @media (max-width: 767px) {
+            .cancel-modal .modal-dialog .modal-content .modal-body .action-btn .btn {
+              width: 100%; } }
+          .cancel-modal .modal-dialog .modal-content .modal-body .action-btn .btn.btn-primary {
+            background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+            color: #fff;
+            margin-left: 12px; }
+            @media (max-width: 767px) {
+              .cancel-modal .modal-dialog .modal-content .modal-body .action-btn .btn.btn-primary {
+                margin: 0;
+                margin-top: 15px; } }
+          .cancel-modal .modal-dialog .modal-content .modal-body .action-btn .btn.btn-secondary {
+            background: #E4DBFF;
+            color: #2C00AA; }
+      .cancel-modal .modal-dialog .modal-content .modal-body .not-txt {
+        margin-top: 56px;
+        padding: 35px 32px;
+        background: #FBFAFF;
+        border: 1px solid #F5F2FF;
+        border-radius: 6px; }
+        @media (max-width: 1367px) {
+          .cancel-modal .modal-dialog .modal-content .modal-body .not-txt {
+            padding: 25px;
+            margin-top: 35px; } }
+        @media (max-width: 1199px) {
+          .cancel-modal .modal-dialog .modal-content .modal-body .not-txt {
+            padding: 20px;
+            margin-top: 25px; } }
+        @media (max-width: 991px) {
+          .cancel-modal .modal-dialog .modal-content .modal-body .not-txt {
+            padding: 15px;
+            margin-top: 15px; } }
+        .cancel-modal .modal-dialog .modal-content .modal-body .not-txt .title {
+          text-align: left;
+          font: 500 14px "Poppins", sans-serif;
+          color: #342C4A;
+          margin-bottom: 13px; }
+        .cancel-modal .modal-dialog .modal-content .modal-body .not-txt .description-txt {
+          text-align: left;
+          font: 300 13px "Poppins", sans-serif;
+          color: #342C4A;
+          margin-bottom: 0; }
+
+.order-info-modal .modal-dialog {
+  max-width: 1300px; }
+  .order-info-modal .modal-dialog .modal-header {
+    min-height: 70px;
+    border: none; }
+    .order-info-modal .modal-dialog .modal-header .btn-close {
+      width: 26px;
+      height: 26px;
+      background-color: #FFFFFF;
+      border: 1px solid #E3E3E3;
+      border-radius: 100px;
+      background-size: 11px;
+      position: absolute;
+      right: 30px;
+      top: 20px; }
+      @media (max-width: 1367px) {
+        .order-info-modal .modal-dialog .modal-header .btn-close {
+          width: 20px;
+          height: 20px; } }
+      @media (max-width: 991px) {
+        .order-info-modal .modal-dialog .modal-header .btn-close {
+          width: 16px;
+          height: 16px; } }
+  .order-info-modal .modal-dialog .modal-body {
+    padding: 0 100px; }
+    @media (max-width: 1679px) {
+      .order-info-modal .modal-dialog .modal-body {
+        padding: 0 60px; } }
+    @media (max-width: 1367px) {
+      .order-info-modal .modal-dialog .modal-body {
+        padding: 0 40px; } }
+    @media (max-width: 991px) {
+      .order-info-modal .modal-dialog .modal-body {
+        padding: 0 15px; } }
+    .order-info-modal .modal-dialog .modal-body .orderInfo-header .title {
+      text-align: left;
+      font: 600 20px "Poppins", sans-serif;
+      color: #120D26;
+      margin-bottom: 33px; }
+      @media (max-width: 1367px) {
+        .order-info-modal .modal-dialog .modal-body .orderInfo-header .title {
+          margin-bottom: 20px;
+          font-size: 18px; } }
+      @media (max-width: 991px) {
+        .order-info-modal .modal-dialog .modal-body .orderInfo-header .title {
+          margin-bottom: 15px; } }
+    .order-info-modal .modal-dialog .modal-body .order-img-block {
+      width: 260px; }
+      @media (max-width: 1024px) {
+        .order-info-modal .modal-dialog .modal-body .order-img-block {
+          width: 200px; } }
+      @media (max-width: 991px) {
+        .order-info-modal .modal-dialog .modal-body .order-img-block {
+          width: 100%; } }
+      @media (max-width: 767px) {
+        .order-info-modal .modal-dialog .modal-body .order-img-block {
+          width: 200px;
+          display: block;
+          margin: auto; } }
+      .order-info-modal .modal-dialog .modal-body .order-img-block img {
+        max-width: 100%; }
+    @media (max-width: 991px) {
+      .order-info-modal .modal-dialog .modal-body .order-img-dtl {
+        margin-top: 15px; } }
+    .order-info-modal .modal-dialog .modal-body .order-img-dtl .txt-green {
+      color: #489D00; }
+    .order-info-modal .modal-dialog .modal-body .order-img-dtl .order-title {
+      text-align: left;
+      font: 600 17px "Poppins", sans-serif;
+      color: #292929;
+      margin-bottom: 24px; }
+      @media (max-width: 1367px) {
+        .order-info-modal .modal-dialog .modal-body .order-img-dtl .order-title {
+          margin-bottom: 15px; } }
+    .order-info-modal .modal-dialog .modal-body .order-img-dtl p {
+      text-align: left;
+      font: normal 14px "Poppins", sans-serif;
+      letter-spacing: 0.34px;
+      color: #292929;
+      margin-bottom: 24px; }
+      @media (max-width: 1367px) {
+        .order-info-modal .modal-dialog .modal-body .order-img-dtl p {
+          margin-bottom: 15px; } }
+    .order-info-modal .modal-dialog .modal-body .price-details {
+      padding: 40px 55px;
+      background: #FBFAFF;
+      border: 1px solid #F5F2FF;
+      border-radius: 6px; }
+      @media (max-width: 1367px) {
+        .order-info-modal .modal-dialog .modal-body .price-details {
+          padding: 30px; } }
+      @media (max-width: 991px) {
+        .order-info-modal .modal-dialog .modal-body .price-details {
+          margin-top: 15px;
+          padding: 15px; } }
+      .order-info-modal .modal-dialog .modal-body .price-details ul li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px; }
+        .order-info-modal .modal-dialog .modal-body .price-details ul li:last-child {
+          margin: 0; }
+        .order-info-modal .modal-dialog .modal-body .price-details ul li p {
+          text-align: left;
+          font: 300 14px "Poppins", sans-serif;
+          color: #000000;
+          margin: 0; }
+        .order-info-modal .modal-dialog .modal-body .price-details ul li span {
+          text-align: left;
+          font: 500 14px "Poppins", sans-serif;
+          color: #000000; }
+          .order-info-modal .modal-dialog .modal-body .price-details ul li span.txt-green {
+            color: #489D00; }
+        .order-info-modal .modal-dialog .modal-body .price-details ul li .amount-txt {
+          font-weight: 600; }
+    .order-info-modal .modal-dialog .modal-body .orderInfo-footer {
+      padding-bottom: 70px; }
+      @media (max-width: 1367px) {
+        .order-info-modal .modal-dialog .modal-body .orderInfo-footer {
+          padding-bottom: 40px; } }
+      @media (max-width: 1023px) {
+        .order-info-modal .modal-dialog .modal-body .orderInfo-footer {
+          padding-bottom: 25px; } }
+      .order-info-modal .modal-dialog .modal-body .orderInfo-footer .delivery-block {
+        margin-top: 33px; }
+        @media (max-width: 1367px) {
+          .order-info-modal .modal-dialog .modal-body .orderInfo-footer .delivery-block {
+            margin-top: 25px; } }
+        @media (max-width: 991px) {
+          .order-info-modal .modal-dialog .modal-body .orderInfo-footer .delivery-block {
+            margin-top: 15px; } }
+    .order-info-modal .modal-dialog .modal-body .delivery-block {
+      border: 1px solid #EFEFEF;
+      border-radius: 14px;
+      padding: 33px 54px; }
+      @media (max-width: 1367px) {
+        .order-info-modal .modal-dialog .modal-body .delivery-block {
+          padding: 25px 30px; } }
+      @media (max-width: 991px) {
+        .order-info-modal .modal-dialog .modal-body .delivery-block {
+          padding: 15px;
+          margin-top: 15px; } }
+      .order-info-modal .modal-dialog .modal-body .delivery-block .delivery-txt {
+        text-align: left;
+        font: 600 17px "Poppins", sans-serif;
+        letter-spacing: 0px;
+        color: #292929;
+        margin-bottom: 26px; }
+        @media (max-width: 1199px) {
+          .order-info-modal .modal-dialog .modal-body .delivery-block .delivery-txt {
+            margin-bottom: 15px; } }
+        .order-info-modal .modal-dialog .modal-body .delivery-block .delivery-txt .map {
+          margin-right: 13px; }
+      .order-info-modal .modal-dialog .modal-body .delivery-block span {
+        text-align: left;
+        font: 600 14px "Poppins", sans-serif;
+        color: #292929;
+        display: block;
+        margin-bottom: 10px; }
+      .order-info-modal .modal-dialog .modal-body .delivery-block p {
+        text-align: left;
+        font: normal 14px "Poppins", sans-serif;
+        color: #292929;
+        margin: 0; }
+      .order-info-modal .modal-dialog .modal-body .delivery-block .delivery-txt-block {
+        margin-top: 50px; }
+        @media (max-width: 1679px) {
+          .order-info-modal .modal-dialog .modal-body .delivery-block .delivery-txt-block {
+            margin-top: 30px; } }
+        .order-info-modal .modal-dialog .modal-body .delivery-block .delivery-txt-block p {
+          text-align: left;
+          font: 500 14px "Poppins", sans-serif;
+          color: #292929;
+          display: flex; }
+          .order-info-modal .modal-dialog .modal-body .delivery-block .delivery-txt-block p span {
+            text-align: left;
+            font: 600 14px "Poppins", sans-serif; }
+            .order-info-modal .modal-dialog .modal-body .delivery-block .delivery-txt-block p span.txt-green {
+              color: #489D00; }
+
+.return-modal .modal-dialog {
+  max-width: 753px; }
+  .return-modal .modal-dialog .modal-header {
+    border: none;
+    position: relative;
+    min-height: 80px; }
+    @media (max-width: 1367px) {
+      .return-modal .modal-dialog .modal-header {
+        min-height: 70px; } }
+    @media (max-width: 1199px) {
+      .return-modal .modal-dialog .modal-header {
+        padding: 0 30px;
+        padding-top: 30px; } }
+    .return-modal .modal-dialog .modal-header .btn-close {
+      width: 26px;
+      height: 26px;
+      background-color: #FFFFFF;
+      border: 1px solid #E3E3E3;
+      border-radius: 100px;
+      background-size: 11px;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      opacity: 1;
+      background-size: 9px; }
+      @media (max-width: 1367px) {
+        .return-modal .modal-dialog .modal-header .btn-close {
+          width: 20px;
+          height: 20px;
+          background-size: 6px; } }
+      @media (max-width: 991px) {
+        .return-modal .modal-dialog .modal-header .btn-close {
+          width: 16px;
+          height: 16px; } }
+  .return-modal .modal-dialog .modal-body {
+    padding: 0 100px;
+    padding-bottom: 88px; }
+    @media (max-width: 1679px) {
+      .return-modal .modal-dialog .modal-body {
+        padding: 0 60px;
+        padding-bottom: 40px; } }
+    @media (max-width: 1281px) {
+      .return-modal .modal-dialog .modal-body {
+        padding: 0 40px;
+        padding-bottom: 30px; } }
+    .return-modal .modal-dialog .modal-body .return-reason-header .title {
+      text-align: left;
+      font: 600 20px "Poppins", sans-serif;
+      color: #120D26;
+      margin-bottom: 45px; }
+      @media (max-width: 1679px) {
+        .return-modal .modal-dialog .modal-body .return-reason-header .title {
+          margin-bottom: 30px; } }
+      @media (max-width: 1367px) {
+        .return-modal .modal-dialog .modal-body .return-reason-header .title {
+          margin-bottom: 10px; } }
+    .return-modal .modal-dialog .modal-body .return-reason-body .input-block {
+      position: relative;
+      margin-bottom: 45px; }
+      @media (max-width: 1679px) {
+        .return-modal .modal-dialog .modal-body .return-reason-body .input-block {
+          margin-bottom: 30px; } }
+      .return-modal .modal-dialog .modal-body .return-reason-body .input-block .form-label {
+        text-align: left;
+        font: 500 16px "Poppins", sans-serif;
+        color: #120D26;
+        margin-bottom: 8px; }
+        @media (max-width: 1367px) {
+          .return-modal .modal-dialog .modal-body .return-reason-body .input-block .form-label {
+            font-size: 14px; } }
+      .return-modal .modal-dialog .modal-body .return-reason-body .input-block .form-select {
+        background-color: #FFFFFF;
+        border: 1px solid #B1B1B1;
+        border-radius: 8px;
+        height: 63px;
+        text-align: left;
+        font: 500 14px "Poppins", sans-serif;
+        color: #120D26; }
+        @media (max-width: 1679px) {
+          .return-modal .modal-dialog .modal-body .return-reason-body .input-block .form-select {
+            height: 50px; } }
+        @media (max-width: 1367px) {
+          .return-modal .modal-dialog .modal-body .return-reason-body .input-block .form-select {
+            height: 44px; } }
+      .return-modal .modal-dialog .modal-body .return-reason-body .input-block textarea.form-control {
+        background: #FFFFFF;
+        border: 1px solid #B1B1B1;
+        border-radius: 8px;
+        text-align: left;
+        font: 500 14px "Poppins", sans-serif;
+        color: #120D26; }
+      .return-modal .modal-dialog .modal-body .return-reason-body .input-block .val-msg {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        align-items: center;
+        padding-top: 8px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #FF4141; }
+        .return-modal .modal-dialog .modal-body .return-reason-body .input-block .val-msg img {
+          margin-right: 10px; }
+    .return-modal .modal-dialog .modal-body .return-reason-footer {
+      display: flex;
+      gap: 0 16px; }
+      @media (max-width: 767px) {
+        .return-modal .modal-dialog .modal-body .return-reason-footer {
+          flex-direction: column;
+          gap: 0; } }
+      .return-modal .modal-dialog .modal-body .return-reason-footer .btn {
+        margin-top: 15px;
+        text-align: center;
+        font: 500 14px "Poppins", sans-serif;
+        padding: 15px;
+        flex: 1 1 50%; }
+        @media (max-width: 1367px) {
+          .return-modal .modal-dialog .modal-body .return-reason-footer .btn {
+            padding: 10px 15px; } }
+        @media (max-width: 767px) {
+          .return-modal .modal-dialog .modal-body .return-reason-footer .btn {
+            flex: 1 1 100%;
+            margin-top: 15px; } }
+        .return-modal .modal-dialog .modal-body .return-reason-footer .btn.btn-secondary {
+          background: #E4DBFF; }
+        .return-modal .modal-dialog .modal-body .return-reason-footer .btn.btn-primary {
+          background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%); }
+          @media (max-width: 767px) {
+            .return-modal .modal-dialog .modal-body .return-reason-footer .btn.btn-primary {
+              margin-top: 15px; } }
+
+.return-submitted-modal .modal-dialog {
+  max-width: 600px; }
+  .return-submitted-modal .modal-dialog .modal-header {
+    min-height: 60px; }
+  .return-submitted-modal .modal-dialog .modal-title {
+    margin-top: 18px;
+    text-align: left;
+    font: 500 20px/30px Poppins;
+    color: #000000; }
+  .return-submitted-modal .modal-dialog .not-txt {
+    padding: 0 !important;
+    background-color: transparent !important;
+    border: none !important;
+    margin-top: 18px !important; }
+    .return-submitted-modal .modal-dialog .not-txt .title {
+      text-align: center !important;
+      font: 500 20px "Poppins", sans-serif !important;
+      color: #000000 !important; }
+      @media (max-width: 1367px) {
+        .return-submitted-modal .modal-dialog .not-txt .title {
+          font-size: 18px !important; } }
+    .return-submitted-modal .modal-dialog .not-txt .description-txt {
+      text-align: center !important;
+      font: normal 14px "Poppins", sans-serif !important;
+      color: #747474 !important;
+      margin-top: 18px !important;
+      max-width: 416px;
+      display: block;
+      margin: auto !important; }
+  .return-submitted-modal .modal-dialog .action-btn {
+    margin-top: 30px !important; }
+    @media (max-width: 767px) {
+      .return-submitted-modal .modal-dialog .action-btn {
+        flex-direction: unset !important;
+        margin: 30px 0 !important; } }
+    .return-submitted-modal .modal-dialog .action-btn .btn {
+      width: 174px !important;
+      height: 50px !important;
+      background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%) !important;
+      border-radius: 6px !important;
+      text-align: center !important;
+      font: 500 14px "Poppins", sans-serif !important;
+      color: #FFFFFF !important;
+      margin: 0 !important; }
+      @media (max-width: 1367px) {
+        .return-submitted-modal .modal-dialog .action-btn .btn {
+          height: 44px !important; } }
+
 /*# sourceMappingURL=my-orders.css.map */

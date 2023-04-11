@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Beekarte</title>
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/common.css">
+      <link rel="stylesheet" href="css/cart.css">
+      <link rel="stylesheet" href="css/cart-items.css">
+      <link rel="stylesheet" href="css/cart-section.css">
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container container-custom">
+               <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+               <div class="cart ms-lg-5 ms-sm-3 ms-3 updates order-lg-3">
+                  <a href="#"><img src="img/cart.svg" alt="cart"></a>
+               </div>
+               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                  aria-label="Toggle navigation">
+               <span></span>
+               <span></span>
+               <span></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <form class="d-flex search-wrp" role="search">
+                     <button class="btn btn-outline-success" type="submit"><img src="img/search.svg"></button>
+                     <input class="form-control me-2" type="search"
+                        placeholder="Search for products, brands and more" aria-label="Search">
+                  </form>
+                  <ul class="navbar-nav ms-auto">
+                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                        Shop by Category
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                        My Profile
+                        </a>
+                        <ul class="dropdown-menu">
+                           <li>
+                              <a class="dropdown-item" href="account.html">
+                              <span>
+                              <img src="img/user.svg">
+                              </span>Account
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <span>
+                              <img src="img/orders.svg">
+                              </span>My Orders</a>
+                           </li>
+                           <li><a class="dropdown-item" href="favorites.html">
+                              <span><img src="img/favs.svg"></span>Favorites</a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="notifications.html">
+                              <span><img src="img/notifications.svg"></span>Notifications
+                              </a>
+                           </li>
+                           <li>
+                              <a class="dropdown-item" href="#">
+                              <span><img src="img/logout.svg"></span>
+                              Logout
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="modal"
+                           data-bs-target="#loginSignup">
+                        Login/Signup
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section class="content-area-wrp">
+            <div class="container container-custom">
+               <div class="col-lg-12">
+                  <h2 class="sub-title"><span><img src="img/cart.svg" alt=""></span> Buy Now</h2>
+               </div>
+               <div class="row cart-main">
+                  <div class="col cart-items-cover">
+                     <!-- item row -->
+                     <div class="cart-item">
+                        <div class="inner-grid-01">
+                           <div class="product">
+                              <img src="img/prodThumb1.png" alt="product" class="product-img">
+                           </div>
+                           <div class="item-col description">
+                              <div class="otr">
+                                 <label for="" class="label">Description</label>
+                                 <p>Beekarte</p>
+                                 <strong class="strong">Swag Denim Jacket</strong>
+                                 <div class="availability">
+                                    <div class="stock-txt  in-stock"><span class="bullet"></span> In Stock</div>
+                                    <!-- <div class="stock-txt outof-stock"><span class="bullet"></span> Out Stock</div> -->
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="item-col size-col">
+                              <label for="" class="label">Size</label>
+                              <div class="size">M</div>
+                           </div>
+                        </div>
+                        <div class="inner-grid-02">
+                           <div class="item-col qnty-col label-align">
+                              <div class="qnty-btn-grp">
+                                 <label for="" class="label">Quantity</label>
+                                 <button class="control-btn add"><img src="img/plus.svg" alt=""></button>
+                                 <button class="control-btn">1</button>
+                                 <button class="control-btn minus"><img src="img/minus.svg" alt=""></button>
+                              </div>
+                           </div>
+                           <div class="item-col price-col label-align">
+                              <div class="price">
+                                 <label for="" class="label">Price</label>
+                                 <span><img src="img/ethereum-sm.svg" alt=""></span> 
+                                 0.15 ETH
+                              </div>
+                           </div>
+                           <div class="item-col delete-col">
+                              <button class="delete-btn">
+                              <img src="img/delete.svg" alt="">
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col price-details ">
+                     <div class="price-box">
+                        <div class="price-list">
+                           <div class="price-title">Price Details</div>
+                           <div class="items-row">
+                              <div class="items">Price (3 Items)</div>
+                              <div class="pricergt">0.34 ETH</div>
+                           </div>
+                           <div class="items-row">
+                              <div class="items">Commission fee</div>
+                              <div class="pricergt">0.4 ETH</div>
+                           </div>
+                           <div class="items-row">
+                              <div class="items">Discount</div>
+                              <div class="pricergt green-txt">0.4 ETH</div>
+                           </div>
+                           <div class="items-row">
+                              <div class="items">Delivery Charges</div>
+                              <div class="pricergt green-txt">Free</div>
+                           </div>
+                           <div class="items-row">
+                              <div class="items">Total Amount</div>
+                              <div class="pricergt total">0.34 ETH</div>
+                           </div>
+                        </div>
+                        <div class="ftr">
+                           <div class="ftr-content">
+                              You will save 0.3 ETH on this order
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12">
+                     <div class="payment-scnt">
+                        <div class="lft-info">
+                           <p><img class="map-pin" src="img/map-pin.svg" alt=""><strong>Delivery to</strong> 
+                              <a class="link" href="">fort lauderdale, Miami</a> 
+                              <strong><a href="" class="change">Change</a></strong>
+                           </p>
+                           <p class="green-txt">Eligible for free delivery</p>
+                        </div>
+                        <div class="btn-cvr">
+                           <a href="" class="payment-btn">
+                           Proceed to Payment <span><img src="img/btn-thunder.svg" alt=""></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <script src="js/bootstrap.bundle.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>

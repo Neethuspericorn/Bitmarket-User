@@ -673,7 +673,8 @@
                     </div>
                     <div class="f-qk-links">
                         <div class="link-m">
-                            <a href="#" class="qk-link btn--6">Contact us</a>
+                            <a href="#" class="qk-link btn--6" data-bs-toggle="modal" data-bs-target="#contact">Contact
+                                us</a>
                         </div>
                         <div class="f-soc-block">
                             <a class="f-soc" href="#"><img src="img/footer-facebook.svg" alt="facebook"></a>
@@ -689,7 +690,6 @@
             <p>Copyright © 2023 Beekarte. All rights reserved</p>
         </div>
     </footer>
-
     <!-- Modal -->
     <div class="modal fade loginSignup" id="loginSignup" tabindex="-1" aria-labelledby="loginSignupLabel"
         aria-hidden="true">
@@ -806,6 +806,7 @@
         </div>
     </div>
 
+
     <!-- Modal -->
     <div class="modal fade loginSignup" id="forgotPasswd" tabindex="-1" aria-labelledby="forgotPasswdLabel"
         aria-hidden="true">
@@ -863,7 +864,54 @@
             </div>
         </div>
     </div>
-
+    <div class="modal fade  order-info-modal contact-modal" id="contact" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title text-center">Order Info</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body custom-scroll">
+                    <div class="contact-header">
+                        <h5 class="title">Contact Us</h5>
+                        <p>Phasellus dignissim, tellus in pellentesque mollis, mauris orci dignissimnisl id gravida nunc
+                            enim quis nibh.</p>
+                    </div>
+                    <div class="contact-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/contact-us.svg" class="contact-us-img" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-block">
+                                    <div class="input-block">
+                                        <label class="form-label">Contact Number</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <img src="img/phone-modal.svg" alt="">
+                                            </span>
+                                            <!-- <input type="text" class="form-control" placeholder="Username"> -->
+                                            <p class="form-control">+01 33434 4444</p>
+                                        </div>
+                                    </div>
+                                    <div class="input-block">
+                                        <label class="form-label">Email us at</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <img src="img/mail-modal.svg" alt="">
+                                            </span>
+                                            <p class="form-control">+01 33434 4444</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/jquery.js"></script>

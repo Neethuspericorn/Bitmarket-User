@@ -1,42 +1,42 @@
 $(document).ready(function () {
     $('.banner-slider').slick({
-      autoplay: false,
-      prevArrow: '<div class="slick-nav prev-arrow"></div>',
-      nextArrow: '<div class="slick-nav next-arrow"></div>',
-      dots: true,
-      autoplaySpeed:3500,
-      appendArrows: ".slider-arrow-nav .container",
-      appendDots: '.slider-arrow-nav .container'
+        autoplay: false,
+        prevArrow: '<div class="slick-nav prev-arrow"></div>',
+        nextArrow: '<div class="slick-nav next-arrow"></div>',
+        dots: true,
+        autoplaySpeed: 3500,
+        appendArrows: ".slider-arrow-nav .container",
+        appendDots: '.slider-arrow-nav .container'
     });
-    $('.banner-slider').on('init', function(e, slick) {
-      var $firstAnimatingElements = $('div.slick-slide:first-child').find('[data-animation]');
-      doAnimations($firstAnimatingElements);    
-  });
-  $('.banner-slider').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
-            var $animatingElements = $('div.slick-slide[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-            doAnimations($animatingElements);    
-  });
+    $('.banner-slider').on('init', function (e, slick) {
+        var $firstAnimatingElements = $('div.slick-slide:first-child').find('[data-animation]');
+        doAnimations($firstAnimatingElements);
+    });
+    $('.banner-slider').on('beforeChange', function (e, slick, currentSlide, nextSlide) {
+        var $animatingElements = $('div.slick-slide[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+        doAnimations($animatingElements);
+    });
     function doAnimations(elements) {
-      var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-      elements.each(function() {
-          var $this = $(this);
-          var $animationDelay = $this.data('delay');
-          var $animationDuration = $this.data('duration');
-          var $animationType = 'animated ' + $this.data('animation');
-          $this.css({
-              'animation-delay': $animationDelay,
-              '-webkit-animation-delay': $animationDelay,
-              'animation-duration': $animationDuration,
-              '-webkit-animation-duration': $animationDuration,
-          });
-          $this.addClass($animationType).one(animationEndEvents, function() {
-              $this.removeClass($animationType);
-          });
-      });
-  }
-  });
+        var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        elements.each(function () {
+            var $this = $(this);
+            var $animationDelay = $this.data('delay');
+            var $animationDuration = $this.data('duration');
+            var $animationType = 'animated ' + $this.data('animation');
+            $this.css({
+                'animation-delay': $animationDelay,
+                '-webkit-animation-delay': $animationDelay,
+                'animation-duration': $animationDuration,
+                '-webkit-animation-duration': $animationDuration,
+            });
+            $this.addClass($animationType).one(animationEndEvents, function () {
+                $this.removeClass($animationType);
+            });
+        });
+    }
+});
 
-  $(document).on('ready', function () {
+$(document).on('ready', function () {
     $(".favorite-brands").slick({
         dots: true,
         infinite: true,
@@ -74,3 +74,48 @@ $(document).ready(function () {
 
     });
 });
+
+
+
+$(document).on('ready', function () {
+    $(".product-brands-slider").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1281,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})

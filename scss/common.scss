@@ -372,3 +372,18 @@ body {
         }
     }
 }
+.custom-scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    background: #2C00AA;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #bca5fc;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: #bca5fc;
+}

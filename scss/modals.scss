@@ -1,39 +1,830 @@
 @import "partials/partials";
 
 // bs modal customized
-.modal{
-    .modal-content{
+.modal {
+    .modal-content {
         border-radius: 27px;
         border: none;
     }
+
     .modal-header,
     .modal-body,
-    .modal-footer{
+    .modal-footer {
         padding-left: 60px;
         padding-right: 60px;
     }
-    .modal-header{
+
+    .modal-header {
         border-bottom: none;
         position: relative;
-        .btn-close{
-           font-size: 10px;
-           color: #9A9A9A;
-           width: 32px;
-           height: 32px;
-           padding: 0;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           border: 1px solid #E3E3E3;
-           border-radius: 32px;
-           position: absolute;
-           top: 18px;
-           right: 18px;
+
+        .btn-close {
+            font-size: 10px;
+            color: #9A9A9A;
+            width: 32px;
+            height: 32px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #E3E3E3;
+            border-radius: 32px;
+            position: absolute;
+            top: 18px;
+            right: 18px;
         }
     }
 }
 
-.modal-backdrop{
+.modal-backdrop {
     background-color: #0D0031;
     opacity: 0.3;
+}
+
+.cancel-modal {
+    .modal-dialog {
+        max-width: 760px;
+        background: #fff;
+        border-radius: 21px;
+    }
+}
+
+.proceed-to-payment-modal {
+
+    .modal-dialog {
+        max-width: 600px;
+
+        .modal-content {
+            padding: 0 30px;
+            position: relative;
+
+            .modal-header {
+                padding: 0;
+                padding-top: 55px;
+                padding-bottom: 22px;
+                border: none;
+                border-bottom: 1px solid #DDDDDD;
+                position: unset;
+
+                @media ($sm-1367) {
+                    padding-top: 40px;
+                }
+
+                .modal-title {
+                    text-align: left;
+                    font: 600 19px $poppins;
+                    color: #000000;
+
+                    span {
+                        font: bold 19px $poppins;
+                        color: #7F57F1;
+                    }
+                }
+
+                .btn-close {
+                    width: 26px;
+                    height: 26px;
+                    background-color: #FFFFFF;
+                    border: 1px solid #E3E3E3;
+                    border-radius: 100px;
+                    background-size: 11px;
+                    position: absolute;
+                    right: 30px;
+                    top: 20px;
+
+                    @media ($sm-1367) {
+                        width: 20px;
+                        height: 20px;
+                        background-size: 8px;
+                    }
+
+                    @media ($sm-991) {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+            }
+
+            .modal-body {
+                padding: 0;
+                padding-top: 38px;
+                padding-bottom: 56px;
+                max-width: 397px;
+                margin: auto;
+
+                @media ($sm-1367) {
+                    padding-top: 30px;
+                    padding-bottom: 38px;
+                    padding-right: 20px;
+                }
+
+                @media (max-width: 420px) {
+                    max-width: 100%;
+                }
+
+                .payment-proceed-block {
+                    .form-block {
+                        .form-label {
+                            text-align: left;
+                            font: 500 15px $poppins;
+                            color: #000000;
+                            margin-bottom: 6px;
+                        }
+
+                        .dropdown {
+                            .btn {
+                                width: 100%;
+                                height: 63px;
+                                background: #FFFFFF;
+                                border: 1px solid #D3CFDE;
+                                border-radius: 8px;
+                                text-align: left;
+                                font: 500 16px $poppins;
+                                color: #000000;
+                                text-transform: uppercase;
+                                display: flex;
+                                align-items: center;
+
+                                @media ($sm-1679) {
+                                    height: 50px;
+                                }
+
+                                @media ($sm-1367) {
+                                    font-size: 14px;
+                                }
+
+                                .select-img {
+                                    width: 28px;
+                                    height: 28px;
+                                    background: #FFF3E2;
+                                    padding: 5px;
+                                    border-radius: 100px;
+                                    margin-right: 10px;
+
+                                    @media ($sm-1367) {
+                                        width: 24px;
+                                        height: 24px;
+                                    }
+                                }
+
+                                &.dropdown-toggle {
+                                    position: relative;
+
+                                    &::after {
+                                        background: url('../img/down.svg') no-repeat;
+                                        border: none;
+                                        width: 12px;
+                                        height: 7px;
+                                        position: absolute;
+                                        right: 30px;
+                                    }
+                                }
+                            }
+
+                            .dropdown-menu {
+                                width: 100%;
+
+                                .dropdown-item {
+                                    text-align: left;
+                                    font: 500 16px $poppins;
+                                    color: #000000;
+                                    text-transform: uppercase;
+
+                                    @media ($sm-1367) {
+                                        font-size: 14px;
+                                    }
+
+                                    .select-img {
+                                        width: 28px;
+                                        height: 28px;
+                                        background: #FFF3E2;
+                                        padding: 5px;
+                                        border-radius: 100px;
+                                        margin-right: 10px;
+
+                                        @media ($sm-1367) {
+                                            width: 24px;
+                                            height: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .payment-proceed-txt {
+                        .pay-block {
+                            margin-top: 18px;
+                            text-align: left;
+                            font: normal 14px $poppins;
+                            color: #412789;
+
+                            span {
+                                text-decoration: underline;
+                                font-weight: 500;
+                            }
+                        }
+
+                        p {
+                            width: 327px;
+                            text-align: left;
+                            font: normal 14px $poppins;
+                            color: #525252;
+                            margin-top: 47px;
+
+                            @media ($sm-1679) {
+                                margin-top: 30px;
+                            }
+
+                            @media (max-width: 420px) {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .action-block {
+                        .proceed-block-btn {
+                            .btn-primary {
+                                width: 100%;
+                                margin-top: 21px;
+                                margin-bottom: 16px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                        }
+
+                        .other-action {
+                            .btn {
+                                background: #EFEAFC;
+                                border-radius: 6px;
+                                width: 185px;
+                                height: 63px;
+                                text-align: center;
+                                font: 500 16px $poppins;
+                                color: #7F57F1;
+
+                                &:first-child {
+                                    margin-right: 17px;
+
+                                    @media (max-width: 420px) {
+                                        margin: 0;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+
+                                @media ($sm-1679) {
+                                    height: 50px;
+                                }
+
+                                @media ($sm-1367) {
+                                    font-size: 14px;
+                                    width: 175px;
+                                }
+
+                                @media (max-width: 420px) {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .modal-footer {
+                padding-top: 0;
+                padding-bottom: 63px;
+                border: none;
+                display: block;
+                margin: auto;
+
+                @media ($sm-1367) {
+                    padding-bottom: 38px;
+                }
+
+                .poweredBy {
+                    text-align: center;
+                    font: 500 15px $poppins;
+                    color: #716890;
+
+                    @media ($sm-1281) {
+                        font-size: 14px;
+                    }
+
+                    span {
+                        font: 600 15px $poppins;
+
+                        @media ($sm-1281) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.amount-to-pay-modal {
+    .modal-dialog {
+        max-width: 760px;
+
+        .modal-content {
+            padding: 0 30px !important;
+            position: relative;
+        }
+
+        .modal-header {
+            position: unset;
+            padding-top: 55px;
+            padding-bottom: 22px;
+            border: none;
+            border-bottom: 1px solid #DDDDDD;
+
+            @media ($sm-1679) {
+                padding-top: 40px;
+            }
+
+            @media (max-width: 480px) {
+                padding: 0 !important;
+                padding-top: 40px !important;
+            }
+
+            .modal-title {
+                text-align: left;
+                font: 600 19px $poppins;
+                color: #000000;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                @media ($sm-1367) {
+                    font-size: 16px;
+                }
+
+                span {
+                    font: bold 19px $poppins;
+                    color: #7F57F1;
+
+                    @media ($sm-1367) {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .btn-close {
+                width: 26px;
+                height: 26px;
+                background-color: #FFFFFF;
+                border: 1px solid #E3E3E3;
+                border-radius: 100px;
+                background-size: 11px;
+                position: absolute;
+                right: 30px;
+                top: 20px;
+
+                @media ($sm-1367) {
+                    width: 20px;
+                    height: 20px;
+                    background-size: 8px;
+                }
+
+                @media ($sm-991) {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        .modal-body {
+            padding: 15px 40px 0 !important;
+
+            @media ($sm-1367) {
+                padding: 15px 30px 0 !important;
+            }
+
+            @media ($sm-1281) {
+                padding: 15px 10px 0 !important;
+            }
+
+
+
+            .payment-proceed-block {
+                .order-txt {
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media (max-width: 480px) {
+                        flex-direction: column;
+                    }
+
+                    p {
+                        text-align: left;
+                        font: normal 14px $poppins;
+                        color: #000000;
+                        margin: 0;
+
+                        span {
+                            text-decoration: underline;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .payment-proceed-txt {
+                .pay-block {
+                    text-align: center;
+                    font: 500 18px $poppins;
+                    color: #000000;
+                    margin-bottom: 20px;
+                    margin-top: 50px;
+
+                    @media ($sm-1679) {
+                        margin-top: 35px;
+                    }
+
+                    @media ($sm-1367) {
+                        margin-top: 25px;
+                        font-size: 16px;
+                    }
+                }
+
+                .address-list {
+                    text-align: center;
+
+                    .user-block {
+                        margin-bottom: 14px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        @media ($sm-1367) {
+                            margin-bottom: 5px;
+                        }
+
+                        .user-img-block {
+                            width: 28px;
+                            height: 28px;
+                            background: #FFF3E2;
+                            padding: 5px;
+                            border-radius: 100px;
+                        }
+
+                        span {
+                            text-align: left;
+                            font: bold 14px $poppins;
+                            color: #362D4E;
+                            margin: 0 10px;
+                        }
+
+                        // .copy-img-block {}
+                    }
+
+                    .time-section {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        @media (max-width: 480px) {
+                            flex-direction: column;
+                        }
+
+                        span {
+                            text-align: left;
+                            font: 300 14px $poppins;
+                            color: #000000;
+                            margin-right: 10px;
+                        }
+
+                        .time-txt {
+                            text-align: left;
+                            font: 500 14px $poppins;
+                            color: #7F57F1;
+
+                            .stopwatch-img-block {
+                                width: 12px;
+                                height: 15px;
+                                margin-right: 5px;
+                            }
+
+                            .btn {
+                                padding: 0;
+                                border: none;
+                                margin-left: 9px;
+
+                                &:active {
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+            }
+
+            .link-block {
+                margin-top: 38px;
+                margin-bottom: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media ($sm-1679) {
+                    margin-top: 25px;
+                }
+
+                @media ($sm-1367) {
+                    margin-top: 20px;
+                }
+
+                .link {
+                    text-align: left;
+                    font: normal 14px $poppins;
+                    letter-spacing: 0px;
+                    color: #7F57F1;
+                    margin-right: 10px;
+                    width: 320px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .copy-img-block {}
+            }
+
+            .qrcode-block {
+                .qrcode-block-img {
+                    background: #FAF8FF;
+                    border-radius: 21px;
+                    padding: 36px;
+                    margin-bottom: 22px;
+
+                    @media ($sm-1679) {
+                        padding: 25px;
+                    }
+
+                    @media ($sm-1679) {
+                        padding: 15px;
+                    }
+
+                    .qrcode-img {
+                        display: block;
+                        margin: auto;
+                        width: 147px;
+                        height: 147px;
+
+                        @media ($sm-1679) {
+                            width: 110px;
+                            height: 110px;
+                        }
+
+                        @media ($sm-1679) {
+                            width: 90px;
+                            height: 90px;
+                        }
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    text-align: left;
+                    font: normal 13px $poppins;
+                    color: #000000;
+                    margin-bottom: 18px;
+
+                    @media ($sm-1679) {
+                        margin-bottom: 10px;
+                    }
+
+                    b {
+                        font-weight: 600;
+                    }
+
+                    span {
+                        text-align: left;
+                        text-decoration: underline;
+                        font: 600 13px $poppins;
+                        color: #7F57F1;
+                    }
+                }
+
+                .nowpayments-txt {
+                    margin-top: 22px;
+                    padding: 20px 30px;
+                    display: block;
+                    text-align: left;
+                    background: #FAF8FF;
+                    border-radius: 8px;
+                    font: 300 13px $poppins;
+                    letter-spacing: 0.18px;
+                    color: #696180;
+                    margin-bottom: 46px;
+
+                    @media ($sm-1679) {
+                        margin-bottom: 30px;
+                    }
+
+                    @media ($sm-1199) {
+                        padding: 20px;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.payment-successful-modal {
+    .modal-dialog {
+        max-width: 760px;
+    }
+
+    .modal-content {
+        padding: 0 80px !important;
+
+        @media ($sm-1441) {
+            padding: 0 50px !important;
+        }
+
+        @media ($sm-1281) {
+            padding: 0 30px !important;
+        }
+    }
+
+    .modal-header {
+        border: none !important;
+
+        @media ($sm-1679) {
+            padding-top: 25px !important;
+        }
+
+    }
+
+    .modal-body {
+        max-width: 100% !important;
+        padding: 0 !important;
+        width: 100%;
+        padding-right: 20px !important;
+
+        .payment-successful-block {
+            .payment-successful-txt {
+                .success-img {
+                    width: 122px;
+                    display: block;
+                    height: 122px;
+                    margin: auto;
+                    margin-bottom: 26px;
+
+                    @media ($sm-1367) {
+                        width: 110px;
+                        height: 110px;
+                    }
+
+                    @media ($sm-1199) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+
+                h5 {
+                    text-align: center;
+                    font: 600 20px $poppins;
+                    color: #000000;
+                    margin-bottom: 19px;
+
+                    @media ($sm-1679) {
+                        margin-bottom: 15px;
+                    }
+
+                    @media ($sm-1367) {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    font: normal 16px $poppins;
+                    color: #626262;
+                    width: 328px;
+                    display: block;
+                    margin: auto;
+                    margin-bottom: 49px;
+
+                    @media ($sm-1679) {
+                        margin-bottom: 35px;
+                    }
+
+                    @media ($sm-1367) {
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                    }
+
+                    @media (max-width: 480px) {
+                        width: 100%;
+                    }
+                }
+
+                .transaction-txt {
+                    text-align: center;
+                    font: 500 18px $poppins;
+                    color: #000000;
+                    display: flex;
+                    margin: auto;
+                    justify-content: center;
+
+                    @media ($sm-1367) {
+                        font-size: 14px;
+                    }
+
+                    span {
+                        text-align: center;
+                        font: 500 18px $poppins;
+                        color: #7F57F1;
+
+                        @media ($sm-1367) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .table {
+                margin-top: 50px;
+                margin-bottom: 38px;
+
+                @media ($sm-1679) {
+                    margin: 35px 0;
+                }
+
+                tr {
+                    th {
+                        text-align: left;
+                        font: 500 18px $poppins;
+                        color: #868686;
+                        padding: 5px;
+
+                        @media ($sm-1367) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    td {
+                        text-align: left;
+                        font: 500 18px $poppins;
+                        color: #000000;
+                        padding: 5px;
+
+                        @media ($sm-1367) {
+                            font-size: 14px;
+                        }
+
+                        .user-img {
+                            width: 23px;
+                            height: 23px;
+                            background: #FFF3E2;
+                            padding: 5px;
+                            border-radius: 100px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .btn.btn-primary {
+                width: 302px;
+                height: 50px;
+                background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+                border-radius: 6px;
+                display: block;
+                margin: auto;
+                text-align: center;
+                font: 500 14px $poppins;
+                color: #FFFFFF;
+                margin-bottom: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media ($sm-1679) {
+                    margin-bottom: 50px;
+                }
+
+                @media ($sm-1367) {
+                    margin-bottom: 30px;
+                    height: 40px;
+                }
+
+                @media (max-width: 480px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

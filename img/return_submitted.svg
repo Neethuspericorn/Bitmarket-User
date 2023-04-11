@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="122" viewBox="0 0 122 122">
+  <g id="Group_57697" data-name="Group 57697" transform="translate(-17.41 -17.41)">
+    <circle id="Ellipse_754" data-name="Ellipse 754" cx="53" cy="53" r="53" transform="translate(25.41 25.41)" fill="#f0ebff"/>
+    <g id="Group_58406" data-name="Group 58406">
+      <circle id="Ellipse_760" data-name="Ellipse 760" cx="61" cy="61" r="61" transform="translate(17.41 17.41)" fill="#f0ebff" opacity="0.374"/>
+      <circle id="Ellipse_759" data-name="Ellipse 759" cx="53" cy="53" r="53" transform="translate(25.41 25.41)" fill="#f0ebff"/>
+    </g>
+    <g id="Group_58398" data-name="Group 58398">
+      <circle id="Ellipse_753" data-name="Ellipse 753" cx="42.5" cy="42.5" r="42.5" transform="translate(35.41 35.41)" fill="#7f57f1"/>
+      <path id="Product_Return" d="M41.282,21.641A19.641,19.641,0,0,1,2,21.641a1.228,1.228,0,0,1,2.455,0A17.186,17.186,0,1,0,21.641,4.455a17.008,17.008,0,0,0-12,4.91h4.633a1.228,1.228,0,1,1,0,2.455H6.91a1.227,1.227,0,0,1-1.228-1.228V3.228a1.228,1.228,0,1,1,2.455,0V7.415A19.435,19.435,0,0,1,21.641,2,19.664,19.664,0,0,1,41.282,21.641Zm-8.593-4.91V27.779a1.229,1.229,0,0,1-.8,1.15l-9.821,3.683a1.237,1.237,0,0,1-.863,0l-9.821-3.683a1.229,1.229,0,0,1-.8-1.15V16.731a1.229,1.229,0,0,1,.8-1.15L21.21,11.9a1.242,1.242,0,0,1,.863,0l9.821,3.683A1.229,1.229,0,0,1,32.689,16.731Zm-17.373,0L21.641,19.1l6.325-2.371L21.641,14.36Zm-2.268,10.2,7.365,2.762V21.265L13.048,18.5Zm17.186,0V18.5l-7.365,2.762V29.69Z" transform="translate(56.41 56.41)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

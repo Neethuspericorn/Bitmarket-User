@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beekarte</title>
+    <link rel="stylesheet" href="css//slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
+    <link rel="stylesheet" href="css/product-view.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container container-custom">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+                <div class="cart ms-lg-5 ms-sm-3 ms-3 updates order-lg-3">
+                    <a href="#"><img src="img/cart.svg" alt="cart"></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <form class="d-flex search-wrp" role="search">
+                        <button class="btn btn-outline-success" type="submit"><img src="img/search.svg"></button>
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search for products, brands and more" aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop by Category
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                My Profile
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="account.html">
+                                        <span>
+                                            <img src="img/user.svg">
+                                        </span>Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span>
+                                            <img src="img/orders.svg">
+                                        </span>My Orders</a>
+                                </li>
+                                <li><a class="dropdown-item" href="favorites.html">
+                                        <span><img src="img/favs.svg"></span>Favorites</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="notifications.html">
+                                        <span><img src="img/notifications.svg"></span>Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span><img src="img/logout.svg"></span>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="modal"
+                                data-bs-target="#loginSignup">
+                                Login/Signup
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="product-view-wrp">
+            <div class="container container-custom product-view-container">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#" class="active">Notifications</a></li>
+                    </ul>
+                </div>
+                <div class="product-view-block">
+                    <div class="product-left-block">
+                        <div class="products-card">
+                            <div class="products-card-header">
+                                <button class="btn btn-add-fav isActive">
+                                    <img src="img/heart_line.svg" class="product-like product-like-line" alt="product">
+                                    <img src="img/heart_fill.svg" class="product-like product-like-fill" alt="product">
+                                </button>
+                                <div class="product-brands-slider slider">
+                                    <div>
+                                        <img src="img/product-view.png" class="product-img" alt="product">
+                                    </div>
+                                    <div>
+                                        <img src="img/product-view.png" class="product-img" alt="product">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-card-body">
+                                <div class="product-txt">
+                                    <span>Purple/Rick and Morty</span>
+                                    <h6>Ingrid Street wear</h6>
+                                    <div class="price-txt">
+                                        <img src="img/ethereum-color.svg" class="price-icon" alt="ethereum">
+                                        0.16 ETH
+                                        <del>0.17 ETH</del>
+                                    </div>
+                                </div>
+                                <div class="view-block">
+                                    <span class="stock-txt in-stock">Stock</span>
+                                    <span class="stock-txt outof-stock">Out Stock</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="product-right-block">
+                        <div class="social-wrp">
+                            <div class="connect-blk">
+                                <a href="#" class="link"><img src="img/facebook.svg" alt=""></a>
+                                <a href="#" class="link"><img src="img/twitter.svg" alt=""></a>
+                                <a href="#" class="link"><img src="img/linkedin.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="product-txt-details">
+                            <h4 class="title">Product Information</h4>
+                            <p class="txt-dec">Regular-fit jacket in rigid denim with a collar, metal buttons down the
+                                front, flap chest pockets with a button and welt side pockets. Long sleeves, buttoned
+                                cuffs and an adjustable tab and buttons at the sides.</p>
+                            <div class="list-block">
+                                <div class="list-title">Fit</div>
+                                <div class="list-dic">Regular Fit</div>
+                            </div>
+                            <div class="list-block">
+                                <div class="list-title">Composition</div>
+                                <div class="list-dic">
+                                    <span>Shell: Cotton 89%,</span>
+                                    <span>Viscose 11%</span>
+                                    <span>Pocket lining:</span>
+                                    <span>Cotton 100%</span>
+                                </div>
+                            </div>
+                            <div class="list-block">
+                                <div class="list-title">Seller</div>
+                                <div class="list-dic">The Masked Man</div>
+                            </div>
+                            <div class="size-select">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select Size</option>
+                                    <option value="1">SM</option>
+                                    <option value="2">MD</option>
+                                    <option value="3">XL</option>
+                                </select>
+                            </div>
+                            <div class="action-btn">
+                                <button class="btn btn-cart">Add to Cart
+                                    <img src="img/btn-cart.svg" alt="">
+                                </button>
+                                <button class="btn btn-buy">Buy Now
+                                    <img src="img/btn-thunder.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="delivery-block">
+                                <img src="img/map-pin.svg" class="map" alt="map">
+                                <div class="delivery-txt">Delivery to</div>
+                                <span>fort lauderdale, Miami</span>
+                                <button class="btn change-btn"> Change</button>
+                            </div>
+                            <div class="free-delivery-info eligible">Eligible for free delivery</div>
+                            <div class="free-delivery-info not-eligible">Eligible for free delivery</div>
+                            <div class="delivery-day">10 Days Return Policy
+                                <button type="button" class="btn" data-bs-toggle="tooltip"
+                                    title="10 Days Return Policy">
+                                    <img src="img/info.svg" class="info-block" alt="info">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -215,3 +215,132 @@
         width: 100%;
     }
 }
+
+.contact-modal {
+    .modal-dialog {
+        max-width: 980px;
+    }
+
+    .modal-header {
+        min-height: 70px;
+        border: none;
+
+        @media ($sm-1367) {
+            min-height: 40px;
+        }
+
+        .btn-close {
+            width: 26px;
+            height: 26px;
+            background-color: #FFFFFF;
+            border: 1px solid #E3E3E3;
+            border-radius: 100px;
+            background-size: 11px;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+
+            // @media ($sm-1367) {
+            //     width: 20px;
+            //     height: 20px;
+            // }
+
+            // @media ($sm-991) {
+            //     width: 16px;
+            //     height: 16px;
+            // }
+        }
+    }
+
+    .modal-body {
+        padding: 0 100px;
+
+        @media ($sm-1679) {
+            padding: 0 60px;
+        }
+
+        @media ($sm-1367) {
+            padding: 0 40px;
+        }
+
+        @media ($sm-991) {
+            padding: 0 30px;
+        }
+
+        .contact-header {
+            .title {
+                text-align: left;
+                font: 600 28px $poppins;
+                color: #1D1D39;
+
+                @media ($sm-1367) {
+                    font-size: 22px;
+                }
+            }
+
+            p {
+                text-align: left;
+                font: normal 13px $poppins;
+                color: #1D1D39;
+            }
+        }
+
+        .contact-body {
+            margin-top: 50px;
+            padding-bottom: 80px;
+
+            @media ($sm-991) {
+                margin-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .contact-us-img {
+                display: block;
+                margin: auto;
+            }
+
+            .form-block {
+                @media ($sm-767) {
+                    margin-top: 30px;
+                }
+
+                .input-block {
+                    margin-bottom: 50px;
+
+                    @media ($sm-1367) {
+                        margin-bottom: 30px;
+                    }
+
+                    .form-label {
+                        text-align: left;
+                        font: normal 15px $poppins;
+                        color: #1D1D39;
+                        margin-bottom: 6px;
+                    }
+                    .input-group-text{
+                        border: none !important;
+                        background: #F8F7FF;
+                        border-radius: 30px 0px 0 30px;
+                        padding-left: 25px;
+                    }
+                    .form-control {
+                        height: auto;
+                        background: #F8F7FF;
+                        border-radius: 30px;
+                        text-align: left;
+                        font: normal 17px $poppins;
+                        color: #1D1D39;
+                        padding: 10px 20px;
+                        padding-left: 0;
+                        border: none;
+                        margin: 0;
+
+                        @media ($sm-1367) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

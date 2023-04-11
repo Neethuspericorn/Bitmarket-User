@@ -5,17 +5,21 @@
     .dropdown-menu {
         margin-top: 55px !important;
         right: -134px !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 8px;
 
         @media ($sm-991) {
             margin: 0 !important;
             padding: 0 !important;
         }
 
-        &::before,
-        &::after {
+        &::before {
             right: 145px !important;
         }
-
+        &::after{
+            display: none;
+        }
         ul {
             display: inline-flex;
             width: 1200px;
@@ -45,6 +49,12 @@
                 width: 100%;
                 margin: 0 !important;
             }
+            @media ($sm-767) {
+                padding: 20px !important;
+                width: 100%;
+                margin: 0 !important;
+                border: 1px solid #f1f1f1 !important;
+            }
 
 
 
@@ -67,6 +77,7 @@
 
                 &:last-child {
                     margin-right: 0;
+
                     @media ($sm-767) {
                         margin: 0;
                     }
@@ -104,9 +115,16 @@
                                 height: 80px;
                                 width: 80px;
                             }
+                            @media ($sm-1023) {
+                                height: 60px;
+                                width: 60px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
 
                             @media ($sm-767) {
-                               display: none;
+                                display: none;
                             }
 
                             .product-items {

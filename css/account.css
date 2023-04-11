@@ -90,7 +90,10 @@
           position: absolute;
           right: 0; }
           .account-section .account-wrap .tab-pane .pro-info-block .pro-info-pic .pic-edit .btn {
-            padding: 0; }
+            padding: 0;
+            border: none;
+            outline: none;
+            box-shadow: none; }
             @media (max-width: 991px) {
               .account-section .account-wrap .tab-pane .pro-info-block .pro-info-pic .pic-edit .btn .edit {
                 width: 15px;
@@ -105,7 +108,8 @@
           padding: 8px;
           margin: auto;
           background: #E8E0FF;
-          border-radius: 100px; }
+          border-radius: 100px;
+          position: relative; }
           @media (max-width: 1679px) {
             .account-section .account-wrap .tab-pane .pro-info-block .pro-info-pic .pro-pics {
               width: 140px;
@@ -126,6 +130,25 @@
               .account-section .account-wrap .tab-pane .pro-info-block .pro-info-pic .pro-pics .pic {
                 width: 100px;
                 height: 100px; } }
+          .account-section .account-wrap .tab-pane .pro-info-block .pro-info-pic .pro-pics .uploding-pic {
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            background: #7F57F1;
+            border: 1px solid #AA9DF2;
+            border-radius: 100px;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999; }
+            .account-section .account-wrap .tab-pane .pro-info-block .pro-info-pic .pro-pics .uploding-pic .form-control {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              opacity: 0; }
       .account-section .account-wrap .tab-pane .pro-info-block .pro-info-form {
         display: flex;
         width: 100%;
@@ -244,6 +267,93 @@
           width: 9px;
           height: 9px;
           margin-right: 10px; }
+      .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .title {
+        margin: 30px 0;
+        text-align: left;
+        font: 600 18px "Poppins", sans-serif;
+        letter-spacing: 0px;
+        color: #120D26; }
+      .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block {
+        margin-bottom: 30px;
+        position: relative; }
+        .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-label {
+          text-align: left;
+          font: 500 15px/23px "Poppins", sans-serif;
+          color: #120D26; }
+          @media (max-width: 1281px) {
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-label {
+              font-size: 14px; } }
+        .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-control {
+          height: 63px;
+          background: #FFFFFF;
+          border: 1px solid #D3D3D3;
+          border-radius: 8px; }
+          @media (max-width: 1441px) {
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-control {
+              height: 54px; } }
+          @media (max-width: 1367px) {
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-control {
+              height: 48px; } }
+          @media (max-width: 1199px) {
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-control {
+              height: 44px; } }
+        .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-radio-block {
+          display: flex;
+          justify-content: space-between; }
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-radio-block .form-check-input:checked {
+            background-color: #7F57F1;
+            border-color: #7F57F1; }
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .form-radio-block .form-check-input:focus {
+            box-shadow: none; }
+        .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .val-msg {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          display: inline-flex;
+          align-items: center;
+          padding-top: 8px;
+          font-size: 12px;
+          font-weight: 500;
+          color: #FF4141; }
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .form-input-wrap .form-block .val-msg img {
+            margin-right: 10px; }
+      .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 30px; }
+        @media (max-width: 520px) {
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block {
+            flex-direction: column; } }
+        .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block .btn {
+          width: 205px;
+          height: 50px;
+          border-radius: 6px;
+          text-align: left;
+          font: 500 14px "Poppins", sans-serif;
+          letter-spacing: 0px;
+          color: #2C00AA;
+          text-align: center; }
+          @media (max-width: 1199px) {
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block .btn {
+              width: 160px;
+              height: 44px; } }
+          @media (max-width: 991px) {
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block .btn {
+              width: 140px;
+              height: 44px; } }
+          @media (max-width: 520px) {
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block .btn {
+              width: 100%; } }
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block .btn.btn-primary {
+            background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+            color: #fff; }
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block .btn.btn-secondary {
+            background: #E4DBFF;
+            margin-right: 15px; }
+            @media (max-width: 520px) {
+              .account-section .account-wrap .tab-pane .man-add .add-btn-block .add-new-address .action-block .btn.btn-secondary {
+                margin: 0;
+                margin-bottom: 15px; } }
       .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items {
         background: #FBFAFF;
         border: 1px solid #F5F2FF;
@@ -251,6 +361,12 @@
         padding: 28px 39px 37px;
         margin-bottom: 20px;
         position: relative; }
+        .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items.checkout-block {
+          display: flex; }
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items.checkout-block .form-block {
+            padding-right: 10px; }
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items.checkout-block .form-block .form-radio-block {
+              margin-top: 6px; }
         @media (max-width: 1679px) {
           .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items {
             padding: 25px 35px 35px; } }
@@ -298,14 +414,42 @@
           position: absolute;
           right: 0px;
           top: 0px; }
-          .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items .dropdown .btn span {
-            width: 3px;
-            height: 3px;
-            background: #C9B9F8;
-            display: block;
-            margin-bottom: 2px;
-            border: none;
-            box-shadow: none;
-            outline: none; }
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items .dropdown .btn {
+            border: none; }
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items .dropdown .btn:active {
+              border: none !important;
+              outline: none !important;
+              box-shadow: none !important; }
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items .dropdown .btn span {
+              width: 3px;
+              height: 3px;
+              background: #C9B9F8;
+              display: block;
+              margin-bottom: 2px;
+              border: none;
+              box-shadow: none;
+              outline: none; }
+          .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items .dropdown .dropdown-menu {
+            transform: translate(-90px, 35px) !important;
+            min-width: 120px;
+            background: #F5F2FF;
+            border: 1px solid #FBFAFF; }
+            .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items .dropdown .dropdown-menu li a {
+              font: 400 16px "Poppins", sans-serif;
+              color: #3F346C; }
+              @media (max-width: 1367px) {
+                .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items .dropdown .dropdown-menu li a {
+                  font-size: 14px; } }
+              .account-section .account-wrap .tab-pane .man-add .add-btn-block .address-list .address-items .dropdown .dropdown-menu li a:hover {
+                background: #e2dbf7; }
+
+.checkout-wrap .title {
+  margin: 30px 0 0;
+  text-align: left;
+  font: 600 18px "Poppins", sans-serif;
+  letter-spacing: 0px;
+  color: #120D26; }
+.checkout-wrap .man-add {
+  margin-top: 20px !important; }
 
 /*# sourceMappingURL=account.css.map */

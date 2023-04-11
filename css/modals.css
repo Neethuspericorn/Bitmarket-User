@@ -1,2 +1,601 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");.modal .modal-content{border-radius:27px;border:none}.modal .modal-header,.modal .modal-body,.modal .modal-footer{padding-left:60px;padding-right:60px}.modal .modal-header{border-bottom:none;position:relative}.modal .modal-header .btn-close{font-size:10px;color:#9A9A9A;width:32px;height:32px;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border:1px solid #E3E3E3;border-radius:32px;position:absolute;top:18px;right:18px}.modal-backdrop{background-color:#0D0031;opacity:0.3}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.modal .modal-content {
+  border-radius: 27px;
+  border: none; }
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer {
+  padding-left: 60px;
+  padding-right: 60px; }
+.modal .modal-header {
+  border-bottom: none;
+  position: relative; }
+  .modal .modal-header .btn-close {
+    font-size: 10px;
+    color: #9A9A9A;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E3E3E3;
+    border-radius: 32px;
+    position: absolute;
+    top: 18px;
+    right: 18px; }
+
+.modal-backdrop {
+  background-color: #0D0031;
+  opacity: 0.3; }
+
+.cancel-modal .modal-dialog {
+  max-width: 760px;
+  background: #fff;
+  border-radius: 21px; }
+
+.proceed-to-payment-modal .modal-dialog {
+  max-width: 600px; }
+  .proceed-to-payment-modal .modal-dialog .modal-content {
+    padding: 0 30px;
+    position: relative; }
+    .proceed-to-payment-modal .modal-dialog .modal-content .modal-header {
+      padding: 0;
+      padding-top: 55px;
+      padding-bottom: 22px;
+      border: none;
+      border-bottom: 1px solid #DDDDDD;
+      position: unset; }
+      @media (max-width: 1367px) {
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-header {
+          padding-top: 40px; } }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-header .modal-title {
+        text-align: left;
+        font: 600 19px "Poppins", sans-serif;
+        color: #000000; }
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-header .modal-title span {
+          font: bold 19px "Poppins", sans-serif;
+          color: #7F57F1; }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-header .btn-close {
+        width: 26px;
+        height: 26px;
+        background-color: #FFFFFF;
+        border: 1px solid #E3E3E3;
+        border-radius: 100px;
+        background-size: 11px;
+        position: absolute;
+        right: 30px;
+        top: 20px; }
+        @media (max-width: 1367px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-header .btn-close {
+            width: 20px;
+            height: 20px;
+            background-size: 8px; } }
+        @media (max-width: 991px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-header .btn-close {
+            width: 16px;
+            height: 16px; } }
+    .proceed-to-payment-modal .modal-dialog .modal-content .modal-body {
+      padding: 0;
+      padding-top: 38px;
+      padding-bottom: 56px;
+      max-width: 397px;
+      margin: auto; }
+      @media (max-width: 1367px) {
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-body {
+          padding-top: 30px;
+          padding-bottom: 38px;
+          padding-right: 20px; } }
+      @media (max-width: 420px) {
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-body {
+          max-width: 100%; } }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .form-label {
+        text-align: left;
+        font: 500 15px "Poppins", sans-serif;
+        color: #000000;
+        margin-bottom: 6px; }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .btn {
+        width: 100%;
+        height: 63px;
+        background: #FFFFFF;
+        border: 1px solid #D3CFDE;
+        border-radius: 8px;
+        text-align: left;
+        font: 500 16px "Poppins", sans-serif;
+        color: #000000;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 1679px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .btn {
+            height: 50px; } }
+        @media (max-width: 1367px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .btn {
+            font-size: 14px; } }
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .btn .select-img {
+          width: 28px;
+          height: 28px;
+          background: #FFF3E2;
+          padding: 5px;
+          border-radius: 100px;
+          margin-right: 10px; }
+          @media (max-width: 1367px) {
+            .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .btn .select-img {
+              width: 24px;
+              height: 24px; } }
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .btn.dropdown-toggle {
+          position: relative; }
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .btn.dropdown-toggle::after {
+            background: url("../img/down.svg") no-repeat;
+            border: none;
+            width: 12px;
+            height: 7px;
+            position: absolute;
+            right: 30px; }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .dropdown-menu {
+        width: 100%; }
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .dropdown-menu .dropdown-item {
+          text-align: left;
+          font: 500 16px "Poppins", sans-serif;
+          color: #000000;
+          text-transform: uppercase; }
+          @media (max-width: 1367px) {
+            .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .dropdown-menu .dropdown-item {
+              font-size: 14px; } }
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .dropdown-menu .dropdown-item .select-img {
+            width: 28px;
+            height: 28px;
+            background: #FFF3E2;
+            padding: 5px;
+            border-radius: 100px;
+            margin-right: 10px; }
+            @media (max-width: 1367px) {
+              .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .form-block .dropdown .dropdown-menu .dropdown-item .select-img {
+                width: 24px;
+                height: 24px; } }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .payment-proceed-txt .pay-block {
+        margin-top: 18px;
+        text-align: left;
+        font: normal 14px "Poppins", sans-serif;
+        color: #412789; }
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .payment-proceed-txt .pay-block span {
+          text-decoration: underline;
+          font-weight: 500; }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .payment-proceed-txt p {
+        width: 327px;
+        text-align: left;
+        font: normal 14px "Poppins", sans-serif;
+        color: #525252;
+        margin-top: 47px; }
+        @media (max-width: 1679px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .payment-proceed-txt p {
+            margin-top: 30px; } }
+        @media (max-width: 420px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .payment-proceed-txt p {
+            width: 100%; } }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .action-block .proceed-block-btn .btn-primary {
+        width: 100%;
+        margin-top: 21px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .action-block .other-action .btn {
+        background: #EFEAFC;
+        border-radius: 6px;
+        width: 185px;
+        height: 63px;
+        text-align: center;
+        font: 500 16px "Poppins", sans-serif;
+        color: #7F57F1; }
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .action-block .other-action .btn:first-child {
+          margin-right: 17px; }
+          @media (max-width: 420px) {
+            .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .action-block .other-action .btn:first-child {
+              margin: 0;
+              margin-bottom: 10px; } }
+        @media (max-width: 1679px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .action-block .other-action .btn {
+            height: 50px; } }
+        @media (max-width: 1367px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .action-block .other-action .btn {
+            font-size: 14px;
+            width: 175px; } }
+        @media (max-width: 420px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-body .payment-proceed-block .action-block .other-action .btn {
+            width: 100%; } }
+    .proceed-to-payment-modal .modal-dialog .modal-content .modal-footer {
+      padding-top: 0;
+      padding-bottom: 63px;
+      border: none;
+      display: block;
+      margin: auto; }
+      @media (max-width: 1367px) {
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-footer {
+          padding-bottom: 38px; } }
+      .proceed-to-payment-modal .modal-dialog .modal-content .modal-footer .poweredBy {
+        text-align: center;
+        font: 500 15px "Poppins", sans-serif;
+        color: #716890; }
+        @media (max-width: 1281px) {
+          .proceed-to-payment-modal .modal-dialog .modal-content .modal-footer .poweredBy {
+            font-size: 14px; } }
+        .proceed-to-payment-modal .modal-dialog .modal-content .modal-footer .poweredBy span {
+          font: 600 15px "Poppins", sans-serif; }
+          @media (max-width: 1281px) {
+            .proceed-to-payment-modal .modal-dialog .modal-content .modal-footer .poweredBy span {
+              font-size: 14px; } }
+
+.amount-to-pay-modal .modal-dialog {
+  max-width: 760px; }
+  .amount-to-pay-modal .modal-dialog .modal-content {
+    padding: 0 30px !important;
+    position: relative; }
+  .amount-to-pay-modal .modal-dialog .modal-header {
+    position: unset;
+    padding-top: 55px;
+    padding-bottom: 22px;
+    border: none;
+    border-bottom: 1px solid #DDDDDD; }
+    @media (max-width: 1679px) {
+      .amount-to-pay-modal .modal-dialog .modal-header {
+        padding-top: 40px; } }
+    @media (max-width: 480px) {
+      .amount-to-pay-modal .modal-dialog .modal-header {
+        padding: 0 !important;
+        padding-top: 40px !important; } }
+    .amount-to-pay-modal .modal-dialog .modal-header .modal-title {
+      text-align: left;
+      font: 600 19px "Poppins", sans-serif;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%; }
+      @media (max-width: 1367px) {
+        .amount-to-pay-modal .modal-dialog .modal-header .modal-title {
+          font-size: 16px; } }
+      .amount-to-pay-modal .modal-dialog .modal-header .modal-title span {
+        font: bold 19px "Poppins", sans-serif;
+        color: #7F57F1; }
+        @media (max-width: 1367px) {
+          .amount-to-pay-modal .modal-dialog .modal-header .modal-title span {
+            font-size: 16px; } }
+    .amount-to-pay-modal .modal-dialog .modal-header .btn-close {
+      width: 26px;
+      height: 26px;
+      background-color: #FFFFFF;
+      border: 1px solid #E3E3E3;
+      border-radius: 100px;
+      background-size: 11px;
+      position: absolute;
+      right: 30px;
+      top: 20px; }
+      @media (max-width: 1367px) {
+        .amount-to-pay-modal .modal-dialog .modal-header .btn-close {
+          width: 20px;
+          height: 20px;
+          background-size: 8px; } }
+      @media (max-width: 991px) {
+        .amount-to-pay-modal .modal-dialog .modal-header .btn-close {
+          width: 16px;
+          height: 16px; } }
+  .amount-to-pay-modal .modal-dialog .modal-body {
+    padding: 15px 40px 0 !important; }
+    @media (max-width: 1367px) {
+      .amount-to-pay-modal .modal-dialog .modal-body {
+        padding: 15px 30px 0 !important; } }
+    @media (max-width: 1281px) {
+      .amount-to-pay-modal .modal-dialog .modal-body {
+        padding: 15px 10px 0 !important; } }
+    .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-block .order-txt {
+      display: flex;
+      justify-content: space-between; }
+      @media (max-width: 480px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-block .order-txt {
+          flex-direction: column; } }
+      .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-block .order-txt p {
+        text-align: left;
+        font: normal 14px "Poppins", sans-serif;
+        color: #000000;
+        margin: 0; }
+        .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-block .order-txt p span {
+          text-decoration: underline;
+          font-weight: 600; }
+    .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .pay-block {
+      text-align: center;
+      font: 500 18px "Poppins", sans-serif;
+      color: #000000;
+      margin-bottom: 20px;
+      margin-top: 50px; }
+      @media (max-width: 1679px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .pay-block {
+          margin-top: 35px; } }
+      @media (max-width: 1367px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .pay-block {
+          margin-top: 25px;
+          font-size: 16px; } }
+    .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list {
+      text-align: center; }
+      .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .user-block {
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media (max-width: 1367px) {
+          .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .user-block {
+            margin-bottom: 5px; } }
+        .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .user-block .user-img-block {
+          width: 28px;
+          height: 28px;
+          background: #FFF3E2;
+          padding: 5px;
+          border-radius: 100px; }
+        .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .user-block span {
+          text-align: left;
+          font: bold 14px "Poppins", sans-serif;
+          color: #362D4E;
+          margin: 0 10px; }
+      .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .time-section {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media (max-width: 480px) {
+          .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .time-section {
+            flex-direction: column; } }
+        .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .time-section span {
+          text-align: left;
+          font: 300 14px "Poppins", sans-serif;
+          color: #000000;
+          margin-right: 10px; }
+        .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .time-section .time-txt {
+          text-align: left;
+          font: 500 14px "Poppins", sans-serif;
+          color: #7F57F1; }
+          .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .time-section .time-txt .stopwatch-img-block {
+            width: 12px;
+            height: 15px;
+            margin-right: 5px; }
+          .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .time-section .time-txt .btn {
+            padding: 0;
+            border: none;
+            margin-left: 9px; }
+            .amount-to-pay-modal .modal-dialog .modal-body .payment-proceed-txt .address-list .time-section .time-txt .btn:active {
+              border: none; }
+    .amount-to-pay-modal .modal-dialog .modal-body .link-block {
+      margin-top: 38px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media (max-width: 1679px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .link-block {
+          margin-top: 25px; } }
+      @media (max-width: 1367px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .link-block {
+          margin-top: 20px; } }
+      .amount-to-pay-modal .modal-dialog .modal-body .link-block .link {
+        text-align: left;
+        font: normal 14px "Poppins", sans-serif;
+        letter-spacing: 0px;
+        color: #7F57F1;
+        margin-right: 10px;
+        width: 320px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+    .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .qrcode-block-img {
+      background: #FAF8FF;
+      border-radius: 21px;
+      padding: 36px;
+      margin-bottom: 22px; }
+      @media (max-width: 1679px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .qrcode-block-img {
+          padding: 25px; } }
+      @media (max-width: 1679px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .qrcode-block-img {
+          padding: 15px; } }
+      .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .qrcode-block-img .qrcode-img {
+        display: block;
+        margin: auto;
+        width: 147px;
+        height: 147px; }
+        @media (max-width: 1679px) {
+          .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .qrcode-block-img .qrcode-img {
+            width: 110px;
+            height: 110px; } }
+        @media (max-width: 1679px) {
+          .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .qrcode-block-img .qrcode-img {
+            width: 90px;
+            height: 90px; } }
+    .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block p {
+      margin: 0;
+      text-align: left;
+      font: normal 13px "Poppins", sans-serif;
+      color: #000000;
+      margin-bottom: 18px; }
+      @media (max-width: 1679px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block p {
+          margin-bottom: 10px; } }
+      .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block p b {
+        font-weight: 600; }
+      .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block p span {
+        text-align: left;
+        text-decoration: underline;
+        font: 600 13px "Poppins", sans-serif;
+        color: #7F57F1; }
+    .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .nowpayments-txt {
+      margin-top: 22px;
+      padding: 20px 30px;
+      display: block;
+      text-align: left;
+      background: #FAF8FF;
+      border-radius: 8px;
+      font: 300 13px "Poppins", sans-serif;
+      letter-spacing: 0.18px;
+      color: #696180;
+      margin-bottom: 46px; }
+      @media (max-width: 1679px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .nowpayments-txt {
+          margin-bottom: 30px; } }
+      @media (max-width: 1199px) {
+        .amount-to-pay-modal .modal-dialog .modal-body .qrcode-block .nowpayments-txt {
+          padding: 20px;
+          margin-bottom: 20px;
+          margin-top: 20px; } }
+
+.payment-successful-modal .modal-dialog {
+  max-width: 760px; }
+.payment-successful-modal .modal-content {
+  padding: 0 80px !important; }
+  @media (max-width: 1441px) {
+    .payment-successful-modal .modal-content {
+      padding: 0 50px !important; } }
+  @media (max-width: 1281px) {
+    .payment-successful-modal .modal-content {
+      padding: 0 30px !important; } }
+.payment-successful-modal .modal-header {
+  border: none !important; }
+  @media (max-width: 1679px) {
+    .payment-successful-modal .modal-header {
+      padding-top: 25px !important; } }
+.payment-successful-modal .modal-body {
+  max-width: 100% !important;
+  padding: 0 !important;
+  width: 100%;
+  padding-right: 20px !important; }
+  .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt .success-img {
+    width: 122px;
+    display: block;
+    height: 122px;
+    margin: auto;
+    margin-bottom: 26px; }
+    @media (max-width: 1367px) {
+      .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt .success-img {
+        width: 110px;
+        height: 110px; } }
+    @media (max-width: 1199px) {
+      .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt .success-img {
+        width: 80px;
+        height: 80px; } }
+  .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt h5 {
+    text-align: center;
+    font: 600 20px "Poppins", sans-serif;
+    color: #000000;
+    margin-bottom: 19px; }
+    @media (max-width: 1679px) {
+      .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt h5 {
+        margin-bottom: 15px; } }
+    @media (max-width: 1367px) {
+      .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt h5 {
+        font-size: 18px;
+        margin-bottom: 10px; } }
+  .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt p {
+    text-align: center;
+    font: normal 16px "Poppins", sans-serif;
+    color: #626262;
+    width: 328px;
+    display: block;
+    margin: auto;
+    margin-bottom: 49px; }
+    @media (max-width: 1679px) {
+      .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt p {
+        margin-bottom: 35px; } }
+    @media (max-width: 1367px) {
+      .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt p {
+        font-size: 14px;
+        margin-bottom: 20px; } }
+    @media (max-width: 480px) {
+      .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt p {
+        width: 100%; } }
+  .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt .transaction-txt {
+    text-align: center;
+    font: 500 18px "Poppins", sans-serif;
+    color: #000000;
+    display: flex;
+    margin: auto;
+    justify-content: center; }
+    @media (max-width: 1367px) {
+      .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt .transaction-txt {
+        font-size: 14px; } }
+    .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt .transaction-txt span {
+      text-align: center;
+      font: 500 18px "Poppins", sans-serif;
+      color: #7F57F1; }
+      @media (max-width: 1367px) {
+        .payment-successful-modal .modal-body .payment-successful-block .payment-successful-txt .transaction-txt span {
+          font-size: 14px; } }
+  .payment-successful-modal .modal-body .payment-successful-block .table {
+    margin-top: 50px;
+    margin-bottom: 38px; }
+    @media (max-width: 1679px) {
+      .payment-successful-modal .modal-body .payment-successful-block .table {
+        margin: 35px 0; } }
+    .payment-successful-modal .modal-body .payment-successful-block .table tr th {
+      text-align: left;
+      font: 500 18px "Poppins", sans-serif;
+      color: #868686;
+      padding: 5px; }
+      @media (max-width: 1367px) {
+        .payment-successful-modal .modal-body .payment-successful-block .table tr th {
+          font-size: 14px; } }
+    .payment-successful-modal .modal-body .payment-successful-block .table tr td {
+      text-align: left;
+      font: 500 18px "Poppins", sans-serif;
+      color: #000000;
+      padding: 5px; }
+      @media (max-width: 1367px) {
+        .payment-successful-modal .modal-body .payment-successful-block .table tr td {
+          font-size: 14px; } }
+      .payment-successful-modal .modal-body .payment-successful-block .table tr td .user-img {
+        width: 23px;
+        height: 23px;
+        background: #FFF3E2;
+        padding: 5px;
+        border-radius: 100px;
+        margin-right: 10px; }
+  .payment-successful-modal .modal-body .payment-successful-block .btn.btn-primary {
+    width: 302px;
+    height: 50px;
+    background: transparent linear-gradient(180deg, #7F57F1 0%, #2C00AA 100%);
+    border-radius: 6px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font: 500 14px "Poppins", sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media (max-width: 1679px) {
+      .payment-successful-modal .modal-body .payment-successful-block .btn.btn-primary {
+        margin-bottom: 50px; } }
+    @media (max-width: 1367px) {
+      .payment-successful-modal .modal-body .payment-successful-block .btn.btn-primary {
+        margin-bottom: 30px;
+        height: 40px; } }
+    @media (max-width: 480px) {
+      .payment-successful-modal .modal-body .payment-successful-block .btn.btn-primary {
+        width: 100%; } }
+
 /*# sourceMappingURL=modals.css.map */

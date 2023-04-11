@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/breadcrumbs.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="logo"></a>
+                <div class="cart ms-lg-5 ms-sm-3 ms-3 updates order-lg-3">
+                    <a href="#"><img src="img/cart.svg" alt="cart"></a>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <form class="d-flex search-wrp" role="search">
+                        <button class="btn btn-outline-success" type="submit"><img src="img/search.svg"></button>
+                        <input class="form-control me-2" type="search"
+                            placeholder="Search for products, brands and more" aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop by Category
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                My Profile
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="account.html">
+                                        <span>
+                                            <img src="img/user.svg">
+                                        </span>Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span>
+                                            <img src="img/orders.svg">
+                                        </span>My Orders</a>
+                                </li>
+                                <li><a class="dropdown-item" href="favorites.html">
+                                        <span><img src="img/favs.svg"></span>Favorites</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="notifications.html">
+                                        <span><img src="img/notifications.svg"></span>Notifications
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <span><img src="img/logout.svg"></span>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="modal"
+                                data-bs-target="#loginSignup">
+                                Login/Signup
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="account-section">
+            <div class="container container-custom">
+
+                <div class="account-wrap checkout-wrap">
+
+                    <div class="tab-pane active">
+                        <div class="add-new-address">
+                            <h5 class="title">Add New Address</h5>
+                        </div>
+                        <div class="man-add">
+                            <div class="add-btn-block">
+                                <button class="btn new-address">
+                                    <img src="img/add-btn.svg" class="plus-icon" alt="add-btn"> Add New
+                                    Address</button>
+                                <div class="address-list">
+
+                                    <div class="address-items checkout-block">
+                                        <div class="form-block ">
+                                            
+                                            <div class="form-radio-block">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios"
+                                                        id="exampleRadios1" value="option1" checked="">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="place-block">
+                                                Home
+                                            </div>
+                                            <h6 class="title">John David</h6>
+                                            <span class="dec">Cecilia Chapman, 711-2880 Nulla St., Mankato
+                                                Mississippi</span>
+                                            <span class="mob-txt">96522 (257) 563-7401</span>
+                                            <div class="dropdown">
+                                                <button type="button" class="btn" data-bs-toggle="dropdown">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                    <li><a class="dropdown-item" href="#">Delete</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="place-block">
+                                        Home
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/main.js"></script>
+
+</html>
